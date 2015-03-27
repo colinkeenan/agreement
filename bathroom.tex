@@ -1,28 +1,15 @@
 \documentclass[12pt,letterpaper]{article}
-\newcommand{\chorestitle}{Bathroom Checklist}
+\newcommand{\mytitle}{Bathroom Checklist}
 \usepackage[margin=1in,headheight=28pt]{geometry}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{
-	\lhead{\centering \chorestitle{}}
-	\rfoot{Page \thepage}}
 \usepackage{multicol}
 \overfullrule=2cm
 
-\newcounter{examplecounter}
-\newenvironment{example}{\begin{quote}%
-    \refstepcounter{examplecounter}%
-  \textbf{Example \arabic{examplecounter}}%
-  \quad
-}{%
-\end{quote}%
-}
-
 \begin{document}
-\title{\chorestitle{}}
+\title{\mytitle{}}
 \author{Colin N Keenan colinnkeenan@gmail.com}
 \date{March 2015}
-\thispagestyle{fancy}
+\section*{\mytitle{}}
+\noindent \hrulefill
 \begin{enumerate}
 	\item stock toilet paper
 	\item cleanup sink and counter
