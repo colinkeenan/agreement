@@ -4,6 +4,7 @@
 \newcommand{\tabsmall}[1]{\makebox[.14\linewidth][l]{#1}\ignorespaces}%
 \newcommand{\tabmed}[1]{\makebox[.22\linewidth][l]{#1}\ignorespaces}%
 \newcommand{\tablarge}[1]{\makebox[.55\linewidth][l]{#1}\ignorespaces}%
+\newcommand{\datefillin}{\hspace{0.2cm}\makebox[.2\linewidth]{\hrulefill}}
 
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage{fancyhdr}
@@ -22,6 +23,7 @@
 \newcommand{\standards}{Residential Housekeeping Standards}
 
 \newcommand{\mom}{Joan B Harrison}
+\newcommand{\ownermail}{Owner Email}
 \newcommand{\management}{Management}
 \newcommand{\myemail}{Management Email}
 \newcommand{\condo}{Wilson Manor}
@@ -33,10 +35,7 @@
 \newcommand{\appliances}{Shared Appliances}
 \newcommand{\utilities}{Shared Utilities}
 \newcommand{\deposit}{Security Deposit}
-\newcommand{\rent}{Weekly Payment}
-\newcommand{\signdate}{Commencement Date}
 \newcommand{\firstday}{Occupancy Commencement Date}
-\newcommand{\rentdate}{Rent Commencement Date}
 \newcommand{\rentweek}{Rent Week}
 \newcommand{\lemail}{Lodger Email}
 \newcommand{\paymenttime}{Payment Notification Time-Date}
@@ -52,7 +51,7 @@
 
 \begin{document}
 \title{\agreementtitle{}}
-\author{Colin N Keenan colinnkeenan@gmail.com}
+\author{Drafted by Colin N Keenan colinnkeenan@gmail.com}
 \date{March 2015}
 \maketitle
 \thispagestyle{fancy}
@@ -72,34 +71,21 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 			\item \textbf{Appliances}. \management{} shall provide those appliances listed in item \ref{appliances} of subsection \ref{definitions} of this Agreement{}, (the ``\appliances{}''), in good working order and maintain same in good working order during the time the \room{} is rented to \lodger{}.
 			\item \textbf{\furniture{}}. \management{} shall provide the \furniture{} listed in item \ref{furniture} of subsection \ref{definitions} of this Agreement{} (``\furniture{}'') in usable condition and maintain same in usable condition during the time \room{} is rented to \lodger{}.
 		\end{enumerate}
-	\item \textbf{\livingroom{}}. \lodger{} shall not enter Owner's private areas as listed in item \ref{livingroom} of subsection \ref{definitions} of this Agreement (``\livingroom{}'') unless requested to do so by \management{}.
+	\item \textbf{\livingroom{}}. \lodger{} shall not enter Owner's private areas as listed in item \ref{livingroom} of subsection \ref{definitions} of this Agreement (``\livingroom{}'') unless requested to do so by a member of \management{}.
 	\item \textbf{Security Deposit And Payments Of Rent Due Under This Agreement}. 
 		\begin{enumerate}
 			\item \textbf{Security Deposit}. There is no security deposit. 
-			\item \textbf{Move-in Date}. \lodger{} may put personal property into, and begin making use of, \room{}, beginning with the occupancy commencement date (``\firstday{}'') that is set forth in item \ref{firstday} of subsection \ref{definitions} of this Agreement.
-			\item \textbf{Rent And Rent Due Date}. The \lodger{} shall pay \management{} the weekly rent (the ``Rent'') set forth in item \ref{rent} of subsection \ref{definitions} of this Agreement{}. Rent shall be paid on or before the seventh (7th) day of each rental week (``\rentweek{}'') as defined in item \ref{rentweek} of subsection \ref{definitions} of this Agreement, beginning with the rent commencement date (``\rentdate{}'') that is set forth in item \ref{rentdate} of subsection \ref{definitions} of this Agreement.
+			\item \textbf{Rental Term}. The term of the rental will begin on \datefilin, (``\firstday{}'') and will continue on a week-to-week basis. The \lodger{} may put personal property into, and begin making use of, the \room{} on the \firstday{}.
+			\item \textbf{Rent And Rent Due Date}. The \lodger{} shall pay the Owner a weekly rent of \$\datefillin (the ``Rent''). Rent shall be paid on or before the seventh (7th) day of each rental week. 
 			\item \textbf{Delinquent Rent}. \label{due}
-				\begin{enumerate}
-					\item \textbf{Standard Due Date}. Rent is delinquent if the \paymenttime{} as defined in item \ref{defpaytime} of this section of this Agreement (the ``\paymenttime{}'') is later than 11:59pm Pacific Standard Time on the seventh (7th) day of the week when due. 
-					\item \textbf{Possible Delay of Delinquency If Employed By Management}. If \lodger{} is employed by \management{}, the rent will not be considered delinquent if paid on the upcoming payday for the work week that includes the first day of the \rentweek{} for which rent is due. That is, the Rent will be delinquent if the \paymenttime{} is later than the latest of the following two times 
-						\begin{enumerate}
-							\item 11:59pm on the seventh (7th) day of the week when due 
-							\item 10 hours after the time-date stamp according to email received from Venmo at \management{}'s email address (the ``\myemail{}'') that is set forth in item \ref{myemail} of subsection \ref{definitions} of this Agreement{}, of \management{}'s Venmo Payment for work done in the week that includes the first day of the \rentweek{} for which rent is due. 
-						\end{enumerate} 
-						\begin{example} 
-							Colin became employed by \management{} on the \firstday{}, which was a Monday. Colin's first 7th day is the following Sunday, which is also the end of his first work week. \management{} paid Colin via Venmo for his first week of work on Monday - a day late for the Rent payment according to the standard due date. \management{} received an email from Venmo confirming payment was made to Colin at 11:59am Pacific Standard Time on Monday, 12 hours after 11:59pm of the 7th day of the week when Rent became due. Colin's Rent will not be delinquent as long as he pays via Venmo by 10pm Pacific Standard Time on that Monday (the day \management{} paid for his first week of work).
-						\end{example}
-						\begin{example} 
-							Colin became employed by \management{} on Saturday, 2 days before the \firstday{}, which was a Monday. Colin's first 7th day is the following Sunday, but his work week ended 2 days earlier, on Friday. \management{} paid Colin via Venmo for his first week of work on Saturday - a day early for the Rent payment according to the standard due date. Colin's Rent will be delinquent if he doesn't pay via Venmo by 11:59pm on Sunday, his 7th day.
-						\end{example}
-				\end{enumerate}
+					Rent is delinquent if the \paymenttime{} as defined in item \ref{defpaytime} of this section of this Agreement (the ``\paymenttime{}'') is later than 11:59pm Pacific Standard Time on the seventh (7th) day of the week when due. 
 			\item \textbf{Pay Or Quit}. Should \lodger{} allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, a notice to pay the Rent or quit will be served. 
-			\item \textbf{Late Charge}. Should \lodger{} allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, \lodger{} shall be charged a \$5 late fee. Payment of the late fee shall be due on the seventh (7th) day of the following week. Any notice to the \lodger{} that a late charge has been assessed shall not waive, or otherwise affect, any rental agreement termination notice or lawsuit. Tender of late fees after the expiration of a rental agreement termination notice shall not waive said notice or the right to remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, based on the notice. 
+			\item \textbf{Late Charge}. Should \lodger{} allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, \lodger{} shall be charged a \$5 late fee, plus \$1 for each additional day that the rent continues to be unpaid.  The total late charge for any one week will not exceed \$10. Any notice to the \lodger{} that a late charge has been assessed shall not waive, or otherwise affect, any rental agreement termination notice or lawsuit. Tender of late fees after the expiration of a rental agreement termination notice shall not waive said notice or the right to remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, based on the notice. 
 		\end{enumerate} 
 	\item \textbf{Utility Services}. 
 		\begin{enumerate} 
-			\item \textbf{Utilities Provided}. \management{} shall not provide any utilities or other services to the \room{} except water, sewer, rubbish removal, and those additional services set forth in item \ref{utilities} of subsection \ref{definitions}
-			\item \textbf{No Other Utilities}. \lodger{} shall not have installed or maintain any utilities in \apt{}.
+			\item \textbf{Utilities Provided}. \management{} shall not provide any utilities or other services to the \room{} except water, sewer, rubbish removal, electricity, natural gas, and broadband internet, as set forth in item \ref{utilities} of subsection \ref{definitions}, (the ``\utilities{}'')
+			\item \textbf{Other Utilities}. \lodger{} agrees to pay for all other utilities and/or services based upon occupancy of the \apt{}.
 		\end{enumerate} 
 	\item \textbf{Other Charges}. 
 		\begin{enumerate} 
@@ -110,7 +96,7 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 		\begin{enumerate} 
 			\item \textbf{Venmo}. All payments of Rent and any other monetary sums due under the terms of this Agreement shall be made via Venmo subject to their terms of service, https://venmo.com/w/legal/us-user-agreement/. 
 				\begin{enumerate}
-					\item Venmo payments shall be made to the Venmo account associated with the \management{}'s email address (the ``\myemail{}'') that is set forth in section \ref{specifics} of this Agreement{}. 
+					\item Venmo payments shall be made to the Venmo account associated with the Owner's email address (the ``\ownermail{}'') that is set forth in item \ref{ownermail} of subsection \ref{definitions} of this Agreement{}. 
 					\item \label{defpaytime} 
 						Venmo will notify \management{} of the payment via the \myemail{}, and \management{} will consider the payment as having been received at the time and date stamped on the Venmo notification (``\paymenttime{}''). 
 					\item For reasons of security and convenience, \management{} shall not accept cash payments. Unless otherwise directed in writing by \management{}, all payments shall be made through Venmo's website https://venmo.com/, one of Venmo's apps for Android/iOS, or by any other method Venmo provides. 
@@ -157,8 +143,8 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 			\item \textbf{Interference With Job Responsibilities}. No \lodger{}, or guest, or other person under the control of the \lodger{} shall interfere with the job responsibilities of authorized vendors, service personnel or representatives of \management{} or \condo{} management. 
 			\item \textbf{\rules{}}. To abide by all the \rules{} in Schedule A of this Agreement (``\rules{}'').
 			\item \textbf{Health And Safety}. To comply with all obligations imposed upon \lodger{} by applicable provisions of Federal, State and local building and housing codes that materially affect health and safety; and to keep the \room{} and such other areas as may be assigned to the \lodger{}, in a clean and safe condition. 
-			\item \textbf{Notice Of Repairs}. To promptly notify \management{} whenever repairs to their \room{} are required. 
-			\item \textbf{\standards{}}. To maintain the \room{} in a clean and sanitary manner in accordance with Schedule B of this Agreement (``\standards{}'').
+			\item \textbf{Notice Of Repairs}. To promptly notify \management{} whenever repairs to his or her \room{} or the \apt{} are required. 
+			\item \textbf{\standards{}}. To maintain the \room{} and \shared{} in a clean and sanitary manner in accordance with Schedule B of this Agreement (``\standards{}'').
 			\item \textbf{Rubbish Removal}. To dispose of all ashes, garbage, rubbish and other waste from the \room{} in a sanitary and safe manner in the receptacles and trash bins provided by \management{} or owned by \lodger{}. 
 			\item \textbf{Care In Use Of Facilities}. To use only in a reasonable and safe manner all electrical, plumbing, sanitary, heating, ventilating, air-conditioning and other facilities and appurtenances. 
 			\item \textbf{Damage To \room{}, \apt{}, Or \condo{}}. No \lodger{}, or guest, or other person under their control shall deface, paint, damage, destroy, tamper with or remove any part of the \room{}, \apt{}, Or \condo{}.
@@ -168,7 +154,7 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 	\item \textbf{Defaults And Terminations}. 
 		\begin{enumerate}
 			\item \textbf{Terminations}. 
-				This Agreement shall be terminated upon the death of \lodger{}, upon a voluntary termination of this Agreement by \lodger{}, or at will by \management{}. \management{} will terminate this Agreement for various reasons, including, but not limited to, the nonpayment of rent, a serious or repeated violation of a material term of this Agreement, smoking, any Criminal Activity or Drug-Related Criminal Activity as set forth in items \ref{criminal} or \ref{drug} of of section \ref{generals} of this Agreement, or for other reasons which \management{} may not disclose to \lodger{}.
+				This Agreement shall be terminated upon the death of \lodger{}, upon a voluntary termination of this Agreement by \lodger{}, or by \management{}. \management{} may terminate this Agreement for various reasons, including, but not limited to, the nonpayment of rent, a serious or repeated violation of a material term of this Agreement, smoking, any Criminal Activity or Drug-Related Criminal Activity as set forth in items \ref{criminal} or \ref{drug} of of section \ref{generals} of this Agreement, or for any other reasons in the discretion of \management{}.
 			\item \textbf{Voluntary Termination Notices}. 
 				Voluntary termination of this Agreement by the \lodger{} shall be by written seven (7) day notice to \management{}. Such notice shall be on a form designated by \management{} and signed by \lodger{} setting forth the last day of their occupancy. Such notice shall be delivered in person to \management{}, or preferably via the \management{}'s email address (the ``\myemail{}'') that is set forth in section \ref{specifics} of this Agreement{}. 
 			\item \textbf{Involuntary Termination Notices}. \label{terminate}
@@ -178,7 +164,7 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 					\item A reasonable time considering the seriousness of the situation (but not exceeding 7 days) when the health or safety of Owner, \management{}, other \condo{} residents or \condo{} management's employees is threatened; and 
 					\item 7 days in any other case. 
 				\end{enumerate} 
-				The Notice of Termination shall both state that \lodger{} is not welcome in \apt{} anymore, and provide reminder that only Owner and \lodger{} reside in this \apt{}. If the notice period is less than 7 days, the Notice of Termination shall also provide the justifying reason for shorter notice. So that, upon expiration of the notice period provided, \management{} will remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, without court order, pursuant to the provisions of Section 602.3 of the California Penal Code or other applicable provisions of law, because any right of \lodger{} to remain in the dwelling unit or any part thereof is terminated by operation of law pursuant to the provisions of Section 1946.5 of California Civil Code.
+				The Notice of Termination shall both state that \lodger{} is not welcome in \apt{} anymore, and provide a reminder that only Owner and \lodger{} reside in this \apt{}. If the notice period is less than 7 days, the Notice of Termination shall also provide the justifying reason for shorter notice. So that, upon expiration of the notice period provided, \management{} will remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, without court order, pursuant to the provisions of Section 602.3 of the California Penal Code or other applicable provisions of law, because any right of \lodger{} to remain in the dwelling unit or any part thereof is terminated by operation of law pursuant to the provisions of Section 1946.5 of California Civil Code.
 			\item \textbf{Service Of Termination Notice}. \label{service}
 				When a notice of termination requires service pursuant to California Code of Civil Procedure 1162, such service may be made by either: 
 				\begin{enumerate}
@@ -190,9 +176,9 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 	\item \textbf{Notices}. 
 		\begin{enumerate} 
 			\item \textbf{Notice To \lodger{}}. 
-				Except as expressly provided elsewhere in this Agreement, all notices required or permitted to be given to the \lodger{} shall be in writing and delivered to the \lodger{} or sent by prepaid first-class mail properly addressed to the \lodger{} at the \room{} in the \apt{}. If the \lodger{} is visually impaired, all notices shall be in an accessible format. 
+				Except as expressly provided elsewhere in this Agreement, all notices required or permitted to be given to the \lodger{} shall be in writing and delivered to the \lodger{} by email to the \lemail{} or sent by prepaid first-class mail properly addressed to the \lodger{} at the \room{} in the \apt{}. If the \lodger{} is visually impaired, all notices shall be in an accessible format. 
 			\item \textbf{Notice To Management}. 
-				Except as expressly provided elsewhere in this Agreement, all notices to \management{} shall be delivered via \management{}'s email address (the ``\myemail{}'') that is set forth in section \ref{specifics} of this Agreement{}.
+				Except as expressly provided elsewhere in this Agreement, all notices to \management{} shall be delivered via \myemail{}.
 		\end{enumerate}
 	\item \textbf{Modifications And Amendments To This Agreement}. \label{modifications}
 		This Agreement may only be modified or amended 
@@ -267,6 +253,9 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 				Allegra Harrison,
 				Rachel Ogletree
 					
+			\item \textbf{\ownermail{}}\\* \label{ownermail}
+				joanharrisonzone@gmail.com
+
 			\item \textbf{\myemail{}}\\* \label{myemail}
 				colinnkeenan@gmail.com
 
@@ -327,22 +316,14 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 			\item \textbf{Term}\\*
 				Seven (7) days
 
-			\item \textbf{\rent{}}\\* \label{rent}
+			\item \textbf{Rent}\\* \label{rent}
 				\$200.00
 
 			\item \textbf{\paymenttime{}}\\* \label{paymenttime}
 				Defined in item \ref{defpaytime} of section \ref{generals} of this Agreement.
 
-			\item \textbf{\signdate{}} \label{signdate}
-
-				\vspace{0.5cm}\makebox[2in]{\hrulefill}
-
 			\item \textbf{\firstday{}} \label{firstday}
 
-				\vspace{0.5cm}\makebox[2in]{\hrulefill}
-
-			\item \textbf{\rentdate{}} \label{rentdate}
-				
 				\vspace{0.5cm}\makebox[2in]{\hrulefill}
 
 			\item \textbf{\rentweek{}}\\* \label{rentweek}
@@ -384,11 +365,11 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 	\tabmed{Schedule B} \tablarge{\textbf{\standards{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
 
 	\vspace{1cm}
-	\noindent\tabmed{\lodger{} Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\hspace{0.2cm}\makebox[.2\linewidth]{\hrulefill}} \\*
+	\noindent\tabmed{\lodger{} Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin \\*
 	\tabmed{} \tablarge{\textsuperscript{Print Name}}
 
 	\vspace{1cm}
-	\noindent\tabmed{Owner Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\hspace{0.2cm}\makebox[.2\linewidth]{\hrulefill}} \\*
+	\noindent\tabmed{Owner Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin \\*
 	\tabmed{} \tablarge{\textsuperscript{\mom{}}}
 
 	\newpage
