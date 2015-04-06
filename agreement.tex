@@ -1,18 +1,9 @@
 \documentclass[12pt,letterpaper]{article}
 \newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
-\usepackage{ifthen,xcolor}
 \newlength{\tabcont}
-
-\newcommand{\tab}[1]{%
-	\settowidth{\tabcont}{#1}%
-	\ifthenelse{\lengthtest{\tabcont < .16\linewidth}}%
-		{\makebox[.16\linewidth][l]{#1}\ignorespaces}%
-		{
-			\ifthenelse{\lengthtest{\tabcont < .2\linewidth}}%
-				{\makebox[.2\linewidth][l]{#1}\ignorespaces}%
-				{\makebox[.6\linewidth][l]{#1}\ignorespaces}%
-		}%
-	}%
+\newcommand{\tabsmall}[1]{\makebox[.14\linewidth][l]{#1}\ignorespaces}%
+\newcommand{\tabmed}[1]{\makebox[.22\linewidth][l]{#1}\ignorespaces}%
+\newcommand{\tablarge}[1]{\makebox[.55\linewidth][l]{#1}\ignorespaces}%
 
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage{fancyhdr}
@@ -382,30 +373,23 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 	\end{multicols}
 
 	\newpage
-	\vspace{1cm}\noindent \textbf{I have read and been given copies of all sections and schedules of this Agreement:}\\ \\*
-	\tab{\ref{generals}} \tab{\textbf{\generals{}}} \tab{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}\\ \\*
-	\tab{\ref{specifics}} \tab{\textbf{\specifics{}}} \tab{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}\\ \\*
-	\tab{Schedule A} \tab{\textbf{\rules{}}} \tab{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}\\ \\*
-	\tab{Schedule B} \tab{\textbf{\standards{}}} \tab{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}\\ \\*
+	\vspace{1cm}\noindent \textbf{I have read and been given copies of all sections and schedules of this Agreement:} \\
+	
+	\tabmed{\ref{generals}} \tablarge{\textbf{\generals{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
 
-	\begin{minipage}[t]{0.65\textwidth}
-		\begin{flushright}
-			\vspace{1cm}\noindent \lodger{} Signature\hspace{0.2cm}\makebox[2in]{\hrulefill} \\*
-			\textsuperscript{Print Name}
+	\tabmed{\ref{specifics}} \tablarge{\textbf{\specifics{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
 
-			\vspace{1cm}\noindent Owner Signature\hspace{0.2cm}\makebox[2in]{\hrulefill} \\*
-			\textsuperscript{\mom{}}
-		\end{flushright}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[t]{0.25\textwidth}
-		\begin{flushright}
-			\vspace{1cm}\noindent Date\hspace{0.2cm}\makebox[2cm]{\hrulefill} \\*
-			\textsuperscript{}
+	\tabmed{Schedule A} \tablarge{\textbf{\rules{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
 
-			\vspace{1cm}\noindent Date\hspace{0.2cm}\makebox[2cm]{\hrulefill} \\*
-		\end{flushright}
-	\end{minipage}
+	\tabmed{Schedule B} \tablarge{\textbf{\standards{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
+
+	\vspace{1cm}
+	\noindent\tabmed{\lodger{} Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\hspace{0.2cm}\makebox[.2\linewidth]{\hrulefill}} \\*
+	\tabmed{} \tablarge{\textsuperscript{Print Name}}
+
+	\vspace{1cm}
+	\noindent\tabmed{Owner Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\hspace{0.2cm}\makebox[.2\linewidth]{\hrulefill}} \\*
+	\tabmed{} \tablarge{\textsuperscript{\mom{}}}
 
 	\newpage
 	\section*{Schedule A: \rules{}} \label{rules}
