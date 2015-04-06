@@ -1,5 +1,19 @@
 \documentclass[12pt,letterpaper]{article}
 \newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
+\usepackage{ifthen,xcolor}
+\newlength{\tabcont}
+
+\newcommand{\tab}[1]{%
+	\settowidth{\tabcont}{#1}%
+	\ifthenelse{\lengthtest{\tabcont < .05\linewidth}}%
+		{\makebox[.05\linewidth][l]{#1}\ignorespaces}%
+		{
+			\ifthenelse{\lengthtest{\tabcont < .15\linewidth}}%
+				{\makebox[.15\linewidth][l]{#1}\ignorespaces}%
+				{\makebox[.75\linewidth][l]{#1}\ignorespaces}%
+		}%
+	}%
+
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -12,7 +26,6 @@
 
 \newcommand{\lodger}{Lodger}
 \newcommand{\generals}{General Terms of Agreement}
-\newcommand{\notice}{Notice To \lodger{}\\* Data Base Of Registered Sex Offender}
 \newcommand{\specifics}{Specifics of Agreement}
 \newcommand{\rules}{Residential Rules}
 \newcommand{\standards}{Residential Housekeeping Standards}
@@ -41,7 +54,7 @@
 \newenvironment{example}{\begin{quote}%
     \refstepcounter{examplecounter}%
   \textbf{Example \arabic{examplecounter}}%
-  \quad
+ .
 }{%
 \end{quote}%
 }
@@ -55,32 +68,32 @@
 
 \noindent \hrulefill
 \section{\generals{}} \label{generals}
-This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{} (``Owner''), and the individual identified as \lodger{} (``\lodger{}'') for the week-to-week rental of that certain furnished lodging (``\room{}'') within that certain apartment house (``\apt{}'') occupied and owned by Owner, where the \lodger{}, \room{}, and \apt{} are identified in items \ref{lodger}, \ref{room}, and \ref{apt} of section \ref{specifics} of this Agreement. Owner retains a right of access to all areas of \apt{} occupied by \lodger{}, that is, the \room{}, and has overall control of the \apt{}. Even though personally occupying \apt{}, Owner together with her family members who have been authorized to act as the Owner's managers of the \apt{} and are identified in item \ref{management} of section \ref{specifics} of this Agreement, will hereinafter be referred to as management (``\management{}''). Only Owner and \lodger{} shall reside in \apt{}. All references to other residents are references to the residents of the condominium with address listed in item \ref{condo} in section \ref{specifics} of this Agreement (``\condo{}''), in which \apt{} is located.
+This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{} (``Owner''), and the individual identified as \lodger{} (``\lodger{}'') for the week-to-week rental of that certain furnished lodging (``\room{}'') within that certain apartment house (``\apt{}'') occupied and owned by Owner, where the \lodger{}, \room{}, and \apt{} are identified in items \ref{lodger}, \ref{room}, and \ref{apt} of subsection \ref{definitions} of this Agreement. Owner retains a right of access to all areas of \apt{} occupied by \lodger{}, that is, the \room{}, and has overall control of the \apt{}. Even though personally occupying \apt{}, Owner together with her family members who have been authorized to act as the Owner's managers of the \apt{} and are identified in item \ref{management} of subsection \ref{definitions} of this Agreement, will hereinafter be referred to as management (``\management{}''). Only Owner and \lodger{} shall reside in \apt{}. All references to other residents are references to the residents of the condominium building with address listed in item \ref{condo} in section \ref{specifics} of this Agreement (``\condo{}''), in which \apt{} is located.
 
 \begin{enumerate}
-	\item \textbf{Rental And Occupancy Of Lodging} \quad 
+	\item \textbf{Rental And Occupancy Of Lodging}. 
 		\begin{enumerate}
-			\item \textbf{Room} \quad
-				\management{} agrees to rent to the \lodger{}, on a week-to-week basis, and for residential purposes only, the \room{} that is located within the \apt{}, and, the \lodger{} agrees to rent from the Owner the \room{} that is located in the \apt{} and to use the \room{} as a bedroom.  Other than as provided in item \ref{livingroom}, \textbf{\livingroom{}}, rental of the \room{} includes shared use of all rooms in the house, including the top-floor bedroom with view of Union Street, all entrances, all hallways and stairs, all hallway closets, the kitchen, the top-floor bathroom, and a carport area providing parking space for one vehicle in the gated parking area of \condo{} (the ``\shared{}'').
-			\item \textbf{Authorized Occupants} \quad No one other than the \lodger{} shall reside in the \room{}. 
-			\item \textbf{Use Of Lodging} \quad The \room{} shall be used only for residential purposes. The \lodger{} shall not, in whole or in part, assign this Agreement, or sublet or transfer possession of any part or all of the \room{}. The \lodger{} shall not give accommodations to paid boarders or residents. Occupancy by guests is prohibited without the Owner's prior written consent and will be considered a breach of this agreement. If employed by \management{}, \lodger{} may not have guests while on duty under that employment. No guest may visit for more than six (6) hours in a day without the written permission of a member of \management{}. The \lodger{} shall give prompt prior written notice to \management{} in the event the \lodger{} will be absent from \apt{} for more than 7 calendar days. Such notice shall include information regarding the expected duration of the absence and where the \lodger{} may be contacted in the event of an emergency. 
-			\item \textbf{No Smoking} \quad As posted in many places on the \condo{} property, smoking is prohibited on \condo{} property, and is enforceable under city laws where \condo{} is located. \management{} will terminate this Agreement as provided in item \ref{terminate} of this section if \management{} suspects \lodger{}, guests, or others under lodger's control, have smoked in \room{}, \apt{}, or on \condo{} property.
-			\item \textbf{Appliances} \quad \management{} shall provide those appliances listed in item \ref{appliances} of section \ref{specifics} of this Agreement{}, (the ``\appliances{}''), in good working order and maintain same in good working order during the time the \room{} is rented to \lodger{}.
-			\item \textbf{\furniture{}} \quad \management{} shall provide the \furniture{} listed in item \ref{furniture} of section \ref{specifics} of this Agreement{} (``\furniture{}'') in usable condition and maintain same in usable condition during the time \room{} is rented to \lodger{}.
+			\item \textbf{Room}.
+				\management{} agrees to rent to the \lodger{}, on a week-to-week basis, and for residential purposes only, the \room{} that is located within the \apt{}, and, the \lodger{} agrees to rent from the Owner the \room{} that is located in the \apt{} and to use the \room{} as a bedroom.  Other than as provided in item \ref{livingroom}, \textbf{\livingroom{}}, rental of the \room{} includes shared use of all rooms in the house, including the top-floor bedroom with a view of Union Street, all entrances, all hallways and stairs, all hallway closets, the kitchen, the top-floor bathroom, and a carport area providing parking space for one vehicle in the gated parking area of \condo{} (the ``\shared{}'').
+			\item \textbf{Authorized Occupants}. No one other than the \lodger{} shall reside in the \room{}. 
+			\item \textbf{Use Of Lodging}. The \room{} shall be used only for residential purposes. The \lodger{} shall not, in whole or in part, assign this Agreement, or sublet or transfer possession of any part or all of the \room{}. The \lodger{} shall not give accommodations to paid boarders or residents. Occupancy by guests is prohibited without the Owner's prior written consent and will be considered a breach of this agreement. If employed by \management{}, \lodger{} may not have guests while on duty under that employment. No guest may visit for more than six (6) hours in a day without the written permission of a member of \management{}. The \lodger{} shall give prompt prior written notice to \management{} in the event the \lodger{} will be absent from \apt{} for more than 7 calendar days. Such notice shall include information regarding the expected duration of the absence and where the \lodger{} may be contacted in the event of an emergency. 
+			\item \textbf{No Smoking}. As posted in many places on the \condo{} property, smoking is prohibited on \condo{} property, and is enforceable under city laws where \condo{} is located. \management{} will terminate this Agreement as provided in item \ref{terminate} of this section if \management{} suspects \lodger{}, guests, or others under lodger's control, have smoked in \room{}, \apt{}, or on \condo{} property.
+			\item \textbf{Appliances}. \management{} shall provide those appliances listed in item \ref{appliances} of subsection \ref{definitions} of this Agreement{}, (the ``\appliances{}''), in good working order and maintain same in good working order during the time the \room{} is rented to \lodger{}.
+			\item \textbf{\furniture{}}. \management{} shall provide the \furniture{} listed in item \ref{furniture} of subsection \ref{definitions} of this Agreement{} (``\furniture{}'') in usable condition and maintain same in usable condition during the time \room{} is rented to \lodger{}.
 		\end{enumerate}
-	\item \textbf{\livingroom{}} \quad \lodger{} shall not enter Owner's private areas as listed in item \ref{livingroom} of section \ref{specifics} of this Agreement (``\livingroom{}'') unless requested to do so by \management{}.
-	\item \textbf{Security Deposit And Payments Of Rent Due Under This Agreement} \quad 
+	\item \textbf{\livingroom{}}. \lodger{} shall not enter Owner's private areas as listed in item \ref{livingroom} of subsection \ref{definitions} of this Agreement (``\livingroom{}'') unless requested to do so by \management{}.
+	\item \textbf{Security Deposit And Payments Of Rent Due Under This Agreement}. 
 		\begin{enumerate}
-			\item \textbf{Security Deposit} \quad There is no security deposit. 
-			\item \textbf{Move-in Date} \quad \lodger{} may put personal property into, and begin making use of, \room{}, beginning with the occupancy commencement date (``\firstday{}'') that is set forth in item \ref{firstday} of section \ref{specifics} of this Agreement.
-			\item \textbf{Rent And Rent Due Date} \quad The \lodger{} shall pay \management{} the weekly rent (the ``Rent'') set forth in item \ref{rent} of section \ref{specifics} of this Agreement{}. Rent shall be paid on or before the seventh (7th) day of each rental week (``\rentweek{}'') as defined in item \ref{rentweek} of section \ref{specifics} of this Agreement, beginning with the rent commencement date (``\rentdate{}'') that is set forth in item \ref{rentdate} of section \ref{specifics} of this Agreement.
-			\item \textbf{Delinquent Rent} \quad \label{due}
+			\item \textbf{Security Deposit}. There is no security deposit. 
+			\item \textbf{Move-in Date}. \lodger{} may put personal property into, and begin making use of, \room{}, beginning with the occupancy commencement date (``\firstday{}'') that is set forth in item \ref{firstday} of subsection \ref{definitions} of this Agreement.
+			\item \textbf{Rent And Rent Due Date}. The \lodger{} shall pay \management{} the weekly rent (the ``Rent'') set forth in item \ref{rent} of subsection \ref{definitions} of this Agreement{}. Rent shall be paid on or before the seventh (7th) day of each rental week (``\rentweek{}'') as defined in item \ref{rentweek} of subsection \ref{definitions} of this Agreement, beginning with the rent commencement date (``\rentdate{}'') that is set forth in item \ref{rentdate} of subsection \ref{definitions} of this Agreement.
+			\item \textbf{Delinquent Rent}. \label{due}
 				\begin{enumerate}
-					\item \textbf{Standard Due Date} \quad Rent is delinquent if the \paymenttime{} as defined in item \ref{defpaytime} of this section of this Agreement (the ``\paymenttime{}'') is later than 11:59pm Pacific Standard Time on the seventh (7th) day of the week when due. 
-					\item \textbf{Possible Delay of Delinquency If Employed By Management} \quad If \lodger{} is employed by \management{}, the rent will not be considered delinquent if paid on the upcoming payday for the work week that includes the first day of the \rentweek{} for which rent is due. That is, the Rent will be delinquent if the \paymenttime{} is later than the latest of the following two times 
+					\item \textbf{Standard Due Date}. Rent is delinquent if the \paymenttime{} as defined in item \ref{defpaytime} of this section of this Agreement (the ``\paymenttime{}'') is later than 11:59pm Pacific Standard Time on the seventh (7th) day of the week when due. 
+					\item \textbf{Possible Delay of Delinquency If Employed By Management}. If \lodger{} is employed by \management{}, the rent will not be considered delinquent if paid on the upcoming payday for the work week that includes the first day of the \rentweek{} for which rent is due. That is, the Rent will be delinquent if the \paymenttime{} is later than the latest of the following two times 
 						\begin{enumerate}
 							\item 11:59pm on the seventh (7th) day of the week when due 
-							\item 10 hours after the time-date stamp according to email received from Venmo at \management{}'s email address (the ``\myemail{}'') that is set forth in item \ref{myemail} of section \ref{specifics} of this Agreement{}, of \management{}'s Venmo Payment for work done in the week that includes the first day of the \rentweek{} for which rent is due. 
+							\item 10 hours after the time-date stamp according to email received from Venmo at \management{}'s email address (the ``\myemail{}'') that is set forth in item \ref{myemail} of subsection \ref{definitions} of this Agreement{}, of \management{}'s Venmo Payment for work done in the week that includes the first day of the \rentweek{} for which rent is due. 
 						\end{enumerate} 
 						\begin{example} 
 							Colin became employed by \management{} on the \firstday{}, which was a Monday. Colin's first 7th day is the following Sunday, which is also the end of his first work week. \management{} paid Colin via Venmo for his first week of work on Monday - a day late for the Rent payment according to the standard due date. \management{} received an email from Venmo confirming payment was made to Colin at 11:59am Pacific Standard Time on Monday, 12 hours after 11:59pm of the 7th day of the week when Rent became due. Colin's Rent will not be delinquent as long as he pays via Venmo by 10pm Pacific Standard Time on that Monday (the day \management{} paid for his first week of work).
@@ -89,38 +102,38 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 							Colin became employed by \management{} on Saturday, 2 days before the \firstday{}, which was a Monday. Colin's first 7th day is the following Sunday, but his work week ended 2 days earlier, on Friday. \management{} paid Colin via Venmo for his first week of work on Saturday - a day early for the Rent payment according to the standard due date. Colin's Rent will be delinquent if he doesn't pay via Venmo by 11:59pm on Sunday, his 7th day.
 						\end{example}
 				\end{enumerate}
-			\item \textbf{Pay Or Quit} \quad Should \lodger{} allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, a notice to pay the Rent or quit will be served. 
-			\item \textbf{Late Charge} \quad Should \lodger{} allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, \lodger{} shall be charged a \$5 late fee. Payment of the late fee shall be due on the seventh (7th) day of the following week. Any notice to the \lodger{} that a late charge has been assessed shall not waive, or otherwise affect, any rental agreement termination notice or lawsuit. Tender of late fees after the expiration of a rental agreement termination notice shall not waive said notice or the right to remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, based on the notice. 
+			\item \textbf{Pay Or Quit}. Should \lodger{} allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, a notice to pay the Rent or quit will be served. 
+			\item \textbf{Late Charge}. Should \lodger{} allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, \lodger{} shall be charged a \$5 late fee. Payment of the late fee shall be due on the seventh (7th) day of the following week. Any notice to the \lodger{} that a late charge has been assessed shall not waive, or otherwise affect, any rental agreement termination notice or lawsuit. Tender of late fees after the expiration of a rental agreement termination notice shall not waive said notice or the right to remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, based on the notice. 
 		\end{enumerate} 
-	\item \textbf{Utility Services} \quad 
+	\item \textbf{Utility Services}. 
 		\begin{enumerate} 
-			\item \textbf{Utilities Provided} \quad \management{} shall not provide any utilities or other services to the \room{} except water, sewer, rubbish removal, and those additional services set forth in item \ref{utilities} of section \ref{specifics}
-			\item \textbf{No Other Utilities} \quad \lodger{} shall not have installed or maintain any utilities in \apt{}.
+			\item \textbf{Utilities Provided}. \management{} shall not provide any utilities or other services to the \room{} except water, sewer, rubbish removal, and those additional services set forth in item \ref{utilities} of subsection \ref{definitions}
+			\item \textbf{No Other Utilities}. \lodger{} shall not have installed or maintain any utilities in \apt{}.
 		\end{enumerate} 
-	\item \textbf{Other Charges} \quad 
+	\item \textbf{Other Charges}. 
 		\begin{enumerate} 
-			\item \textbf{Other Charges} \quad \lodger{} shall pay for the cost of repairing any damages made to the \room{} and the public areas caused by the \lodger{}, guests, or other visitors of the \lodger{}. These other charges (``Other Charges'') shall be billed to \lodger{} and will specify the damaged items, corrective action taken, and cost of labor and/or materials to correct the damages. 
-			\item \textbf{Billings And Payments} \quad For any Other Charges incurred by the \lodger{}, \management{} shall give the \lodger{} a written statement which sets forth the amount and nature of the charges owed at least seven (7) days before such charges become due and payable. Payment shall be made in accordance with item \ref{paymethod} of this section. 
+			\item \textbf{Other Charges}. \lodger{} shall pay for the cost of repairing any damages made to the \room{} and the public areas caused by the \lodger{}, guests, or other visitors of the \lodger{}. These other charges (``Other Charges'') shall be billed to \lodger{} and will specify the damaged items, corrective action taken, and cost of labor and/or materials to correct the damages. 
+			\item \textbf{Billings And Payments}. For any Other Charges incurred by the \lodger{}, \management{} shall give the \lodger{} a written statement which sets forth the amount and nature of the charges owed at least seven (7) days before such charges become due and payable. Payment shall be made in accordance with item \ref{paymethod} of this section. 
 		\end{enumerate} 
-	\item \textbf{Method Of Payment Of Monetary Obligations} \quad \label{paymethod}
+	\item \textbf{Method Of Payment Of Monetary Obligations}. \label{paymethod}
 		\begin{enumerate} 
-			\item \textbf{Venmo} \quad All payments of Rent and any other monetary sums due under the terms of this Agreement shall be made via Venmo subject to their terms of service, https://venmo.com/w/legal/us-user-agreement/. 
+			\item \textbf{Venmo}. All payments of Rent and any other monetary sums due under the terms of this Agreement shall be made via Venmo subject to their terms of service, https://venmo.com/w/legal/us-user-agreement/. 
 				\begin{enumerate}
 					\item Venmo payments shall be made to the Venmo account associated with the \management{}'s email address (the ``\myemail{}'') that is set forth in section \ref{specifics} of this Agreement{}. 
 					\item \label{defpaytime} 
 						Venmo will notify \management{} of the payment via the \myemail{}, and \management{} will consider the payment as having been received at the time and date stamped on the Venmo notification (``\paymenttime{}''). 
 					\item For reasons of security and convenience, \management{} shall not accept cash payments. Unless otherwise directed in writing by \management{}, all payments shall be made through Venmo's website https://venmo.com/, one of Venmo's apps for Android/iOS, or by any other method Venmo provides. 
 				\end{enumerate}
-			\item \textbf{Receipt} \quad \management{} will provide receipt of payment via one of the \lemail{} that is set forth in item \ref{lemail} of section \ref{specifics} of this Agreement{}, and record payment was received at the \paymenttime{}. 
+			\item \textbf{Receipt}. \management{} will provide receipt of payment via one of the \lemail{} that is set forth in item \ref{lemail} of subsection \ref{definitions} of this Agreement{}, and record payment was received at the \paymenttime{}. 
 		\end{enumerate}
-	\item \textbf{Confidentiality Of Record} \quad 
+	\item \textbf{Confidentiality Of Record}. 
 		Confidential records and information obtained by \management{} shall not be disclosed to third parties except in accordance with law. 
-	\item \textbf{Criminal And Drug Related Activities} \quad 
+	\item \textbf{Criminal And Drug Related Activities}. 
 		In an effort to keep \mom{} safe in her own home, \management{} is taking a ``zero tolerance' position towards the commission of any of the Criminal or Drug-Related Criminal activities described in items of this section of the Agreement that follow. 
 		\begin{enumerate} 
-			\item \textbf{Criminal Activity} \quad \label{criminal}
+			\item \textbf{Criminal Activity}. \label{criminal}
 				\begin{enumerate}
-					\item No \lodger{}, guest, or other person under their control shall commit any criminal or illegal act, on or off the property of \condo{} at the address listed in item \ref{condo} of section \ref{specifics} of this Agreement (``\condo{}'') which threatens 
+					\item No \lodger{}, guest, or other person under their control shall commit any criminal or illegal act, on or off the property of \condo{} at the address listed in item \ref{condo} of subsection \ref{definitions} of this Agreement (``\condo{}'') which threatens 
 						\begin{enumerate} 
 							\item the health or safety of any \condo{} resident, 
 							\item the rights of any \condo{} resident to the peaceful and quiet enjoyment of their residence, 
@@ -136,7 +149,7 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 						
 						As used throughout this Agreement, ``other person under their control' shall mean any person other than the \lodger{}, or guest, who enters \condo{} property at the express or implied invitation of the \lodger{}, or their guest. 
 				\end{enumerate}
-			\item \textbf{Criminal Drug Related Activity} \quad \label{drug}
+			\item \textbf{Criminal Drug Related Activity}. \label{drug}
 				No \lodger{}, guest, or other person under their control shall engage in any Drug-Related Criminal Activity on or off the property of \condo{}. As used in this Agreement, ``Drug-Related Criminal Activity' shall mean the illegal manufacture, sale, distribution, use or possession with the intent to manufacture, sell, distribute or use a controlled substance as defined in section 102 of the Controlled Substances Act (21 U.S.C. 802). The \lodger{} specifically understands and acknowledges that: 
 				\begin{enumerate}
 					\item The \lodger{} has an affirmative obligation to ensure that the \lodger{}, or guest, or other person under their control do not commit any Drug-Related Criminal Activity; 
@@ -144,258 +157,234 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 					\item \management{} will terminate this Agreement for any such criminal or illegal act, regardless of whether there is an arrest or a conviction.
 				\end{enumerate}
 		\end{enumerate}
-	\item \textbf{\lodger{}'s Obligations} \quad
+	\item \textbf{\lodger{}'s Obligations}.
 		In addition to obligations stated elsewhere in this Agreement, the \lodger{} agrees to the following: 
 		\begin{enumerate}
-			\item \textbf{Nuisance} \quad No \lodger{}, or guest, or other person under their control shall commit or maintain a nuisance on or about the \room{}, \apt{}, or \condo{}. 
-			\item \textbf{Impairment Of The Environment} \quad To conduct themselves, and to cause guests and other persons who are under their control, to conduct themselves in a manner which will not impair the physical or social environment of \apt{} or \condo{}. 
-			\item \textbf{Quiet Enjoyment} \quad To conduct themselves, and to cause guests and other persons under their control, to conduct themselves in a manner that will not disturb the rights of Owner or other residents of \condo{} to the peaceful enjoyment of their residences or the public areas. 
-			\item \textbf{Interference With Job Responsibilities} \quad No \lodger{}, or guest, or other person under the control of the \lodger{} shall interfere with the job responsibilities of authorized vendors, service personnel or representatives of \management{} or \condo{} management. 
-			\item \textbf{\rules{}} \quad To abide by all the \rules{} in section \ref{rules} of this Agreement (``\rules'').
-			\item \textbf{Health And Safety} \quad To comply with all obligations imposed upon \lodger{} by applicable provisions of Federal, State and local building and housing codes that materially affect health and safety; and to keep the \room{} and such other areas as may be assigned to the \lodger{}, in a clean and safe condition. 
-			\item \textbf{Notice Of Repairs} \quad To promptly notify \management{} whenever repairs to their \room{} are required. 
-			\item \textbf{\standards{}} \quad To maintain the \room{} in a clean and sanitary manner in accordance with section \ref{standards} of this Agreement (``\standards{}'').
-			\item \textbf{Rubbish Removal} \quad To dispose of all ashes, garbage, rubbish and other waste from the \room{} in a sanitary and safe manner in the receptacles and trash bins provided by \management{} or owned by \lodger{}. 
-			\item \textbf{Care In Use Of Facilities} \quad To use only in a reasonable and safe manner all electrical, plumbing, sanitary, heating, ventilating, air-conditioning and other facilities and appurtenances. 
-			\item \textbf{Damage To \room{}, \apt{}, Or \condo{}} \quad No \lodger{}, or guest, or other person under their control shall deface, paint, damage, destroy, tamper with or remove any part of the \room{}, \apt{}, Or \condo{}.
-			\item \textbf{Alterations} \quad To make no repairs, alterations or additions of any kind without the prior written consent of \management{}, including but not limited to, painting, changing locks, or installing security bars, doors or safety devices. \management{} may withhold such consent at \management{}'s sole discretion. 
-			\item \textbf{Signs} \quad Not to display on or about the \room{}, \apt{}, or \condo{} any signs or advertisements of any kind including, but not limited to, signs for goods or services. 
+			\item \textbf{Nuisance}. No \lodger{}, or guest, or other person under their control shall commit or maintain a nuisance on or about the \room{}, \apt{}, or \condo{}. 
+			\item \textbf{Impairment Of The Environment}. To conduct themselves, and to cause guests and other persons who are under their control, to conduct themselves in a manner which will not impair the physical or social environment of \apt{} or \condo{}. 
+			\item \textbf{Quiet Enjoyment}. To conduct themselves, and to cause guests and other persons under their control, to conduct themselves in a manner that will not disturb the rights of Owner or other residents of \condo{} to the peaceful enjoyment of their residences or the public areas. 
+			\item \textbf{Interference With Job Responsibilities}. No \lodger{}, or guest, or other person under the control of the \lodger{} shall interfere with the job responsibilities of authorized vendors, service personnel or representatives of \management{} or \condo{} management. 
+			\item \textbf{\rules{}}. To abide by all the \rules{} in Schedule A of this Agreement (``\rules{}'').
+			\item \textbf{Health And Safety}. To comply with all obligations imposed upon \lodger{} by applicable provisions of Federal, State and local building and housing codes that materially affect health and safety; and to keep the \room{} and such other areas as may be assigned to the \lodger{}, in a clean and safe condition. 
+			\item \textbf{Notice Of Repairs}. To promptly notify \management{} whenever repairs to their \room{} are required. 
+			\item \textbf{\standards{}}. To maintain the \room{} in a clean and sanitary manner in accordance with Schedule B of this Agreement (``\standards{}'').
+			\item \textbf{Rubbish Removal}. To dispose of all ashes, garbage, rubbish and other waste from the \room{} in a sanitary and safe manner in the receptacles and trash bins provided by \management{} or owned by \lodger{}. 
+			\item \textbf{Care In Use Of Facilities}. To use only in a reasonable and safe manner all electrical, plumbing, sanitary, heating, ventilating, air-conditioning and other facilities and appurtenances. 
+			\item \textbf{Damage To \room{}, \apt{}, Or \condo{}}. No \lodger{}, or guest, or other person under their control shall deface, paint, damage, destroy, tamper with or remove any part of the \room{}, \apt{}, Or \condo{}.
+			\item \textbf{Alterations}. To make no repairs, alterations or additions of any kind without the prior written consent of \management{}, including but not limited to, painting, changing locks, or installing security bars, doors or safety devices. \management{} may withhold such consent at \management{}'s sole discretion. 
+			\item \textbf{Signs}. Not to display on or about the \room{}, \apt{}, or \condo{} any signs or advertisements of any kind including, but not limited to, signs for goods or services. 
 		\end{enumerate}
-	\item \textbf{Defaults And Terminations} \quad 
+	\item \textbf{Defaults And Terminations}. 
 		\begin{enumerate}
-			\item \textbf{Terminations} \quad 
+			\item \textbf{Terminations}. 
 				This Agreement shall be terminated upon the death of \lodger{}, upon a voluntary termination of this Agreement by \lodger{}, or at will by \management{}. \management{} will terminate this Agreement for various reasons, including, but not limited to, the nonpayment of rent, a serious or repeated violation of a material term of this Agreement, smoking, any Criminal Activity or Drug-Related Criminal Activity as set forth in items \ref{criminal} or \ref{drug} of of section \ref{generals} of this Agreement, or for other reasons which \management{} may not disclose to \lodger{}.
-			\item \textbf{Voluntary Termination Notices} \quad 
+			\item \textbf{Voluntary Termination Notices}. 
 				Voluntary termination of this Agreement by the \lodger{} shall be by written seven (7) day notice to \management{}. Such notice shall be on a form designated by \management{} and signed by \lodger{} setting forth the last day of their occupancy. Such notice shall be delivered in person to \management{}, or preferably via the \management{}'s email address (the ``\myemail{}'') that is set forth in section \ref{specifics} of this Agreement{}. 
-			\item \textbf{Involuntary Termination Notices} \label{terminate}
-				\quad In terminating this Agreement, \management{} shall give a written notice of termination (``Notice of Termination'') of: 
+			\item \textbf{Involuntary Termination Notices}. \label{terminate}
+				In terminating this Agreement, \management{} shall give a written notice of termination (``Notice of Termination'') of: 
 				\begin{enumerate}
 					\item 3 days in the case of failure to pay rent; 
 					\item A reasonable time considering the seriousness of the situation (but not exceeding 7 days) when the health or safety of Owner, \management{}, other \condo{} residents or \condo{} management's employees is threatened; and 
 					\item 7 days in any other case. 
 				\end{enumerate} 
 				The Notice of Termination shall both state that \lodger{} is not welcome in \apt{} anymore, and provide reminder that only Owner and \lodger{} reside in this \apt{}. If the notice period is less than 7 days, the Notice of Termination shall also provide the justifying reason for shorter notice. So that, upon expiration of the notice period provided, \management{} will remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, without court order, pursuant to the provisions of Section 602.3 of the California Penal Code or other applicable provisions of law, because any right of \lodger{} to remain in the dwelling unit or any part thereof is terminated by operation of law pursuant to the provisions of Section 1946.5 of California Civil Code.
-			\item \textbf{Service Of Termination Notice} \label{service}
-				\quad When a notice of termination requires service pursuant to California Code of Civil Procedure 1162, such service may be made by either: 
+			\item \textbf{Service Of Termination Notice}. \label{service}
+				When a notice of termination requires service pursuant to California Code of Civil Procedure 1162, such service may be made by either: 
 				\begin{enumerate}
 					\item Personally delivering a copy to the \lodger{}; or, 
 					\item If the \lodger{} is absent from the \room{} and from their usual place of business, service may be made by leaving a copy with some person of suitable age and discretion at their usual place of business, and sending a copy through the mail addressed to the \lodger{} at \apt{}; or, 
 					\item If such place of business cannot be ascertained, or a person of suitable age or discretion there cannot be found, then service may be made by affixing a copy in a conspicuous place in the \room{}, and also sending a copy through the mail addressed to the \lodger{} at \apt{}.
 				\end{enumerate}
 		\end{enumerate}
-	\item \textbf{Notices} \quad 
+	\item \textbf{Notices}. 
 		\begin{enumerate} 
-			\item \textbf{Notice To \lodger{}} \quad 
+			\item \textbf{Notice To \lodger{}}. 
 				Except as expressly provided elsewhere in this Agreement, all notices required or permitted to be given to the \lodger{} shall be in writing and delivered to the \lodger{} or sent by prepaid first-class mail properly addressed to the \lodger{} at the \room{} in the \apt{}. If the \lodger{} is visually impaired, all notices shall be in an accessible format. 
-			\item \textbf{Notice To Management} \quad 
+			\item \textbf{Notice To Management}. 
 				Except as expressly provided elsewhere in this Agreement, all notices to \management{} shall be delivered via \management{}'s email address (the ``\myemail{}'') that is set forth in section \ref{specifics} of this Agreement{}.
 		\end{enumerate}
-	\item \textbf{Modifications And Amendments To This Agreement} \label{modifications}
-		\quad This Agreement may only be modified or amended 
+	\item \textbf{Modifications And Amendments To This Agreement}. \label{modifications}
+		This Agreement may only be modified or amended 
 		\begin{enumerate}
 			\item by the written consent of both \management{} and the \lodger{}, or 
 			\item \management{} (without the written consent of the \lodger{}) at any time during the term of the Agreement upon 7 day written notice. 
 		\end{enumerate}
 				
 		This item \ref{modifications} of this section of the Agreement, shall not apply to changes authorized by this Agreement or law.
-	\item \textbf{Waivers} \quad 
+	\item \textbf{Waivers}. 
 		\management{}'s failure to require strict compliance with any covenant, term or condition of this Agreement, or to exercise any right \management{} may have by reason of this Agreement, shall not be deemed a waiver by \management{} of such covenant, condition, term or right. \management{}'s acceptance of rent with the knowledge of any default by the \lodger{} to this Agreement shall not be deemed a waiver of such default, nor shall it limit or impair \management{}'s right to enforce any subsequent default of the same covenant, condition, term or right. 
-	\item \textbf{Captions} \quad 
+	\item \textbf{Captions}. 
 		Section headings of this Agreement are solely for convenience of the parties and shall not be used to explain, modify, simplify, or aid in the interpretation of any of the provisions of this Agreement. 
-	\item \textbf{Rights And Remedies Cumulative} \quad 
+	\item \textbf{Rights And Remedies Cumulative}. 
 		All rights and remedies that \management{} may have under this Agreement or at law are cumulative and nonexclusive. 
-	\item \textbf{Severability} \quad 
+	\item \textbf{Severability}. 
 		If any provision of this Agreement is found by a court of competent jurisdiction to be illegal, invalid, or unenforceable, the remainder of this Agreement will not be affected. In lieu of any provision which a court of competent jurisdiction finds to be illegal, invalid, or unenforceable, there will be added as a part of this Agreement a provision as similar to such provision as may be possible, yet be legal, valid and enforceable. 
-	\item \textbf{the Effect Of Prior Rental Agreements} \quad 
+	\item \textbf{The Effect Of Prior Rental Agreements}. 
 		Providing the \lodger{} is not in default of any term, condition or covenant under any other rental agreement that is in force between the \lodger{} and \management{} at the time this Agreement becomes effective, all prior rental agreements will terminate. In all cases where the \lodger{} is in default under a rental agreement with \management{} at the time this Agreement becomes effective, any default under that agreement shall be deemed a default of this Agreement. 
-	\item \textbf{Automatic Renewal} \quad 
+	\item \textbf{Automatic Renewal}.
 		Unless terminated, this Agreement shall be automatically renewed weekly on the same terms and conditions. 
+	\item \textbf{Megan's Law Disclosure}.
+		``Notice: Pursuant to Section 290.46 of the Penal Code, information about specified registered sex offenders is made available to the public via an Internet Web site maintained by the Department of Justice at www.meganslaw.ca.gov. Depending on an offender's criminal history, this information will include either the address at which the offender resides or the community of residence and ZIP Code in which he or she resides.''
 \end{enumerate}
 
-\newpage
-\section{\notice{}} \label{notice}
+\section{\specifics{}} \label{specifics} 
+\subsection{Important Points \lodger{} Must Be Aware Of}
+	Important points from section \ref{generals}, \generals{}, are repeated or restated as follows so as to not be missed by \lodger{}.
+	\begin{enumerate}
+		\item \textbf{Applicability of Section 1946.5 of California Civil Code}\\*
+			The \lodger{} understands and agrees with the following:
+			\begin{enumerate}
+				\item this Agreement is week-to-week
+				\item \lodger{} is contracting with Owner, the owner of \apt{}, for \room{}, a room within \apt{}
+				\item \apt{} is personally occupied by Owner
+				\item Owner retains a right of access to all areas of \apt{} occupied by \lodger{} 
+				\item Owner has overall control of \apt{} 
+				\item no one other than \lodger{} and Owner reside in \apt{}. 
+			\end{enumerate}
+			Therefore, \management{} may exercise it's rights under Section 1946.5 of California Civil Code, and do both of the following: 
+			\begin{enumerate}
+				\item Legally terminate this Rental Agreement with only 3 to 7 day written notice of termination delivered to \lodger{} as outlined in items \ref{terminate} and \ref{service} of section \ref{generals} of this Agreement.
+				\item Upon expiration of the 3-7 day notice period provided, remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, without court order, pursuant to the provisions of Section 602.3 of the California Penal Code or other applicable provisions of law, because any right of \lodger{} to remain in the dwelling unit or any part thereof is terminated by operation of law pursuant to the provisions of Section 1946.5 of California Civil Code.
+			\end{enumerate} 
+			\lodger{} agrees to obey the provisions of Section 1946.5 of California Civil Code by vacating the premises before expiration of any legally delivered notice of termination of this Agreement.  
+	
+		\item \textbf{Impermanence, \rules{}, and \standards{}}\\*
+			\lodger{} further understands and agrees with the following: 
+			\begin{enumerate}
+				\item This Agreement is temporary and although automatically renewing weekly, this Agreement will eventually be terminated by \management{} when \management{} will no longer rent \room{} to anyone, even if \lodger{} has always been in good standing under this Agreement. 
+				\item \management{} desires that \lodger{} clearly understands how to avoid premature termination of this Agreement, and so has provided rules as listed in Schedule A of this Agreement (``\rules{}''), and housekeeping standards as listed in Schedule B of this Agreement (``\standards{}''). 
+				\item \management{} may change or add to \rules{} and \standards{} at will, providing those subsequent drafts to \lodger{} so that \lodger{} may obey them. 
+				\item \lodger{} shall obey the \rules{} and \standards{} as currently and subsequently drafted and delivered to \lodger{} in order to avoid premature termination of this Agreement.
+			\end{enumerate}
 
-Notice is hereby given pursuant to California Civil Code Section 2079.10A The California Department of Justice, sheriff's departments, police departments serving jurisdictions of 200,000 or more and many other local law enforcement authorities maintain for public access a data base of the locations of persons required to register pursuant to paragraph (1) of subdivision (a) of Section 290.4 of the Penal Code. The database is updated on a quarterly basis and a source of information about the presence of these individuals in any neighborhood. The Department of Justice also maintains a Sex Offender Identification Line through which inquiries about individuals may be made. This is a ````900" telephone service. Callers must have specific information about individuals they are checking. Information regarding neighborhoods is not available through the ````900" telephone service. 
+		\item \textbf{Honesty}\\*
+			The \lodger{} understands and agrees that \management{} is entering into this Agreement in reliance upon the truth, completeness and accuracy of information provided in the \lodger{}'s initial application for a lodging rental. Furthermore, the \lodger{} understands and agrees that \management{} is relying on the truth, completeness and accuracy of all future information to be provided by the \lodger{}. Should it be discovered that any such information is false, misleading, or incomplete, \management{} may terminate this Agreement which may result in additional rent being owed by the \lodger{} and/or lead to other legal action and remedies which may be appropriate under the law. 
 
-\newpage
-\section{\specifics{}} \label{specifics}
-In this section of the Agreement, the meaning of the capitalized words referred to throughout this Agreement are established, and the most important points of the \generals{} are repeated or restated so as to not be missed by \lodger{}.
-
-The \lodger{} understands and agrees that this Agreement is week-to-week, and that \lodger{} is contracting with Owner, the owner of \apt{}, for \room{}, a room within \apt{} personally occupied by Owner, where Owner retains a right of access to all areas of \apt{} occupied by \lodger{} and has overall control of \apt{}. Furthermore, \lodger{} understands and agrees that no one other than \lodger{} and Owner reside in \apt{}. Therefore, \management{} may exercise it's rights under Section 1946.5 of California Civil Code, and do both of the following: 
-\begin{enumerate}
-	\item Legally terminate this Rental Agreement with only 3 to 7 day written notice of termination delivered to \lodger{} as outlined in items \ref{terminate} and \ref{service} of section \ref{generals} of this Agreement.
-	\item Upon expiration of the 3-7 day notice period provided, remove \lodger{}'s possessions, and remove \lodger{} from \apt{} as a trespasser, without court order, pursuant to the provisions of Section 602.3 of the California Penal Code or other applicable provisions of law, because any right of \lodger{} to remain in the dwelling unit or any part thereof is terminated by operation of law pursuant to the provisions of Section 1946.5 of California Civil Code.
-\end{enumerate}
-
-\lodger{} agrees to obey the provisions of Section 1946.5 of California Civil Code by vacating the premises before expiration of any legally delivered notice of termination of this Agreement.
-
-\lodger{} further understands and agrees this Agreement is temporary and although automatically renewing weekly, this Agreement will eventually be terminated by \management{} when \management{} will no longer rent \room{} to anyone, even if \lodger{} has always been in good standing under this Agreement. \management{} desires that \lodger{} clearly understands how to avoid premature termination of this Agreement, and so has provided rules as listed in section \ref{rules} of this Agreement (``\rules{}''), and housekeeping standards as listed in section \ref{standards} of this Agreement (``\standards{}''). \management{} may change or add to \rules{} and \standards{} at will, providing the updates to \lodger{} so that \lodger{} may obey them. \lodger{} agrees to obey the \rules{} and \standards{} as currently and subsequently drafted in order to avoid premature termination of this Agreement.
-
-The \lodger{} understands and agrees that \management{} is entering into this Agreement in reliance upon the truth, completeness and accuracy of information provided in the \lodger{}'s initial application for a lodging rental. Furthermore, the \lodger{} understands and agrees that \management{} is relying on the truth, completeness and accuracy of all future information to be provided by the \lodger{}. Should it be discovered that any such information is false, misleading, or incomplete, \management{} may terminate this Agreement which may result in additional rent being owed by the \lodger{} and/or lead to other legal action and remedies which may be appropriate under the law. 
-
-\begin{multicols}{2}
-	\begin{enumerate} 
-		\item \textbf{\management{}}\\* \label{management}
-			\noindent \mom{}\\*
-			and her family members:\\*
-			Colin N Keenan,
-			Charlene Nichols,
-			Chris Nichols,
-			Renee Fried,
-			Allegra Harrison,
-			Rachel Ogletree
-				
-		\item \textbf{\myemail{}}\\* \label{myemail}
-			colinnkeenan@gmail.com
-
-		\item \textbf{\condo{}}\\* \label{condo}
-			The real property condominium on the south-east corner of Wilson Ave and Union St in the United States Postal Service zip code 91106
-
-		\item \textbf{\apt{}}\\* \label{apt}
-			The apartment house in \condo{} owned by \mom{} with the following address:\\*
-			104 N Wilson, \apt{} 13,\\* 
-			Pasadena, CA  91106
-
-		\item \textbf{\room{}}\\* \label{room}
-			\textit{In \apt{}}\\*
-			top-floor room with view of gated parking area
-
-
-		\item \textbf{\furniture{}}\\* \label{furniture}
-			\textit{In \room{}}\\*
-			queen-size bed on frame, large dresser, shelves, bookcase, floor lamp\\*
-			\textit{In Kitchen}\\*
-			fully stocked with plates, bowls, cups, silverware, cutting boards, cooking utensils, pizza pan, broiler pan, drip pan, dish clothes, hand towels, etc.
-			\textit{In Linen Closet}\\*
-			bath towels, hand towels, wash cloths, fitted and flat sheets, blankets, etc.
-
-		\item \textbf{\shared{}}\\* \label{shared}
-			\textit{In \apt{}}\\*
-			top-floor room with view of Union St\\*
-			all entrances\\*
-			all hallways and stairs\\*
-			all hallway closets\\*
-			the kitchen\\*
-			top-floor bathroom\\*
-			\textit{In gated parking area of \condo{}}\\*
-			carport area providing parking space for one vehicle
-			
-		\item \textbf{\livingroom{}}\\* \label{livingroom}
-			\textit{In \apt{}}\\*
-			living room\\*
-			bottom-floor bathroom
-			
-		\item \textbf{\appliances}\\* \label{appliances}
-			\textit{In Kitchen} 1800W double burner,
-			900W microwave,
-			1500W toaster oven\\*
-			\textit{In Hallway Next To \room{}} washer and dryer
-			\textit{In \room{}} electric heater,
-			portable air conditioner
-			
-		\item \textbf{\utilities{}}\\* \label{utilities}
-			water,
-			rubbish removal,\\*
-			electricity,
-			natural gas,\\*
-			broadband internet
-
-		\item \textbf{\deposit{}}\\* \label{deposit}
-			\$0.00
-
-		\item \textbf{Term}\\*
-			Seven (7) days
-
-		\item \textbf{\rent{}}\\* \label{rent}
-			\$200.00
-
-		\item \textbf{\paymenttime{}}\\* \label{paymenttime}
-			Defined in item \ref{defpaytime} of section \ref{generals} of this Agreement.
-
-		\item \textbf{\signdate{}} \label{signdate}
-
-			\vspace{0.5cm}\makebox[2in]{\hrulefill}
-
-		\item \textbf{\firstday{}} \label{firstday}
-
-			\vspace{0.5cm}\makebox[2in]{\hrulefill}
-
-		\item \textbf{\rentdate{}} \label{rentdate}
-			
-			\vspace{0.5cm}\makebox[2in]{\hrulefill}
-
-		\item \textbf{\rentweek{}}\\* \label{rentweek}
-			The first rent week runs from \firstday{} through \rentdate{}, as defined in items \ref{firstday} and \ref{rentdate} of this section.  Every seven days is another \rentweek{}. For example, if the first \rentweek{} began on a Tuesday, then every Tuesday would be the start of another \rentweek{}.
-			
-		\item \textbf{\lodger{}}\\* \label{lodger}
-			\begin{minipage}[t]{2in}
-
-				\vspace{0.2cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Name}
-				
-				\vspace{0.2cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Date Of Birth}
-				
-				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Social Security Number}
-				
-				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Signature}
-			\end{minipage}%
-
-		\item \textbf{\lemail{}} \label{lemail}
-
-			\vspace{0.5cm}\makebox[2in]{\hrulefill}
-
-			\vspace{0.5cm}\makebox[2in]{\hrulefill}
 	\end{enumerate}
-\end{multicols}
+\subsection{Definitions} \label{definitions}
+	In this subsection of this section of the Agreement, the meaning of the capitalized words referred to throughout this Agreement are established
+	\begin{multicols}{2}
+		\begin{enumerate} 
+			\item \textbf{\management{}}\\* \label{management}
+				\noindent \mom{}\\*
+				and the authorized family members listed below:\\*
+				Colin N Keenan,
+				Charlene Nichols,
+				Chris Nichols,
+				Renee Fried,
+				Allegra Harrison,
+				Rachel Ogletree
+					
+			\item \textbf{\myemail{}}\\* \label{myemail}
+				colinnkeenan@gmail.com
 
-\noindent \textbf{I have read and been given copies of all five sections of this Rental Agreement:}
+			\item \textbf{\condo{}}\\* \label{condo}
+				The real property condominium on the south-east corner of Wilson Ave and Union St in the United States Postal Service zip code 91106
 
-\begin{enumerate}
-	\item 
-	\item 
-		\begin{minipage}[t]{0.55\textwidth}
-			\ref{generals} \generals{}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{0.35\textwidth}
-				Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}
-		\end{minipage}
-	\item 
-		\begin{minipage}[t]{0.55\textwidth}
-			\ref{notice} \notice{}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{0.35\textwidth}
-				Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}
-		\end{minipage}
-	\item 
-		\begin{minipage}[t]{0.55\textwidth}
-			\ref{specifics} \specifics{}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{0.35\textwidth}
-				Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}
-		\end{minipage}
-	\item 
-		\begin{minipage}[t]{0.55\textwidth}
-			\ref{rules} \rules{}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{0.35\textwidth}
-				Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}
-		\end{minipage}
-	\item 
-		\begin{minipage}[t]{0.55\textwidth}
-			\ref{standards} \standards{}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{0.35\textwidth}
-				Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}
-		\end{minipage}
-\end{enumerate}
+			\item \textbf{\apt{}}\\* \label{apt}
+				The apartment house in \condo{} owned by \mom{} with the following address:\\*
+				104 N Wilson, \apt{} 13,\\* 
+				Pasadena, CA  91106
+
+			\item \textbf{\room{}}\\* \label{room}
+				\textit{In \apt{}}\\*
+				the top-floor bedroom with a view of the gated parking area
+
+			\item \textbf{\furniture{}}\\* \label{furniture}
+				\textit{In \room{}}\\*
+				queen-size bed on frame, large dresser, shelves, bookcase, floor lamp\\*
+				\textit{In Kitchen}\\*
+				fully stocked with plates, bowls, cups, silverware, cutting boards, cooking utensils, pizza pan, broiler pan, drip pan, dish clothes, hand towels, etc.
+				\textit{In Linen Closet}\\*
+				bath towels, hand towels, wash cloths, fitted and flat sheets, blankets, etc.
+
+			\item \textbf{\shared{}}\\* \label{shared}
+				\textit{In \apt{}}\\*
+				the top-floor room with a view of Union St\\*
+				all entrances\\*
+				all hallways and stairs\\*
+				all hallway closets\\*
+				the kitchen\\*
+				top-floor bathroom\\*
+				\textit{In gated parking area of \condo{}}\\*
+				carport area providing parking space for one vehicle
+				
+			\item \textbf{\livingroom{}}\\* \label{livingroom}
+				\textit{In \apt{}}\\*
+				living room\\*
+				bottom-floor bathroom
+				
+			\item \textbf{\appliances}\\* \label{appliances}
+				\textit{In Kitchen} 1800W double burner,
+				900W microwave,
+				1500W toaster oven\\*
+				\textit{In Hallway Next To \room{}} washer and dryer
+				\textit{In \room{}} electric heater,
+				portable air conditioner
+				
+			\item \textbf{\utilities{}}\\* \label{utilities}
+				water,
+				rubbish removal,\\*
+				electricity,
+				natural gas,\\*
+				broadband internet
+
+			\item \textbf{\deposit{}}\\* \label{deposit}
+				\$0.00
+
+			\item \textbf{Term}\\*
+				Seven (7) days
+
+			\item \textbf{\rent{}}\\* \label{rent}
+				\$200.00
+
+			\item \textbf{\paymenttime{}}\\* \label{paymenttime}
+				Defined in item \ref{defpaytime} of section \ref{generals} of this Agreement.
+
+			\item \textbf{\signdate{}} \label{signdate}
+
+				\vspace{0.5cm}\makebox[2in]{\hrulefill}
+
+			\item \textbf{\firstday{}} \label{firstday}
+
+				\vspace{0.5cm}\makebox[2in]{\hrulefill}
+
+			\item \textbf{\rentdate{}} \label{rentdate}
+				
+				\vspace{0.5cm}\makebox[2in]{\hrulefill}
+
+			\item \textbf{\rentweek{}}\\* \label{rentweek}
+				The first rent week runs from \firstday{} through \rentdate{}, as defined in items \ref{firstday} and \ref{rentdate} of this section.  Every seven days is another \rentweek{}. For example, if the first \rentweek{} began on a Tuesday, then every Tuesday would be the start of another \rentweek{}.
+				
+			\item \textbf{\lodger{}}\\* \label{lodger}
+				\begin{minipage}[t]{2in}
+
+					\vspace{0.2cm}\makebox[2in]{\hrulefill} \\*
+					\textsuperscript{Name}
+					
+					\vspace{0.2cm}\makebox[2in]{\hrulefill} \\*
+					\textsuperscript{Date Of Birth}
+					
+					\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
+					\textsuperscript{Social Security Number}
+					
+					\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
+					\textsuperscript{Signature}
+				\end{minipage}%
+
+			\item \textbf{\lemail{}} \label{lemail}
+
+				\vspace{0.5cm}\makebox[2in]{\hrulefill}
+
+				\vspace{0.5cm}\makebox[2in]{\hrulefill}
+		\end{enumerate}
+	\end{multicols}
+
+\noindent \textbf{I have read and been given copies of all four sections of this Rental Agreement:}\\*
+\textbf{\tab{\ref{generals}} \tab{\generals{}}} \tab{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}\\*
+\textbf{\tab{\ref{specifics}} \tab{\specifics{}}} \tab{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}\\*
+\textbf{\tab{Schedule A} \tab{\rules{}}} \tab{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}\\*
+\textbf{\tab{Schedule B} \tab{\standards{}}} \tab{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}\\*
 
 \begin{minipage}[t]{0.65\textwidth}
 	\begin{flushright}
@@ -414,9 +403,9 @@ The \lodger{} understands and agrees that \management{} is entering into this Ag
 \end{minipage}
 
 \newpage
-\section{\rules{}} \label{rules}
+\section*{Schedule A: \rules{}} \label{rules}
 
- These \rules{} are some of \lodger{}'s obligations under this Agreement. These Residential Rules may be amended from time to time by \management{} upon 7 day written notice to \lodger{} setting forth the proposed modifications. A copy of such notice shall be mailed to the \lodger{}, and emailed to one of the \lodger{}'s email addresses (``\lemail{}'') that is listed in item \ref{lemail} of section \ref{specifics} of this Agreement.
+ These \rules{} are some of \lodger{}'s obligations under this Agreement. These Residential Rules may be amended from time to time by \management{} upon 7 day written notice to \lodger{} setting forth the proposed modifications. A copy of such notice shall be mailed to the \lodger{}, and emailed to one of the \lodger{}'s email addresses (``\lemail{}'') that is listed in item \ref{lemail} of subsection \ref{definitions} of this Agreement.
 
 \begin{enumerate}
 	\item \lodger{} shall not smoke in \room{}, \apt{}, or anywhere on \condo{} property.
@@ -471,9 +460,9 @@ The \lodger{} understands and agrees that \management{} is entering into this Ag
 
 
 \newpage
-\section{\standards{}} \label{standards}
+\section*{Schedule B: \standards{}} \label{standards}
 
-These \standards{} (``Housekeeping Standards'') are some of \lodger{}'s obligations under this Agreement. These Housekeeping Standards may be amended from time to time by \management{} upon 7 day written notice to \lodger{} setting forth the proposed modifications. A copy of such notice shall be mailed to the \lodger{}, and emailed to one of the resident notification methods (``\lemail{}'') that is listed in item \ref{lemail} of section \ref{specifics} of this Agreement. 
+These \standards{} (``Housekeeping Standards'') are some of \lodger{}'s obligations under this Agreement. These Housekeeping Standards may be amended from time to time by \management{} upon 7 day written notice to \lodger{} setting forth the proposed modifications. A copy of such notice shall be mailed to the \lodger{}, and emailed to one of the resident notification methods (``\lemail{}'') that is listed in item \ref{lemail} of subsection \ref{definitions} of this Agreement. 
 \begin{enumerate}
 	\item The \lodger{} shall thoroughly clean up after their pet using carpet cleaner, water, towels, vacuums, and all other appropriate cleaning materials and appliances, and immediately wash and dry any towels and other washable materials used.
 	\item The \lodger{} shall maintain an extra-large cat litter box for any cat brought into \room{} by \lodger{}, thoroughly cleaning in and around it daily. The longest dimension of the litter box must be 6'' longer than the longest cat, not counting tail, and must have walls tall enough to keep 3'' deep cat litter inside the box when a cat is using it.
