@@ -8,10 +8,11 @@
 \newcommand{\datefillin}{\hspace{0.2cm}\makebox[3cm]{\hrulefill}}
 
 \newcounter{schedulecounter}
+\renewcommand{\theschedulecounter}{\Alph{schedulecounter}}
 \newcommand{\schedule}[1]{%
 	\newpage%
 	\refstepcounter{schedulecounter}%
-	\noindent \textbf{\Large Schedule \Alph{schedulecounter}:~{#1}}\\ \\}
+	\noindent \textbf{\Large Schedule \theschedulecounter:~{#1}}\\ \\}
 
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage{fancyhdr}
@@ -54,8 +55,8 @@
 \thispagestyle{fancy}
 
 \noindent \hrulefill
-\section{\specifics{}}
-	Important points from Schedule \Alph \ref{generals}, \generals{}, are repeated or restated as follows so as to not be missed by \lodger{}.
+\section{\specifics{}} \label{specifics}
+Important points from Schedule \ref{generals}, \generals{}, are repeated or restated as follows so as to not be missed by \lodger{}.
 	\begin{enumerate}
 		\item \textbf{Applicability of Section 1946.5 of California Civil Code}\\*
 			The \lodger{} understands and agrees with the following:
@@ -69,7 +70,7 @@
 			\end{enumerate}
 			Therefore, \management{} may exercise it's rights under Section 1946.5 of California Civil Code.
 			\begin{enumerate}
-				\item Upon receipt of 3-7 day notice of termination delivered to \lodger{} as outlined in items \ref{terminate} and \ref{service} of Schedule \Alph \ref{generals} of this Agreement, \lodger{} agrees to obey the provisions of Section 1946.5 of California Civil Code by vacating the premises including removing his or her possessions before expiration of that legally delivered notice of termination.
+				\item Upon receipt of 3-7 day notice of termination delivered to \lodger{} as outlined in items \ref{terminate} and \ref{service} of Schedule \ref{generals} of this Agreement, \lodger{} agrees to obey the provisions of Section 1946.5 of California Civil Code by vacating the premises including removing his or her possessions before expiration of that legally delivered notice of termination.
 				\item Upon expiration of the 3-7 day notice period provided, \management{} may remove \lodger{}'s possessions, and effect the removal of \lodger{} from \apt{} as a trespasser, without court order, pursuant to the provisions of Section 602.3 of the California Penal Code or other applicable provisions of law, because any right of \lodger{} to remain in the dwelling unit or any part thereof is terminated by operation of law pursuant to the provisions of Section 1946.5 of California Civil Code.
 			\end{enumerate} 
 	
@@ -77,7 +78,7 @@
 			\lodger{} further understands and agrees with the following: 
 			\begin{enumerate}
 				\item This Agreement is temporary and although automatically renewing weekly, this Agreement will eventually be terminated by \management{} when \management{} will no longer rent \room{} to anyone, even if \lodger{} has always been in good standing under this Agreement. 
-				\item \management{} desires that \lodger{} clearly understands how to avoid premature termination of this Agreement, and so has provided rules as listed in Schedule \Alph \ref{rules} of this Agreement (``\rules{}''), and housekeeping standards as listed in Schedule \Alph \ref{standards} of this Agreement (``\standards{}''). 
+				\item \management{} desires that \lodger{} clearly understands how to avoid premature termination of this Agreement, and so has provided rules as listed in Schedule \ref{rules} of this Agreement (``\rules{}''), and housekeeping standards as listed in Schedule \ref{standards} of this Agreement (``\standards{}''). 
 				\item \management{} may change or add to \rules{} and \standards{} with 7 day written notice, providing those subsequent drafts to \lodger{} so that \lodger{} may obey them. 
 				\item \lodger{} shall obey the \rules{} and \standards{} as currently and subsequently drafted and delivered to \lodger{} in order to avoid premature termination of this Agreement.
 			\end{enumerate}
@@ -87,7 +88,7 @@
 
 	\end{enumerate}
 \section{Definitions} \label{definitions}
-	In this section of this section of the Agreement, the meaning of the capitalized words referred to throughout this Agreement are established
+	In this section of the Agreement, the meaning of the capitalized words referred to throughout all sections and schedules of this Agreement are established.
 	\begin{multicols}{2}
 		\begin{enumerate} 
 			\item \textbf{\management{}}\\* \label{management}
@@ -160,7 +161,7 @@
 				\$200.00
 
 			\item \textbf{\paymenttime{}}\\* \label{paymenttime}
-				Defined in item \ref{defpaytime} of Schedule \Alph \ref{generals} of this Agreement.
+				Defined in item \ref{defpaytime} of Schedule \ref{generals} of this Agreement.
 
 			\item \textbf{\firstday{}} \label{firstday} \\* \\
 				Saturday, \datefillin, 2015
@@ -211,11 +212,11 @@
 	
 	\tabmed{Section \ref{specifics}} \tablarge{\textbf{\specifics{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
 	
-	\tabmed{Schedule \Alph \ref{generals}} \tablarge{\textbf{\generals{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
+	\tabmed{Schedule \ref{generals}} \tablarge{\textbf{\generals{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
 
-	\tabmed{Schedule \Alph \ref{rules}} \tablarge{\textbf{\rules{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
+	\tabmed{Schedule \ref{rules}} \tablarge{\textbf{\rules{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
 
-	\tabmed{Schedule \Alph \ref{standards}} \tablarge{\textbf{\standards{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
+	\tabmed{Schedule \ref{standards}} \tablarge{\textbf{\standards{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \\
 
 	\vspace{1cm}
 	\noindent\tabmed{\lodger{} Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
@@ -324,7 +325,7 @@
 		\item \textbf{Defaults And Terminations}. 
 			\begin{enumerate}
 				\item \textbf{Terminations}. 
-					This Agreement shall be terminated upon the death of \lodger{}, upon a voluntary termination of this Agreement by \lodger{}, or by \management{}. \management{} may terminate this Agreement for various reasons, including, but not limited to, the nonpayment of rent, a serious or repeated violation of a material term of this Agreement, smoking, any Criminal Activity or Drug-Related Criminal Activity as set forth in items \ref{criminal} or \ref{drug} of of Schedule \Alph \ref{generals} of this Agreement, or for any other reasons in the discretion of \management{}.
+					This Agreement shall be terminated upon the death of \lodger{}, upon a voluntary termination of this Agreement by \lodger{}, or by \management{}. \management{} may terminate this Agreement for various reasons, including, but not limited to, the nonpayment of rent, a serious or repeated violation of a material term of this Agreement, smoking, any Criminal Activity or Drug-Related Criminal Activity as set forth in items \ref{criminal} or \ref{drug} of of Schedule \ref{generals} of this Agreement, or for any other reasons in the discretion of \management{}.
 				\item \textbf{Voluntary Termination Notices}. 
 					Voluntary termination of this Agreement by the \lodger{} shall be by written seven (7) day notice to \management{}. Such notice shall be on a form designated by \management{} and signed by \lodger{} setting forth the last day of his or her occupancy. Such notice shall be delivered in person to \management{}, or preferably via the \management{}'s email address (the ``\myemail{}'') that is set forth in item \ref{myemail} of section \ref{definitions} of this Agreement{}. 
 				\item \textbf{Involuntary Termination Notices}. \label{terminate}
