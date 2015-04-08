@@ -11,7 +11,8 @@
 \renewcommand{\theschedulecounter}{\Alph{schedulecounter}}
 \newenvironment{schedule}[1] {\newpage
 	\refstepcounter{schedulecounter}
-	\noindent \textbf{\Large Schedule \theschedulecounter:~{#1}}\\ \\
+	\noindent \textbf{\Large Schedule \theschedulecounter:~{#1}}\\
+	\noindent
 }{}
 
 \usepackage[margin=1in,headheight=28pt]{geometry}
@@ -222,15 +223,15 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 
 \tabmed{Schedule \ref{payments}} \tablarge{\textbf{\payments{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
 
-\tabmed{Schedule \ref{behavior}} \tablarge{\textbf{\behavior{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
-
 \tabmed{Schedule \ref{terminating}} \tablarge{\textbf{\terminating{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
 
-\tabmed{Schedule \ref{meta}} \tablarge{\textbf{\meta{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
+\tabmed{Schedule \ref{behavior}} \tablarge{\textbf{\behavior{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
 
 \tabmed{Schedule \ref{rules}} \tablarge{\textbf{\rules{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
 
 \tabmed{Schedule \ref{standards}} \tablarge{\textbf{\standards{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} 
+
+\tabmed{Schedule \ref{meta}} \tablarge{\textbf{\meta{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
 
 \vspace{1cm}
 \noindent\tabmed{Lodger Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
@@ -292,10 +293,48 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 				\end{enumerate}
 			\item \textbf{Receipt}. \management{} will provide receipt of payment via one of the \lemail{} that is set forth in item \ref{lemail} of section \ref{definitions} of this Agreement{}, and record payment was received at the \paymenttime{}. 
 		\end{enumerate}
+	\item \textbf{Confidentiality Of Record}. 
+		Confidential records and information obtained by \management{} shall not be disclosed to third parties except in accordance with law. 
 \end{enumerate}
 \end{schedule}
 
-\section*{} %criminal
+\section*{} %terminating
+\begin{schedule}{\terminating{}} \label{terminating}
+\begin{enumerate}
+	\item \textbf{Defaults And Terminations}. 
+		\begin{enumerate}
+			\item \textbf{Terminations}. 
+				This Agreement shall be terminated upon the death of Lodger, upon a voluntary termination of this Agreement by Lodger, or by \management{}. \management{} may terminate this Agreement for various reasons, including, but not limited to, the nonpayment of rent, a serious or repeated violation of a material term of this Agreement, smoking, any Criminal Activity or Drug-Related Criminal Activity as set forth in items \ref{criminal} or \ref{drug} of of Schedule \ref{behavior} of this Agreement, or for any other reasons in the discretion of \management{}.
+			\item \textbf{Voluntary Termination Notices}. 
+				Voluntary termination of this Agreement by the Lodger shall be by written seven (7) day notice to \management{}. Such notice shall be on a form designated by \management{} and signed by Lodger setting forth the last day of his or her occupancy. Such notice shall be delivered in person to \management{}, or preferably via the \management{}'s email address (the ``\myemail{}'') that is set forth in item \ref{myemail} of section \ref{definitions} of this Agreement{}. 
+			\item \textbf{Involuntary Termination Notices}. \label{terminate}
+				In terminating this Agreement, \management{} shall give a written notice of termination (``Notice of Termination'') of: 
+				\begin{enumerate}
+					\item 3 days in the case of failure to pay rent; 
+					\item A reasonable time considering the seriousness of the situation (but not exceeding 7 days) when the health or safety of Owner, \management{}, other \condo{} residents or \condo{} management's employees is threatened; and 
+					\item 7 days in any other case. 
+				\end{enumerate} 
+				The Notice of Termination shall both state that Lodger is not welcome in \apt{} anymore, and provide a reminder that only Owner and Lodger reside in this \apt{}. If the notice period is less than 7 days, the Notice of Termination shall also provide the justifying reason for shorter notice. 
+			\item \textbf{Service Of Termination Notice}. \label{service}
+				When a notice of termination requires service pursuant to California Code of Civil Procedure 1162, such service may be made by either: 
+				\begin{enumerate}
+					\item Personally delivering a copy to the Lodger; or, 
+					\item If the Lodger is absent from the \room{} and from his or her usual place of business, service may be made by leaving a copy with some person of suitable age and discretion at his or her usual place of business, and sending a copy through the mail addressed to the Lodger at \apt{}; or, 
+					\item If such place of business cannot be ascertained, or a person of suitable age or discretion there cannot be found, then service may be made by affixing a copy in a conspicuous place in the \room{}, and also sending a copy through the mail addressed to the Lodger at \apt{}.
+				\end{enumerate}
+		\end{enumerate}
+	\item \textbf{Notices}. 
+		\begin{enumerate} 
+			\item \textbf{Notice To Lodger}. 
+				Except as expressly provided elsewhere in this Agreement, all notices required or permitted to be given to the Lodger shall be in writing and delivered to the Lodger by email to the \lemail{} or sent by prepaid first-class mail properly addressed to the Lodger at the \room{} in the \apt{}. If the Lodger is visually impaired, all notices shall be in an accessible format. 
+			\item \textbf{Notice To Management}. 
+				Except as expressly provided elsewhere in this Agreement, all notices to \management{} shall be delivered via \myemail{}.
+		\end{enumerate}
+\end{enumerate}
+\end{schedule}
+
+
+\section*{} %behavior
 \begin{schedule}{\behavior{}} \label{behavior}
 \begin{enumerate}
 	\item \textbf{Criminal And Drug Related Activities}. 
@@ -347,74 +386,9 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 \end{enumerate}
 \end{schedule}
 
-\section*{} %terminating
-\begin{schedule}{\terminating{}} \label{terminating}
-\begin{enumerate}
-	\item \textbf{Defaults And Terminations}. 
-		\begin{enumerate}
-			\item \textbf{Terminations}. 
-				This Agreement shall be terminated upon the death of Lodger, upon a voluntary termination of this Agreement by Lodger, or by \management{}. \management{} may terminate this Agreement for various reasons, including, but not limited to, the nonpayment of rent, a serious or repeated violation of a material term of this Agreement, smoking, any Criminal Activity or Drug-Related Criminal Activity as set forth in items \ref{criminal} or \ref{drug} of of Schedule \ref{behavior} of this Agreement, or for any other reasons in the discretion of \management{}.
-			\item \textbf{Voluntary Termination Notices}. 
-				Voluntary termination of this Agreement by the Lodger shall be by written seven (7) day notice to \management{}. Such notice shall be on a form designated by \management{} and signed by Lodger setting forth the last day of his or her occupancy. Such notice shall be delivered in person to \management{}, or preferably via the \management{}'s email address (the ``\myemail{}'') that is set forth in item \ref{myemail} of section \ref{definitions} of this Agreement{}. 
-			\item \textbf{Involuntary Termination Notices}. \label{terminate}
-				In terminating this Agreement, \management{} shall give a written notice of termination (``Notice of Termination'') of: 
-				\begin{enumerate}
-					\item 3 days in the case of failure to pay rent; 
-					\item A reasonable time considering the seriousness of the situation (but not exceeding 7 days) when the health or safety of Owner, \management{}, other \condo{} residents or \condo{} management's employees is threatened; and 
-					\item 7 days in any other case. 
-				\end{enumerate} 
-				The Notice of Termination shall both state that Lodger is not welcome in \apt{} anymore, and provide a reminder that only Owner and Lodger reside in this \apt{}. If the notice period is less than 7 days, the Notice of Termination shall also provide the justifying reason for shorter notice. 
-			\item \textbf{Service Of Termination Notice}. \label{service}
-				When a notice of termination requires service pursuant to California Code of Civil Procedure 1162, such service may be made by either: 
-				\begin{enumerate}
-					\item Personally delivering a copy to the Lodger; or, 
-					\item If the Lodger is absent from the \room{} and from his or her usual place of business, service may be made by leaving a copy with some person of suitable age and discretion at his or her usual place of business, and sending a copy through the mail addressed to the Lodger at \apt{}; or, 
-					\item If such place of business cannot be ascertained, or a person of suitable age or discretion there cannot be found, then service may be made by affixing a copy in a conspicuous place in the \room{}, and also sending a copy through the mail addressed to the Lodger at \apt{}.
-				\end{enumerate}
-		\end{enumerate}
-	\item \textbf{Notices}. 
-		\begin{enumerate} 
-			\item \textbf{Notice To Lodger}. 
-				Except as expressly provided elsewhere in this Agreement, all notices required or permitted to be given to the Lodger shall be in writing and delivered to the Lodger by email to the \lemail{} or sent by prepaid first-class mail properly addressed to the Lodger at the \room{} in the \apt{}. If the Lodger is visually impaired, all notices shall be in an accessible format. 
-			\item \textbf{Notice To Management}. 
-				Except as expressly provided elsewhere in this Agreement, all notices to \management{} shall be delivered via \myemail{}.
-		\end{enumerate}
-\end{enumerate}
-\end{schedule}
-
-\section*{} %meta
-\begin{schedule}{\meta{}} \label{meta}
-\begin{enumerate}
-	\item \textbf{Confidentiality Of Record}. 
-		Confidential records and information obtained by \management{} shall not be disclosed to third parties except in accordance with law. 
-	\item \textbf{Modifications And Amendments To This Agreement}. \label{modifications}
-		This Agreement may only be modified or amended 
-		\begin{enumerate}
-			\item by the written consent of both \management{} and the Lodger, or 
-			\item \management{} (without the written consent of the Lodger) at any time during the term of the Agreement upon 7 day written notice. 
-		\end{enumerate}
-				
-		This item \ref{modifications} of this section of the Agreement, shall not apply to changes authorized by this Agreement or law.
-	\item \textbf{Waivers}. 
-		\management{}'s failure to require strict compliance with any covenant, term or condition of this Agreement, or to exercise any right \management{} may have by reason of this Agreement, shall not be deemed a waiver by \management{} of such covenant, condition, term or right. \management{}'s acceptance of rent with the knowledge of any default by the Lodger to this Agreement shall not be deemed a waiver of such default, nor shall it limit or impair \management{}'s right to enforce any subsequent default of the same covenant, condition, term or right. 
-	\item \textbf{Captions}. 
-		Section headings of this Agreement are solely for convenience of the parties and shall not be used to explain, modify, simplify, or aid in the interpretation of any of the provisions of this Agreement. 
-	\item \textbf{Rights And Remedies Cumulative}. 
-		All rights and remedies that \management{} may have under this Agreement or at law are cumulative and nonexclusive. 
-	\item \textbf{Severability}. 
-		If any provision of this Agreement is found by a court of competent jurisdiction to be illegal, invalid, or unenforceable, the remainder of this Agreement will not be affected. In lieu of any provision which a court of competent jurisdiction finds to be illegal, invalid, or unenforceable, there will be added as a part of this Agreement a provision as similar to such provision as may be possible, yet be legal, valid and enforceable. 
-	\item \textbf{The Effect Of Prior Rental Agreements}. 
-		Providing the Lodger is not in default of any term, condition or covenant under any other rental agreement that is in force between the Lodger and \management{} at the time this Agreement becomes effective, all prior rental agreements will terminate. In all cases where the Lodger is in default under a rental agreement with \management{} at the time this Agreement becomes effective, any default under that agreement shall be deemed a default of this Agreement. 
-	\item \textbf{Automatic Renewal}.
-		Unless terminated, this Agreement shall be automatically renewed weekly on the same terms and conditions. 
-	\item \textbf{Megan's Law Disclosure}.
-		``Notice: Pursuant to Section 290.46 of the Penal Code, information about specified registered sex offenders is made available to the public via an Internet Web site maintained by the Department of Justice at www.meganslaw.ca.gov. Depending on an offender's criminal history, this information will include either the address at which the offender resides or the community of residence and ZIP Code in which he or she resides.''
-\end{enumerate}
-\end{schedule}
-
 \section*{} % rules
 \begin{schedule}{\rules{}} \label{rules}
- These \rules{} are some of Lodger's obligations under this Agreement. These Residential Rules may be amended from time to time by \management{} upon 7 day written notice to Lodger setting forth the proposed modifications. A copy of such notice shall be mailed to the Lodger, and emailed to one of the Lodger's email addresses (``\lemail{}'') that is listed in item \ref{lemail} of section \ref{definitions} of this Agreement.
+These \rules{} are some of Lodger's obligations under this Agreement. These Residential Rules may be amended from time to time by \management{} upon 7 day written notice to Lodger setting forth the proposed modifications. A copy of such notice shall be mailed to the Lodger, and emailed to one of the Lodger's email addresses (``\lemail{}'') that is listed in item \ref{lemail} of section \ref{definitions} of this Agreement.
 
 \begin{enumerate}
 	\item Lodger shall not smoke in \room{}, \apt{}, or anywhere on \condo{} property.
@@ -494,4 +468,33 @@ These \standards{} (``Housekeeping Standards'') are some of Lodger's obligations
 	\item The Lodger shall keep and maintain the tub and/or shower clean and free of mildew and mold. Shower curtains shall be maintained in a good clean condition. Shower curtains provided by \management{} shall not be replaced except by \management{}.
 \end{enumerate}
 \end{schedule}
+
+\section*{} %meta
+\begin{schedule}{\meta{}} \label{meta}
+\begin{enumerate}
+	\item \textbf{Modifications And Amendments To This Agreement}. \label{modifications}
+		This Agreement may only be modified or amended 
+		\begin{enumerate}
+			\item by the written consent of both \management{} and the Lodger, or 
+			\item \management{} (without the written consent of the Lodger) at any time during the term of the Agreement upon 7 day written notice. 
+		\end{enumerate}
+				
+		This item \ref{modifications} of this section of the Agreement, shall not apply to changes authorized by this Agreement or law.
+	\item \textbf{Waivers}. 
+		\management{}'s failure to require strict compliance with any covenant, term or condition of this Agreement, or to exercise any right \management{} may have by reason of this Agreement, shall not be deemed a waiver by \management{} of such covenant, condition, term or right. \management{}'s acceptance of rent with the knowledge of any default by the Lodger to this Agreement shall not be deemed a waiver of such default, nor shall it limit or impair \management{}'s right to enforce any subsequent default of the same covenant, condition, term or right. 
+	\item \textbf{Captions}. 
+		Section headings of this Agreement are solely for convenience of the parties and shall not be used to explain, modify, simplify, or aid in the interpretation of any of the provisions of this Agreement. 
+	\item \textbf{Rights And Remedies Cumulative}. 
+		All rights and remedies that \management{} may have under this Agreement or at law are cumulative and nonexclusive. 
+	\item \textbf{Severability}. 
+		If any provision of this Agreement is found by a court of competent jurisdiction to be illegal, invalid, or unenforceable, the remainder of this Agreement will not be affected. In lieu of any provision which a court of competent jurisdiction finds to be illegal, invalid, or unenforceable, there will be added as a part of this Agreement a provision as similar to such provision as may be possible, yet be legal, valid and enforceable. 
+	\item \textbf{The Effect Of Prior Rental Agreements}. 
+		Providing the Lodger is not in default of any term, condition or covenant under any other rental agreement that is in force between the Lodger and \management{} at the time this Agreement becomes effective, all prior rental agreements will terminate. In all cases where the Lodger is in default under a rental agreement with \management{} at the time this Agreement becomes effective, any default under that agreement shall be deemed a default of this Agreement. 
+	\item \textbf{Automatic Renewal}.
+		Unless terminated, this Agreement shall be automatically renewed weekly on the same terms and conditions. 
+	\item \textbf{Megan's Law Disclosure}.
+		``Notice: Pursuant to Section 290.46 of the Penal Code, information about specified registered sex offenders is made available to the public via an Internet Web site maintained by the Department of Justice at www.meganslaw.ca.gov. Depending on an offender's criminal history, this information will include either the address at which the offender resides or the community of residence and ZIP Code in which he or she resides.''
+\end{enumerate}
+\end{schedule}
+
 \end{document}
