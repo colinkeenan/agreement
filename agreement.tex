@@ -11,9 +11,9 @@
 
 \newcounter{schedulecounter}
 \renewcommand{\theschedulecounter}{\Alph{schedulecounter}}
-\newenvironment{schedule}[1] {\newpage
-	\refstepcounter{schedulecounter}
-	\noindent \textbf{\Large Schedule \theschedulecounter:~{#1}}\\
+\newenvironment{schedule}[1] {%
+	\refstepcounter{schedulecounter}%
+	\noindent \textbf{\Large Schedule \theschedulecounter:~{#1}}
 	\noindent
 }{}
 
@@ -32,9 +32,10 @@
 \newcommand{\payments}{Payments}
 \newcommand{\behavior}{Required Behavior}
 \newcommand{\terminating}{Terminating Agreement}
-\newcommand{\meta}{About This Agreement}
 \newcommand{\rules}{Residential Rules}
 \newcommand{\standards}{Residential Housekeeping Standards}
+\newcommand{\meta}{About This Agreement}
+\newcommand{\disclosures}{Disclosures}
 
 \newcommand{\mom}{Joan B Harrison}
 \newcommand{\lname}{Lodger's Name}
@@ -51,6 +52,7 @@
 \newcommand{\utilities}{Shared Utilities}
 \newcommand{\firstday}{Occupancy Commencement Date}
 \newcommand{\rentweek}{Rent Week}
+\newcommand{\rent}{\$175}
 \newcommand{\lemail}{Lodger Email}
 \newcommand{\paymenttime}{Payment Notification Time-Date}
 
@@ -69,7 +71,7 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 		\item \textbf{Applicability of Section 1946.5 of California Civil Code}\\*
 			The Lodger understands and agrees with the following:
 			\begin{enumerate}
-				\item this Agreement is week-to-week with weekly payments to be made in accordance with Schedule \ref{payments}
+				\item this Agreement is week-to-week with weekly payments of \rent{} (the ``Rent'') to be made in accordance with Schedule \ref{payments}
 				\item Lodger is contracting with Owner, the owner of \apt{}, for \room{}, a room within \apt{}
 				\item \apt{} is personally occupied by Owner
 				\item Owner retains a right of access to all areas of \apt{} occupied by Lodger 
@@ -83,7 +85,7 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 			\end{enumerate} 
 
 		\item \textbf{\behavior{}}.
-			\management{} will terminate this Agreement for smoking as set forth in item \ref{smoking} of Schedule \ref{therental} of this Agreement, criminal, or drug related activities as set forth in items \ref{criminal} and \ref{drug} of Schedule \ref{behavior} of this Agreement. \management{} may terminate this Agreement for failure to meet all the obligations set forth in item \ref{obligations} of Schedule \ref{behavior} of this Agreement.
+			\management{} will terminate this Agreement for smoking as set forth in item \ref{smoking} of Schedule \ref{therental} of this Agreement, and also for criminal or drug related activities as set forth in items \ref{criminal} and \ref{drug} of Schedule \ref{behavior} of this Agreement. \management{} may terminate this Agreement for failure to meet all the obligations set forth in item \ref{obligations} of Schedule \ref{behavior} of this Agreement.
 	
 		\item \textbf{Impermanence, \rules{}, and \standards{}}\\
 			Lodger further understands and agrees with the following: 
@@ -97,6 +99,7 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 		\item \textbf{\meta{}}.
 			Further terms relating to this Agreement itself are set forth in Schedule \ref{meta} of this Agreement.
 
+		\item \textbf{\disclosures{}}. See Schedule \ref{disclosures}: \disclosures{}.
 		\item \textbf{Honesty}.
 			The Lodger understands and agrees that \management{} is entering into this Agreement in reliance upon the truth, completeness and accuracy of information provided in the Lodger's initial application for a lodging rental. Furthermore, the Lodger understands and agrees that \management{} is relying on the truth, completeness and accuracy of all future information to be provided by the Lodger. Should it be discovered that any such information is false, misleading, or incomplete, \management{} may terminate this Agreement which may result in additional rent being owed by the Lodger and/or lead to other legal action and remedies which may be appropriate under the law. 
 
@@ -173,7 +176,7 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 			broadband internet
 
 		\item \textbf{Rent}\\* \label{rent}
-			\$200.00
+			\rent{}
 
 		\item \textbf{\paymenttime{}}\\* \label{paymenttime}
 			Defined in item \ref{defpaytime} of Schedule \ref{payments} of this Agreement.
@@ -211,7 +214,7 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 				\textsuperscript{Social Security Number}
 				
 				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Signature (Print Name)}
+				\textsuperscript{Signature (\lname{})}
 			\end{minipage}%
 
 		\item \textbf{\lemail{}} \label{lemail}
@@ -242,9 +245,11 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 
 \tabmed{Schedule \ref{meta}} \tablarge{\textbf{\meta{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
 
+\tabmed{Schedule \ref{disclosures}} \tablarge{\textbf{\disclosures{}}} \tabsmall{Initial:\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}} \vspace{.3cm}
+
 \vspace{1cm}
 \noindent\tabmed{Lodger Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
-\tabmed{} \tablarge{\textsuperscript{Print Name}}
+\tabmed{} \tablarge{\textsuperscript{\lname{}}}
 
 \vspace{.5cm}
 \noindent\tabmed{Owner Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
@@ -277,6 +282,7 @@ WITNESS my hand and official seal.
 \vspace{2.5cm}
 			(Place Notary Seal Above)
 \section*{} %therental
+\newpage
 \begin{schedule}{\therental{}} \label{therental}
 \begin{enumerate}
 	\item \textbf{Rental And Occupancy Of Lodging}. 
@@ -287,7 +293,7 @@ WITNESS my hand and official seal.
 			\item \textbf{Use Of Lodging}. The \room{} shall be used only for residential purposes. The Lodger shall not, in whole or in part, assign this Agreement, or sublet or transfer possession of any part or all of the \room{}. The Lodger shall not give accommodations to paid boarders or residents. Occupancy by guests is prohibited without the Owner's prior written consent and will be considered a breach of this agreement. If employed by \management{}, Lodger may not have guests while on duty under that employment. No guest may visit for more than six (6) hours in a day without the written permission of a member of \management{}. The Lodger shall give prompt prior written notice to \management{} in the event the Lodger will be absent from \apt{} for more than 7 calendar days. Such notice shall include information regarding the expected duration of the absence and where the Lodger may be contacted in the event of an emergency. 
 			\item \textbf{No Smoking}. \label{smoking}
 				As posted in many places on the \condo{} property, smoking is prohibited on \condo{} property, and is enforceable under city laws where \condo{} is located. \management{} will terminate this Agreement as provided in item \ref{terminate} of this section if \management{} suspects Lodger, guests, or others under lodger's control, have smoked in \room{}, \apt{}, or on \condo{} property.
-			\item \textbf{Appliances}. \management{} shall provide those appliances listed in item \ref{appliances} of section \ref{definitions} of this Agreement{}, (the ``\appliances{}''), in good working order and maintain same in good working order during the time the \room{} is rented to Lodger.
+			\item \textbf{Appliances}. \management{} shall provide and maintain those appliances listed in item \ref{appliances} of section \ref{definitions} of this Agreement{}, (the ``\appliances{}''), in good working order during the time the \room{} is rented to Lodger.
 			\item \textbf{\furniture{}}. \management{} shall provide the \furniture{} listed in item \ref{furniture} of section \ref{definitions} of this Agreement{} (``\furniture{}'') in usable condition and maintain same in usable condition during the time \room{} is rented to Lodger.
 		\end{enumerate}
 	\item \textbf{\livingroom{}}. Lodger shall not enter Owner's private areas as listed in item \ref{livingroom} of section \ref{definitions} of this Agreement (``\livingroom{}'') unless requested to do so by a member of \management{}.
@@ -295,14 +301,25 @@ WITNESS my hand and official seal.
 \end{schedule}
 
 \section*{} %payments
+\newpage
 \begin{schedule}{\payments{}} \label{payments}
 \begin{enumerate}
+	\item \textbf{Method Of Payment Of Monetary Obligations}. \label{paymethod}
+		\begin{enumerate} 
+			\item \textbf{Venmo}. All payments of Rent and any other monetary sums due under the terms of this Agreement shall be made via Venmo subject to its terms of service, https://venmo.com/w/legal/us-user-agreement/. 
+				\begin{enumerate}
+					\item Venmo payments shall be made to the Venmo account associated with the Owner's email address (the ``\ownermail{}'') that is set forth in item \ref{ownermail} of section \ref{definitions} of this Agreement{}. 
+					\item \label{defpaytime} 
+						Venmo will notify \management{} of the payment via the \ownermail{}, and \management{} will consider the payment as having been received at the time and date stamped on the Venmo notification (``\paymenttime{}''). 
+					\item For reasons of security and convenience, \management{} shall not accept cash payments. Unless otherwise directed in writing by \management{}, all payments shall be made through Venmo's website https://venmo.com/, one of Venmo's apps for Android/iOS, or by any other method Venmo provides. 
+				\end{enumerate}
+			\item \textbf{Receipt}. \management{} will provide receipt of payment via one of the \lemail{} that is set forth in item \ref{lemail} of section \ref{definitions} of this Agreement{} (``\lemail{}''), and record payment was received at the \paymenttime{}. 
+		\end{enumerate}
 	\item \textbf{Security Deposit And Payments Of Rent Due Under This Agreement}. 
 		\begin{enumerate}
 			\item \textbf{Security Deposit}. There is no security deposit. 
 			\item \textbf{Rental Term}. The term of the rental will begin on Saturday \datefillin, 2015 (``\firstday{}'') and will continue on a week-to-week basis. The Lodger may put personal property into, and begin making use of, the \room{} on the \firstday{}.
-			\item \textbf{Rent And Rent Due Date}. The Lodger shall pay the Owner a weekly rent of\\* \\ 
-				\$\datefillin{} (the ``Rent''). Rent shall be paid on or before the seventh (7th) day of each rental week (``\rentweek{}'') as defined in item \ref{rentweek} of section \ref{definitions} of this Agreement. 
+			\item \textbf{Rent And Rent Due Date}. The Lodger shall pay the Owner a weekly rent of \rent{}. Rent shall be paid on or before the seventh (7th) day of each rental week (``\rentweek{}'') as defined in item \ref{rentweek} of section \ref{definitions} of this Agreement. 
 			\item \textbf{Delinquent Rent}. \label{due}
 					Rent is delinquent if the \paymenttime{} as defined in item \ref{defpaytime} of this section of this Agreement (the ``\paymenttime{}'') is later than 11:59pm Pacific Standard Time on the seventh (7th) day of the week when due. 
 			\item \textbf{Pay Or Quit}. Should Lodger allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, a notice to pay the Rent or quit will be served. 
@@ -318,36 +335,24 @@ WITNESS my hand and official seal.
 			\item \textbf{Other Charges}. Lodger shall pay for the cost of repairing any damages made to the \room{} and the public areas caused by the Lodger, guests, or other visitors of the Lodger. These other charges (``Other Charges'') shall be billed to Lodger and will specify the damaged items, corrective action taken, and cost of labor and/or materials to correct the damages. 
 			\item \textbf{Billings And Payments}. For any Other Charges incurred by the Lodger, \management{} shall give the Lodger a written statement which sets forth the amount and nature of the charges owed at least seven (7) days before such charges become due and payable. Payment shall be made in accordance with item \ref{paymethod} of this section. 
 		\end{enumerate} 
-	\item \textbf{Method Of Payment Of Monetary Obligations}. \label{paymethod}
-		\begin{enumerate} 
-			\item \textbf{Venmo}. All payments of Rent and any other monetary sums due under the terms of this Agreement shall be made via Venmo subject to its terms of service, https://venmo.com/w/legal/us-user-agreement/. 
-				\begin{enumerate}
-					\item Venmo payments shall be made to the Venmo account associated with the Owner's email address (the ``\ownermail{}'') that is set forth in item \ref{ownermail} of section \ref{definitions} of this Agreement{}. 
-					\item \label{defpaytime} 
-						Venmo will notify \management{} of the payment via the \ownermail{}, and \management{} will consider the payment as having been received at the time and date stamped on the Venmo notification (``\paymenttime{}''). 
-					\item For reasons of security and convenience, \management{} shall not accept cash payments. Unless otherwise directed in writing by \management{}, all payments shall be made through Venmo's website https://venmo.com/, one of Venmo's apps for Android/iOS, or by any other method Venmo provides. 
-				\end{enumerate}
-			\item \textbf{Receipt}. \management{} will provide receipt of payment via one of the \lemail{} that is set forth in item \ref{lemail} of section \ref{definitions} of this Agreement{}, and record payment was received at the \paymenttime{}. 
-		\end{enumerate}
-	\item \textbf{Confidentiality Of Record}. 
-		Confidential records and information obtained by \management{} shall not be disclosed to third parties except in accordance with law. 
 \end{enumerate}
 \end{schedule}
 
 \section*{} %terminating
+\newpage
 \begin{schedule}{\terminating{}} \label{terminating}
 \begin{enumerate}
 	\item \textbf{Defaults And Terminations}. 
 		\begin{enumerate}
 			\item \textbf{Terminations}. 
-				This Agreement shall be terminated upon the death of Lodger, upon a voluntary termination of this Agreement by Lodger, or by \management{}. \management{} may terminate this Agreement for various reasons, including, but not limited to, the nonpayment of rent, a serious or repeated violation of a material term of this Agreement, smoking, any Criminal Activity or Drug-Related Criminal Activity as set forth in items \ref{criminal} or \ref{drug} of Schedule \ref{behavior} of this Agreement, or for any other reasons in the discretion of \management{}.
+				This Agreement shall be terminated upon the death of Lodger, upon a voluntary termination of this Agreement by Lodger, or by \management{}. 
 			\item \textbf{Voluntary Termination Notices}. 
 				Voluntary termination of this Agreement by the Lodger shall be by written seven (7) day notice to \management{}. Such notice shall be on a form designated by \management{} and signed by Lodger setting forth the last day of his or her occupancy. Such notice shall be delivered in person to \management{}, or preferably via the \management{}'s email address (the ``\myemail{}'') that is set forth in item \ref{myemail} of section \ref{definitions} of this Agreement{}. 
 			\item \textbf{Involuntary Termination Notices}. \label{terminate}
 				In terminating this Agreement, \management{} shall give a written notice of termination (``Notice of Termination'') of: 
 				\begin{enumerate}
 					\item 3 days in the case of failure to pay rent; 
-					\item A reasonable time considering the seriousness of the situation (but not exceeding 7 days) when the health or safety of Owner, \management{}, other \condo{} residents or \condo{} management's employees is threatened; and 
+					\item A reasonable time considering the seriousness of the situation (but not exceeding 7 days) when the health or safety of Owner, \management{}, or any other \condo{} resident is threatened; and 
 					\item 7 days in any other case. 
 				\end{enumerate} 
 				The Notice of Termination shall both state that Lodger is not welcome in \apt{} anymore, and provide a reminder that only Owner and Lodger reside in this \apt{}. If the notice period is less than 7 days, the Notice of Termination shall also provide the justifying reason for shorter notice. 
@@ -369,16 +374,16 @@ WITNESS my hand and official seal.
 \end{enumerate}
 \end{schedule}
 
-
 \section*{} %behavior
+\vspace{-1cm}
 \begin{schedule}{\behavior{}} \label{behavior}
 \begin{enumerate}
 	\item \textbf{Criminal And Drug Related Activities}. 
-		In an effort to keep \mom{} safe in her own home, \management{} is taking a ``zero tolerance' position towards the commission of any of the Criminal or Drug-Related Criminal activities described in items of this section of the Agreement that follow. 
+		In an effort to keep \mom{} safe in her own home, \management{} is taking a ``zero tolerance' position towards any of the Criminal or Drug-Related Criminal activities described on this page. 
 		\begin{enumerate} 
 			\item \textbf{Criminal Activity}. \label{criminal}
 				\begin{enumerate}
-					\item No Lodger, guest, or other person under his or her control shall commit any criminal or illegal act, on or off the property of \condo{} at the address listed in item \ref{condo} of section \ref{definitions} of this Agreement (``\condo{}'') which threatens 
+					\item Lodger, guest, or other person under his or her control shall not commit any criminal or illegal act, on or off the property of \condo{} which threatens 
 						\begin{enumerate} 
 							\item the health or safety of any \condo{} resident, 
 							\item the rights of any \condo{} resident to the peaceful and quiet enjoyment of his or her residence, 
@@ -395,7 +400,7 @@ WITNESS my hand and official seal.
 						As used throughout this Agreement, ``other person under his or her control' shall mean any person other than the Lodger, or guest, who enters \condo{} property at the express or implied invitation of the Lodger, or his or her guest. 
 				\end{enumerate}
 			\item \textbf{Criminal Drug Related Activity}. \label{drug}
-				No Lodger, guest, or other person under his or her control shall engage in any Drug-Related Criminal Activity on or off the property of \condo{}. As used in this Agreement, ``Drug-Related Criminal Activity' shall mean the illegal manufacture, sale, distribution, use or possession with the intent to manufacture, sell, distribute or use a controlled substance as defined in section 102 of the Controlled Substances Act (21 U.S.C. 802). The Lodger specifically understands and acknowledges that: 
+				Lodger, guest, or other person under his or her control shall not engage in any Drug-Related Criminal Activity on or off the property of \condo{}. As used in this Agreement, ``Drug-Related Criminal Activity' shall mean the illegal manufacture, sale, distribution, use or possession with the intent to manufacture, sell, distribute or use a controlled substance as defined in section 102 of the Controlled Substances Act (21 U.S.C. 802). The Lodger specifically understands and acknowledges that: 
 				\begin{enumerate}
 					\item The Lodger has an affirmative obligation to ensure that the Lodger, or guest, or other person under his or her control do not commit any Drug-Related Criminal Activity; 
 					\item The Lodger shall be held strictly and vicariously liable for any such Drug-Related Criminal Activity which is committed by a guest, or other person under his or her control; and 
@@ -403,56 +408,55 @@ WITNESS my hand and official seal.
 				\end{enumerate}
 		\end{enumerate}
 	\item \textbf{Lodger's Obligations}. \label{obligations}
-		In addition to obligations stated elsewhere in this Agreement, the Lodger agrees to the following: 
+		In addition to other obligations stated in Agreement, Lodger agrees that Lodger, any guest, and any other person under his or her control shall
 		\begin{enumerate}
-			\item \textbf{Nuisance}. No Lodger, or guest, or other person under his or her control shall commit or maintain a nuisance on or about the \room{}, \apt{}, or \condo{}. 
-			\item \textbf{Impairment Of The Environment}. To conduct himself or herself, and to cause guests and other persons who are under his or her control, to conduct themselves in a manner which will not impair the physical or social environment of \apt{} or \condo{}. 
-			\item \textbf{Quiet Enjoyment}. To conduct himself or herself, and to cause guests and other persons under his or her control, to conduct themselves in a manner that will not disturb the rights of Owner or other residents of \condo{} to the peaceful enjoyment of their residences or the public areas. 
-			\item \textbf{Interference With Job Responsibilities}. No Lodger, or guest, or other person under the control of the Lodger shall interfere with the job responsibilities of authorized vendors, service personnel or representatives of \management{} or \condo{} management. 
-			\item \textbf{\rules{}}. To abide by all the \rules{} in Schedule A of this Agreement (``\rules{}'').
-			\item \textbf{Health And Safety}. To comply with all obligations imposed upon Lodger by applicable provisions of Federal, State and local building and housing codes that materially affect health and safety; and to keep the \room{} and such other areas as may be assigned to the Lodger, in a clean and safe condition. 
-			\item \textbf{Notice Of Repairs}. To promptly notify \management{} whenever repairs to his or her \room{} or the \apt{} are required. 
-			\item \textbf{\standards{}}. To maintain the \room{} and \shared{} in a clean and sanitary manner in accordance with Schedule B of this Agreement (``\standards{}'').
-			\item \textbf{Rubbish Removal}. To dispose of all garbage, rubbish and other waste from the \room{} in a sanitary and safe manner in the receptacles and trash bins provided by \management{} or owned by Lodger. 
-			\item \textbf{Care In Use Of Facilities}. To use only in a reasonable and safe manner all electrical, plumbing, sanitary, heating, ventilating, air-conditioning and other facilities and appurtenances. 
-			\item \textbf{Damage To \room{}, \apt{}, Or \condo{}}. Lodger, or guest, or other person under his or her control shall not deface, paint, damage, destroy, tamper with or remove any part of the \room{}, \apt{}, Or \condo{}.
-			\item \textbf{Alterations}. To make no repairs, alterations or additions of any kind without the prior written consent of \management{}, including but not limited to, painting, changing locks, or installing security bars, doors or safety devices. \management{} may withhold such consent at \management{}'s sole discretion. 
-			\item \textbf{Signs}. Not to display on or about the \room{}, \apt{}, or \condo{} any signs or advertisements of any kind including, but not limited to, signs for goods or services. 
+			\item \textbf{(Nuisance)} not commit or maintain a nuisance on or about the \room{}, \apt{}, or \condo{}; 
+			\item \textbf{(Impairment Of The Environment)} conduct himself or herself in a manner which will not impair the physical or social environment of \apt{} or \condo{}; 
+			\item \textbf{(Quiet Enjoyment)} conduct himself or herself in a manner that will not disturb the rights of Owner or other residents of \condo{} to the peaceful enjoyment of their residences or the public areas; 
+			\item \textbf{(Interference With Job Responsibilities)} not interfere with the job responsibilities of authorized vendors, service personnel or representatives of \management{} or \condo{} management; 
+			\item \textbf{(\rules{})} abide by all the \rules{};
+			\item \textbf{(Health And Safety)} comply with all obligations imposed upon Lodger by applicable provisions of Federal, State and local building and housing codes that materially affect health and safety; keep the \room{} and such other areas as may be assigned to the Lodger, in a clean and safe condition; 
+			\item \textbf{(Notice Of Repairs)} promptly notify \management{} whenever repairs to his or her \room{} or the \apt{} are required; 
+			\item \textbf{(\standards{})} maintain the \room{} and \shared{} in a clean and sanitary manner in accordance with \standards{};
+			\item \textbf{(Rubbish Removal)} dispose of all garbage, rubbish and other waste from the \room{} in a sanitary and safe manner in the receptacles and trash bins provided by \management{} or owned by Lodger; 
+			\item \textbf{(Care In Use Of Facilities)} use only in a reasonable and safe manner all electrical, plumbing, sanitary, heating, ventilating, air-conditioning and other facilities and appurtenances; 
+			\item \textbf{(Damage To \room{}, \apt{}, Or \condo{})} not deface, paint, damage, destroy, tamper with or remove any part of the \room{}, \apt{}, Or \condo{};
+			\item \textbf{(Alterations)} make no repairs, alterations or additions of any kind without the prior written consent of \management{}, including but not limited to, painting, changing locks, or installing security bars, doors or safety devices; 
+			\item \textbf{(Signs)} not display on or about the \room{}, \apt{}, or \condo{} any signs or advertisements of any kind including, but not limited to, signs for goods or services. 
 		\end{enumerate}
 \end{enumerate}
 \end{schedule}
 
 \section*{} % rules
+\newpage
 \begin{schedule}{\rules{}} \label{rules}
-These \rules{} are some of Lodger's obligations under this Agreement. These Residential Rules may be amended from time to time by \management{} upon 7 day written notice to Lodger setting forth the proposed modifications. A copy of such notice shall be mailed to the Lodger, and emailed to one of the Lodger's email addresses (``\lemail{}'') that is listed in item \ref{lemail} of section \ref{definitions} of this Agreement.
-
 \begin{enumerate}
 	\item Lodger shall not smoke in \room{}, \apt{}, or anywhere on \condo{} property.
-	\item No large moving vans or vehicles capable of damaging the balconies may enter the gated parking area. Only when necessary, momentarily park a large vehicle outside the main gate and leave enough space for other vehicles to maneuver in and out of the driveway. 
+	\item No large moving vans or vehicles capable of damaging the balconies may enter the gated parking area. Only when necessary, momentarily park a large vehicle outside the main gate and leave enough space for other vehicles to maneuver in and out.
 	\item Trailers, nonoperative motor vehicles and motor vehicles without current registration shall not be permitted within \condo{}. 
-	\item Lodger may use his or her assigned parking spot to park only licensed vehicles which \textit{fit the length and width of the designated space}.
-	\item Do not park in the driveway. For safety reasons, the driveway area is always to be kept clear. Failure to meet with this rule will result in a Parking Ticket from Pasadena Law Enforcement. 
-	\item Only vehicles with currently valid Pasadena parking permits may park overnight on public streets near \condo{}.\\* See http://cityofpasadena.net/Transportation/Parking\_Permits/.
+	\item Lodger may use his or her assigned parking spot to park only licensed vehicles which fit the length and width of the designated space.
+	\item Do not park in the driveway. For safety reasons, the driveway area is always to be kept clear. Failure to meet with this rule will result in a Parking Ticket from Pasadena.
+	\item Only vehicles with valid Pasadena parking permits may park overnight on public streets near \condo{}. cityofpasadena.net/Transportation/Parking\_Permits/.
 	\item Within the \condo{} gated parking area, Lodger shall only park in his or her assigned space. Any vehicles parked in violation will be towed away at Lodger's expense.
-	\item Vehicles shall only be parked in designated areas. Absolutely no parking on the lawns or sidewalks. 
-	\item Motorcycles, mini-bikes, and bicycles may not be chained to parking area posts or stored anywhere else in the common areas. Motorcycles may be parked in the lodger's assigned space only.
+	\item Vehicles shall only be parked in designated areas. Absolutely no parking on sidewalks. 
+	\item Motorcycles, mini-bikes, and bicycles may not be chained to parking area posts or stored in common areas. Motorcycles may be parked in the lodger's assigned space only.
 	\item No vehicle repairs or maintenance may be done within the parking area. 
 	\item The drive-way speed limit is 5 mph. Please be careful of pedestrians.
 	\item Do not blow horns or race engines within the parking area. 
 	\item Without prior written approval of \management{}, nothing with any dimension greater than two (2) feet may be brought into the \room{}, \apt{}, or \condo{}.
-	\item Bicycle riding, skateboarding, rollerskating and game playing is permitted in the parking area or on sidewalks in the common areas provided that there is parental supervision.
+	\item Bicycle riding, skateboarding, rollerskating and game playing is permitted in the parking area or on sidewalks in the common areas if there is parental supervision.
 	\item Items shall not be stored in the carport area.
-	\item Please place trash in the dumpster, not alongside it. Residents are responsible for making arrangements for disposing of large items or hazardous waste. Please do not place loose trash into dumpster. Please reclose the lid to keep odors to a minimum. Large boxes should be torn-up before placing in dumpster, this also includes Christmas trees. Dumpsters are emptied on Wednesday mornings. 
-	\item No large unwanted objects (that is: furniture, mattresses, TV's, etc.) shall be put in or near the dumpsters.
+	\item Please place trash in the dumpster, not alongside it. Please do not place loose trash into dumpster. Please reclose the lid to keep odors to a minimum. Large boxes should be torn-up before placing in dumpster. 
+	\item Nothing large (furniture, mattresses, TV's, etc.) shall be put in or near the dumpsters. Residents are responsible for making arrangements for disposing of large items or hazardous waste. 
 	\item The walk-through security gate must be kept locked at all times for security reasons. Please do not disable this lock or prop the door open. 
-	\item Please use your automatic gate openers each time you drive through the gate. Please be sure the gate closes behind you. It is recommended that the gate opener is left in the car.
+	\item Please use your automatic gate openers each time you drive through the gate. Please be sure the gate closes behind you.
 	\item Without prior written approval of \management{}, nothing provided in the \room{} may be moved or removed from the \room{}.
 	\item Without prior written approval of \management{}, personal property shall not be stored outside the \room{} at any time. 
 	\item Without prior written approval of \management{}, nothing provided in \shared{} may be removed from the area it is in other than items in closets or cupboards. Items in cupboards must be cleaned and returned to the cupboard daily.
 	\item Nothing shall be thrown out windows or doors. All trash and garbage shall be deposited in outside trash bins or trash cans provided by \management{}. 
 	\item All common areas including, but not limited to, sidewalks, courts, entry passages, halls and stairways shall remain free from obstruction at all times. 
 	\item Musical instruments; radios; television sets; CD, record and tape players; and other musical devices shall not be played at a volume audible outside the \room{} at anytime. 
-	\item At no time shall the Lodger, guest or other individual under the control of the Lodger, create noise which is reasonably objectionable to other residents of \condo{}, or objectionable to Owner, even if not reasonably objectionable. 
+	\item At no time shall the Lodger, guest or other individual under the control of the Lodger, create noise which is objectionable to other residents of \condo{} or Owner.
 	\item Trash cans, bottles, brooms, mops, etc., should be kept out of sight.
 	\item No items, including but not limited to rugs and clothing, are to be shaken, cleaned or hung on, or from, windows, balconies, doorways, walkways, or fences. 
 	\item Balconies and patios should not be used for storage.
@@ -460,48 +464,49 @@ These \rules{} are some of Lodger's obligations under this Agreement. These Resi
 	\item Outside antennas are prohibited, including satellite dishes.
 	\item Flammable materials including, but not limited to, lighter fluid, gasoline, solvents and motor oil shall not be kept in or about the \room{}. 
 	\item Lodger is required to maintain the grounds immediately surrounding the \room{} in good condition including, but not limited to, free of debris, waste, trash and rubbish. 
-	\item The removal of existing plants or the addition of new ones in the common areas of \condo{} is prohibited.
+	\item Do not move or put plants in the common areas of \condo{}.
 	\item Lodger may not borrow or remove equipment or property from the common areas of \condo{}. 
-	\item No pets or animals other than a single small one (dog or cat) approved in writing by \management{} shall be kept. For that pet, Lodger shall keep it wearing a current license tag issued by The Pasadena Humane Society at all times, keep track of the current rabies certificate for it, and thoroughly clean up after it, using appropriate measures to reduce pet odors and stains. Lodger shall walk his or her dog frequently enough to reduce indoor issues. However, Owner is against corporal punishment or overly harsh words towards pets, and Lodger shall refrain from correcting pet behavior in those ways.
-	\item The Lodger shall not create a mess in the laundry areas. The Lodger shall remove all lint from the dryer after using same. 
-	\item	No Lodger, or Guest shall be permitted on the Roof. 
-	\item Writing or painting on any surface of \apt{} or \condo{} property shall be prohibited. 
+	\item Only one pet may be kept in \apt, but no pet or animal may be kept without obtaining the written consent from a member of Management first; if a member of Management grants consent to have a pet, then the Lodger must keep it wearing a current license tag issued by The Pasadena Humane Society, keep track of the current rabies certificate for it, and thoroughly clean up after it, using appropriate measures to reduce pet odors and stains. Lodger shall walk his or her dog frequently enough to reduce indoor issues. However, Owner is against corporal punishment or overly harsh words towards pets, and Lodger shall refrain from correcting the pet in those ways.
+	\item The Lodger shall not create a mess in the laundry areas. 
+	\item	Lodger, or Guest shall not be permitted on the Roof. 
+	\item No writing or painting on any surface of \apt{} or \condo{} property.
 	\item Pigeons and other wildlife are not to be fed. 
 	\item No playing with fire. 
-	\item No Lodger shall damage, remove or otherwise render inoperable any smoke detector or other safety devices or equipment within the \room{}, apt{}, or condo{}. 
+	\item Lodger shall not damage, remove or otherwise render inoperable any smoke detector or other safety devices or equipment within the \room{}, apt{}, or condo{}. 
 	\item Alcoholic beverages shall not be consumed in the \shared{} or the public areas of \condo{}. 
 	\item No explosives or firecrackers shall be kept or exploded on or about the \room{}, \apt{}, or \condo{}. 
 	\item No littering shall be permitted anywhere within the common areas of \condo{}. All trash shall be discarded in the trash bins. 
 	\item Abuse of alcohol which causes behavior that interferes with the health, safety, or the right to the peaceful enjoyment of \condo{} property by Owner, \condo{} residents or personnel will not be tolerated. 
 	\item Other than as requested by Owner, Lodger shall not adjust the thermostat which controls the \apt{}'s central heating and air conditioning.
-	\item Although provided with portable air conditioner and heater, those appliances are not to be used in a way contrary to the Owner's use of the central heating and air conditioning in the \apt{}. That is, if Owner is heating the \apt{}, Lodger shall not cool the \room{}, and if Owner is cooling the \apt{}, Lodger shall not heat the \room{}. The portable heater and air conditioner are provided so that Lodger may cool or heat the room beyond what the Owner has set the central heating and air conditioning to do.
+	\item Although provided with portable air conditioner and heater, those appliances are not to be used in a way contrary to the Owner's use of the central heating and air conditioning in the \apt{}. That is, if Owner is heating the \apt{}, Lodger shall not cool the \room{}, and if Owner is cooling the \apt{}, Lodger shall not heat the \room{}. The portable heater and air conditioner are provided so that Lodger may cool or heat the room beyond the central thermostat setting.
 \end{enumerate}
 \end{schedule}
 
 \section*{} % standards
-\begin{schedule}{\standards{}} \label{standards}
-These \standards{} (``Housekeeping Standards'') are some of Lodger's obligations under this Agreement. These Housekeeping Standards may be amended from time to time by \management{} upon 7 day written notice to Lodger setting forth the proposed modifications. A copy of such notice shall be mailed to the Lodger, and emailed to one of the resident notification methods (``\lemail{}'') that is listed in item \ref{lemail} of section \ref{definitions} of this Agreement. 
+\newpage
+\begin{schedule}{\standards{}} \label{standards}\vspace{.25cm}\\*
+	The Lodger shall
 \begin{enumerate}
-	\item The Lodger shall thoroughly clean up after his or her pet using carpet cleaner, water, towels, vacuums, and all other appropriate cleaning materials and appliances, and immediately wash and dry any towels and other washable materials used.
-	\item The Lodger shall maintain an extra-large cat litter box for any cat brought into \room{} by Lodger, thoroughly cleaning in and around it daily. The longest dimension of the litter box must be 6'' longer than the longest cat, not counting tail, and must have walls tall enough to keep 3'' deep cat litter inside the box when a cat is using it.
-	\item The Lodger shall keep and maintain the walls and ceilings of the \room{} clean and free of all dirt, grease, holes, cobwebs and fingerprints. 
-	\item The Lodger shall keep and maintain the floors of the \room{} clean, dry and free from all hazardous conditions. 
-	\item The Lodger shall keep and maintain the windows and window ledges of the \room{} clean and free of all objects. All window coverings shall be clean and kept in a good state of repair. 
-	\item The Lodger shall keep and maintain the interior trim of the \room{} clean and free of all dirt, grease, gouges and scratches. 
-	\item The Lodger shall keep and maintain the doors of the \room{} clean and free of all dirt, grease, holes, and fingerprints. All doors shall be maintained with a working hardware and doorstop. 
-	\item The Lodger shall keep and maintain the heating vents and units of the \room{} clean and free of all dirt, grease, cobwebs and fingerprints. Access to the heating units shall not be obstructed. 
-	\item The Lodger shall keep and maintain the \room{} free from all clutter and trash. 
-	\item The Lodger shall keep and maintain all sinks and waste pipes of the \apt{} free from obstructions. 
-	\item The Lodger shall keep and maintain the refrigerator of the \apt{} clean and free of spoiled food.
-	\item The Lodger shall keep and maintain all kitchen cabinets of the \apt{} clean and neat. Cabinet surfaces, food storage areas and countertops should be kept free of grease and spilled food. 
-	\item The Lodger shall keep and maintain all dishes clean and safely stored when not in use. 
-	\item Dishes, pots, or pans and all other cooking utensils used by Lodger that are owned by Owner must be cleaned daily.
-	\item The Lodger shall not leave dishes, pots, pans, or other cooking utensils in the sink for any amount of time. Any dishes, pots, pans, or cooking utensils used by Lodger waiting to be cleaned must be kept in the container provided by \management{} for that purpose, even while still cooking or preparing food, and only put in the sink while actually washing them. The container used to hold dirty dishes, pots, and pans, must also be washed after each use.
-	\item The Lodger shall keep and maintain all closets and other storage areas neat and clean. 
-	\item The Lodger shall not allow trash and garbage to accumulate in the \room{} for more than one week. While in the \room{}, all trash and garbage shall be kept in appropriate covered containers. 
-	\item The Lodger shall keep and maintain the bathroom exhaust fan, if any, free of dust. 
-	\item The Lodger shall keep and maintain the toilet and tank clean and free of odors. 
-	\item The Lodger shall keep and maintain the tub and/or shower clean and free of mildew and mold. Shower curtains shall be maintained in a good clean condition. Shower curtains provided by \management{} shall not be replaced except by \management{}.
+	\item thoroughly clean up after his or her pet using carpet cleaner, water, towels, vacuums, and all other appropriate cleaning materials and appliances, and immediately wash and dry any towels and other washable materials used;
+	\item maintain an extra-large cat litter box (6'' longer than cat's body with walls tall enough to keep 3'' deep cat litter inside the box while in use) for any cat brought into \room{} by Lodger, thoroughly cleaning in and around it daily;
+	\item keep the walls and ceilings clean;
+	\item keep the floors clean, dry and free of hazards; 
+	\item keep the windows, window coverings, and window ledges clean and free of objects; 
+	\item keep the interior trim clean and free of all dirt, grease, gouges and scratches; 
+	\item keep the doors of the \room{} clean;
+	\item keep the heating vents and units of the \room{} clean and unobstructed;
+	\item keep the \room{} free from all clutter and trash; 
+	\item keep all sinks and waste pipes of the \apt{} free from obstructions; 
+	\item keep the refrigerator of the \apt{} clean and free of spoiled food;
+	\item keep all kitchen cabinets and countertops of the \apt{} clean and neat;
+	\item keep all dishes clean and safely stored when not in use; 
+	\item daily clean the dishes, pots, or pans and all other cooking utensils used by Lodger that are owned by Owner;
+	\item not store dishes, pots, pans, or other cooking utensils in the sink by puting them in the container provided by \management{} for that purpose until actually washing them;
+	\item keep all closets and other storage areas neat and clean; 
+	\item not allow trash and garbage to accumulate in the \room{} for more than one week, keeping it in appropriately covered containers; 
+	\item keep the bathroom exhaust fan, if any, free of dust; 
+	\item keep the toilet and tank clean and free of odors; 
+	\item keep the tub/shower and curtains clean and free of mildew and mold. Shower curtains provided by \management{} shall not be replaced except by \management{}.
 \end{enumerate}
 \end{schedule}
 
@@ -528,8 +533,17 @@ These \standards{} (``Housekeeping Standards'') are some of Lodger's obligations
 		Providing the Lodger is not in default of any term, condition or covenant under any other rental agreement that is in force between the Lodger and \management{} at the time this Agreement becomes effective, all prior rental agreements will terminate. In all cases where the Lodger is in default under a rental agreement with \management{} at the time this Agreement becomes effective, any default under that agreement shall be deemed a default of this Agreement. 
 	\item \textbf{Automatic Renewal}.
 		Unless terminated, this Agreement shall be automatically renewed weekly on the same terms and conditions. 
+\end{enumerate}
+\end{schedule}
+
+\section*{} %disclosures
+\newpage
+\begin{schedule}{\disclosures{}} \label{disclosures}
+\begin{enumerate}
 	\item \textbf{Megan's Law Disclosure}.
 		``Notice: Pursuant to Section 290.46 of the Penal Code, information about specified registered sex offenders is made available to the public via an Internet Web site maintained by the Department of Justice at www.meganslaw.ca.gov. Depending on an offender's criminal history, this information will include either the address at which the offender resides or the community of residence and ZIP Code in which he or she resides.''
+	\item \textbf{Confidentiality Of Record}. 
+		Confidential records and information obtained by \management{} shall not be disclosed to third parties except in accordance with law. 
 \end{enumerate}
 \end{schedule}
 
