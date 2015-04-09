@@ -19,10 +19,11 @@
 
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
 \pagestyle{fancy}
 \fancyhf{
 	\lhead{\centering \agreementtitle{}}
-	\rfoot{Page \thepage}}
+	\rfoot{Page \thepage~of~\pageref{LastPage}}}
 \usepackage{multicol}
 \overfullrule=2cm
 \renewcommand{\thesection}{\Roman{section}}
