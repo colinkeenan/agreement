@@ -2,8 +2,10 @@
 \newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
 
 \newlength{\tabcont}
+\newcommand{\tabtiny}[1]{\makebox[1.8em][l]{#1}\ignorespaces}
 \newcommand{\tabsmall}[1]{\makebox[.14\linewidth][l]{#1}\ignorespaces}
 \newcommand{\tabmed}[1]{\makebox[.22\linewidth][l]{#1}\ignorespaces}
+\newcommand{\tablmed}[1]{\makebox[.33\linewidth][l]{#1}\ignorespaces}
 \newcommand{\tablarge}[1]{\makebox[.55\linewidth][l]{#1}\ignorespaces}
 \newcommand{\datefillin}{\hspace{0.2cm}\makebox[3cm]{\hrulefill}}
 
@@ -35,6 +37,7 @@
 \newcommand{\standards}{Residential Housekeeping Standards}
 
 \newcommand{\mom}{Joan B Harrison}
+\newcommand{\lname}{Lodger's Name}
 \newcommand{\ownermail}{Owner Email}
 \newcommand{\management}{Management}
 \newcommand{\myemail}{Management Email}
@@ -79,10 +82,10 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 				\item As set forth in the provisions of Section 1946.5 of California Civil Code, upon expiration of the 3-7 day notice period provided, \management{} may effect the removal of Lodger from \apt{} pursuant to the provisions of Section 602.3 of the California Penal Code or other applicable provisions of law, because any right of Lodger to remain in the dwelling unit or any part thereof is terminated by operation of law.
 			\end{enumerate} 
 
-		\item \textbf{\behavior{}}\\*
+		\item \textbf{\behavior{}}.
 			\management{} will terminate this Agreement for smoking as set forth in item \ref{smoking} of Schedule \ref{therental} of this Agreement, criminal, or drug related activities as set forth in items \ref{criminal} and \ref{drug} of Schedule \ref{behavior} of this Agreement. \management{} may terminate this Agreement for failure to meet all the obligations set forth in item \ref{obligations} of Schedule \ref{behavior} of this Agreement.
 	
-		\item \textbf{Impermanence, \rules{}, and \standards{}}\\*
+		\item \textbf{Impermanence, \rules{}, and \standards{}}\\
 			Lodger further understands and agrees with the following: 
 			\begin{enumerate}
 				\item This Agreement is temporary and although automatically renewing weekly, this Agreement will eventually be terminated by \management{} when \management{} will no longer rent \room{} to anyone, even if Lodger has always been in good standing under this Agreement. 
@@ -91,10 +94,10 @@ This \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{}
 				\item Lodger shall obey the \rules{} and \standards{} as currently and subsequently drafted and delivered to Lodger in order to avoid premature termination of this Agreement.
 			\end{enumerate}
 
-		\item \textbf{\meta{}}\\
+		\item \textbf{\meta{}}.
 			Further terms relating to this Agreement itself are set forth in Schedule \ref{meta} of this Agreement.
 
-		\item \textbf{Honesty}\\*
+		\item \textbf{Honesty}.
 			The Lodger understands and agrees that \management{} is entering into this Agreement in reliance upon the truth, completeness and accuracy of information provided in the Lodger's initial application for a lodging rental. Furthermore, the Lodger understands and agrees that \management{} is relying on the truth, completeness and accuracy of all future information to be provided by the Lodger. Should it be discovered that any such information is false, misleading, or incomplete, \management{} may terminate this Agreement which may result in additional rent being owed by the Lodger and/or lead to other legal action and remedies which may be appropriate under the law. 
 
 	\end{enumerate}
@@ -245,8 +248,34 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 
 \vspace{.5cm}
 \noindent\tabmed{Owner Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
-\tabmed{} \tablarge{\textsuperscript{\mom{}}}
+\tabmed{} \tablarge{\textsuperscript{\mom{}}} 
 
+\vspace{1cm}
+\begin{center}
+\noindent\fbox{\parbox{.98\textwidth}{A notary public or other officer completing this certificate verifies only the identity of the individual who signed the document to which this certificate is attached, and not the truthfulness, accuracy, or validity of that document.}} 
+\end{center}
+
+\vspace{.5cm}
+\noindent\tablmed{State of California})\\*
+\tablmed{County of Los Angeles})
+
+\vspace{1cm}
+\noindent \tabtiny{On} \tablmed{\hrulefill~before me,}~\hrulefill\\*
+\tabtiny{} \tablmed{\textsuperscript{Date}}~\textsuperscript{Here Insert Name and Title of the Officer}\\*
+personally appeared \mom{} and \lname{} who proved to me on the basis of satisfactory evidence to be the persons whose names are subscribed to the within instrument and acknowledged to me that they executed the same in their authorized capacities, and that by their signatures on the instrument the persons, or the entity upon behalf of which the persons acted, executed the instrument.\\
+
+\hfill\begin{tabular}{@{}p{.5\linewidth}@{}}
+I certify under PENALTY OF PERJURY under the
+laws of the State of California that the
+foregoing paragraph is true and correct.\\*
+WITNESS my hand and official seal.
+			
+\vspace{1cm}
+\noindent Signature \hrulefill
+\end{tabular}
+
+\vspace{2.5cm}
+			(Place Notary Seal Above)
 \section*{} %therental
 \begin{schedule}{\therental{}} \label{therental}
 \begin{enumerate}
