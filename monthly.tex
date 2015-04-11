@@ -3,7 +3,14 @@
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage{multicol}
 \overfullrule=2cm
-
+\let\oldenumerate\enumerate
+\renewcommand{\enumerate}{
+  \oldenumerate
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+	\large
+}
 \begin{document}
 \title{\mytitle{}}
 \author{Colin N Keenan colinnkeenan@gmail.com}
