@@ -1,95 +1,64 @@
 \documentclass[]{article}
 \newcommand{\mytitle}{Big Chores - One Per Week}
+\newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
 \overfullrule=2cm
 \usepackage[margin=1in,headheight=28pt]{geometry}
-\usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-    \usepackage{xltxtra,xunicode}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-  \newcommand{\euro}{€}
-\fi
-% use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\usepackage{longtable,booktabs}
-\ifxetex
-  \usepackage[setpagesize=false, % page size defined by xetex
-              unicode=false, % unicode breaks when used with xetex
-              xetex]{hyperref}
-\else
-  \usepackage[unicode=true]{hyperref}
-\fi
-\hypersetup{breaklinks=true,
-            bookmarks=true,
-            pdfauthor={},
-            pdftitle={},
-            colorlinks=true,
-            citecolor=blue,
-            urlcolor=blue,
-            linkcolor=magenta,
-            pdfborder={0 0 0}}
-\urlstyle{same}  % don't use monospace font for urls
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\setcounter{secnumdepth}{0}
 
-\date{}
+\newcommand{\startdate}{the/start/date}
+\newcommand{\datefillin}{\hspace{0.2cm}\makebox[3cm]{\hrulefill}}
+\newcommand{caregiver}{Caregiver's Name}
+\newcommand{mom}{Joan B. Harrison}
+\newcommand{rules}{Senior Care Guidelines}
+\newcommand{basic}{Basic Daily Chores}
+\newcommand{bathroom}{Bathroom Checklist}
+\newcommand{shopping}{Items To Put On Shopping List When Getting Low}
+\newcommand{big}{Big Chores, Only One To Be Done Each Week}
+\newcommand{health}{Health Records}
+
+\newcounter{attachmentcounter}
+\renewcommand{\theattachmentcounter}{\Alph{attachmentcounter}}
+\newenvironment{attachment}[1] {%
+	\refstepcounter{attachmentcounter}%
+	\noindent \textbf{\Large Attachment\theattachmentcounter:~{#1}}
+	\noindent
+}{}
 
 \begin{document}
+\title{\mytitle{}}
+\author{Drafted by Colin N Keenan colinnkeenan@gmail.com}
+\date{April 2015}
+\maketitle
+\thispagestyle{fancy}
 
-Dear \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_,
+Dear \caregiver{},
 
-Thank you for providing this much-needed care! The following contract is
-to make sure we are all on the same page about responsibilities,
-vacation days, taxes, payments and schedules. The attached "Senior Care
-Guidelines'' (Attachment A), ''Daily Schedule" (Attachment B) and
-``Health Records'' (Attachment C) offer a little more information about
-how our family works and how we are hoping you can assist our loved one,
-written down so it can be clear. While the below contract is very black
-and white, the addendum will be an agile document as we know things
-might change.
+Thank you for providing this much-needed care! The following contract is to make sure we are all on the same page about responsibilities, vacation days, taxes, payments and schedules. The attached ``\rules{}'' (Attachment \ref{rules}), ``\basic{}'' (Attachment \ref{basic}), ``\bathroom{}'' (Attachment \ref{bathroom}), ``\shopping{}'' (Attachment \ref{shopping}), ``\big{}'' (Attachment \ref{big}), and ``\health{}'' (Attachment \ref{health}) offer a little more information about how our family works and how we are hoping you can assist our loved one, written down so it can be clear. While the below contract is very black and white, the attachments will be agile documents as we know things might change.
 
-This contract, executed on \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, between
-
-Joan B. Harrison (``Employer'') and
-\_\_\_\_\_\_\_\_\_\_\_\_\_(``Employee'') has the following terms of
-employment:
+This contract, executed on \datefillin{}, between \mom{} (``Employer'') and \caregiver{} (``Employee'') has the following terms of employment:
 
 \textbf{START DATE}
 
-Employee will start employment on \textbf{{[}insert date{]}} and
-continue until either party elects to terminate the relationship.
+Employee will start employment on \textbf{\startdate{}} and continue until either party elects to terminate the relationship.
 
 \textbf{WORKSITE ADDRESS}
 
-Work will be performed at 104 North Wilson Ave, Apt. 13, Pasadena, CA
-91106 (``Employer's Home'').
+Work will be performed at 104 North Wilson Ave, Apt. 13, Pasadena, CA 91106 (``Employer's Home'').
 
-The Employee may choose to rent a room in the Employer's Home upon the
-terms set forth in the {[}Insert full name of the room lease contract
-here{]} (``Room Lease'').
+The Employee may choose to rent a room in the Employer's Home upon the terms set forth in the \agreementtitle{} (``Room Rental'').
 
 \textbf{WORK SCHEDULE}
 
-The following represents a typical weekly schedule. You will also need
-to maintain a written log of our daily hours as set forth in the
-Employee Guidelines.
+The work schedule consists of two shifts seven days a week, and weekday medical appointments scheduled by the Employee:
+
+\textbf{Morning Shift}
+8am until chores are completed (typically finished at about 9am, but may finish anytime between 8:30am and 10am)
+
+\textbf{Evening Shift}
+7pm until chores are completed (typically finished at about 8pm, but may finish anytime between 7:30pm and 9pm)
+
+The total number of hours, not counting medical appointments, should be within half an hour of sixteen hours each week. The Employee should attempt to schedule no more than two medical appointments in the same work week. 
+
+You will need to check in by phone at the start of each shift and check out by phone or internet at the end of each shift as set forth in the Employee Guidelines. Your daily morning and evening chores are set forth in \basic{}, \bathroom{}, and \shopping{}. Once a week, you will do a bigger chore from the \big{} list. You will also assist with showers a few times a month as set forth in \shower{}. You are to spend about sixteen hours each week on the chores referenced in this paragraph.
 
 \textbf{{[} Have the caregiver maintain a written log of all daily hours
 worked confirming in writing its accuracy each day{]}}
@@ -114,7 +83,7 @@ Total Weekly Hours: & 9 hours & 7 hours & 16 hours\tabularnewline
 
 \textbf{NOTES ABOUT THE PERSON REQUIRING CARE}
 
-The person you will care for, Joan B. Harrison, born February 7,1943 has
+The person you will care for, \mom{}, born February 7,1943 has
 been diagnosed with diabetes, scoliosis and severe arthritis, has
 difficulty swallowing, has had surgery for thryroid, kidney and, most
 recently, breast cancer, has high cholesterol and has floaters in her
@@ -517,7 +486,7 @@ and the Employee's employment at any time, for any reason with or
 without cause or notice.
 
 The Employee shall vacate the premises promptly upon termination.
-\textbf{{[}will insert timing consistent with Lease and will
+\textbf{{[}will insert timing consistent with Rental and will
 double-check whether this provision is permitted under Federal and CA
 law. Also ask HomePay about this provision. {]}}
 
@@ -584,7 +553,7 @@ Employer Signature
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_dated
 \_\_\_\_\_\_\_\_\_\_\_
 
-Joan B. Harrison
+\mom{}
 
 Employer's Address and Telephone Number:
 
