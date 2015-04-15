@@ -1,9 +1,8 @@
 \documentclass[]{article}
-\newcommand{\mytitle}{Big Chores - One Per Week}
+\newcommand{\mytitle}{SENIOR CARE CONTRACT}
 \newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
 \overfullrule=2cm
 \usepackage[margin=1in,headheight=28pt]{geometry}
-\usepackage{hyperref}
 
 \newcommand{\toprule}{\hrulefill}
 \newcommand{\bottomrule}{\hrulefill}
@@ -12,6 +11,7 @@
 \newcommand{\initialfillin}{\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}
 \newcommand{\caregiver}{Caregiver's Name}
 \newcommand{\mom}{Joan B. Harrison}
+
 \newcommand{\rules}{Senior Care Guidelines}
 \newcommand{\basic}{Basic Daily Chores}
 \newcommand{\bathroom}{Bathroom Checklist}
@@ -28,16 +28,31 @@
 	\noindent \textbf{\Large Attachment\theattachmentcounter:~{#1}}
 	\noindent
 }{}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancypagestyle{withfooter}{
+	\fancyhf{}
+	\lhead{\centering \mytitle{}}
+	\rfoot{Page \thepage~of~\pageref{LastPage}}
+}
+\fancypagestyle{empty}{
+	\fancyhf{}
+}
+\renewcommand{\thesection}{\Roman{section}}
 
+\pagestyle{withfooter}
 \begin{document}
 \title{\mytitle{}}
 \author{Drafted by Colin N Keenan colinnkeenan@gmail.com}
 \date{April 2015}
 \maketitle
+\thispagestyle{fancy}
+
+\noindent \hrulefill
 
 Dear \caregiver{},
 
-Thank you for providing this much-needed care! The following contract is to make sure we are all on the same page about responsibilities, vacation days, taxes, payments and schedules. The attached ``\rules{}'' (Attachment \ref{rules}), ``\basic{}'' (Attachment \ref{basic}), ``\bathroom{}'' (Attachment \ref{bathroom}), ``\shopping{}'' (Attachment \ref{shopping}), ``\bigchores{}'' (Attachment \ref{big}), and ``\health{}'' (Attachment \ref{health}) offer a little more information about how our family works and how we are hoping you can assist our loved one, written down so it can be clear. While the below contract is very black and white, the attachments will be agile documents as we know things might change.
+Thank you for providing this much-needed care! The following contract is to make sure we are all on the same page about responsibilities, vacation days, taxes, payments and schedules. The attached ``\rules{}'' (Attachment \ref{rules}), ``\basic{}'' (Attachment \ref{basic}), ``\bathroom{}'' (Attachment \ref{bathroom}), ``\shopping{}'' (Attachment \ref{shopping}), ``\bigchores{}'' (Attachment \ref{bigchores}), and ``\health{}'' (Attachment \ref{health}) offer a little more information about how our family works and how we are hoping you can assist our loved one, written down so it can be clear. While the below contract is very black and white, the attachments will be agile documents as we know things might change.
 
 This contract, executed on \datefillin{}, between \mom{} (``Employer'') and \caregiver{} (``Employee'') has the following terms of employment:
 
@@ -122,37 +137,6 @@ a different account. While Venmo may be convenient and we can recommend
 using this service, the employee should ultimately decide to which
 account her pay should go. I still need to double-check the law on
 appropriate methods of payment{]} }
-
-{[}\textbf{The live-in employees requirements apply if the Employee is a
-Domestic Worker and is NOT a personal attendant.} Live in employees who
-work in excess of five workdays in a workweek must be paid overtime at
-the rate of one and one-half times the employees regular rate of pay for
-hours worked up to and including nine hours on the sixth (6th) and
-seventh (7th) workdays, and two times the employee's regular rate of pay
-for all hours worked in excess of nine hours on the sixth (6th) and
-seventh (7th) workdays. See,
-\href{http://www.dir.ca.gov/dlse/FAQ_OvertimeExceptions.htm}{\emph{http://www.dir.ca.gov/dlse/FAQ\_OvertimeExceptions.htm}}{]}
-
-{[}\textbf{Personal Attendant Overtime allowances DO NOT apply to our
-Employee.} Wage Order 15 vaguely directed that ``personal attendant''
-status only applies when ``no significant amount of work'' outside of
-such caregiving duties was required. Section 1451(d) of the DWBR
-specifically states ``personal attendant'' means any person employed by
-a private householder or by any third-party employer recognized in the
-health care industry to work in a private household, to supervise, feed,
-or dress a child, or a person who by reason of advanced age, physical
-disability, or mental deficiency needs supervision. The status of
-personal attendant shall apply when no significant amount of work other
-than the foregoing is required. For purposes of this subdivision, ``no
-significant amount of work'' means work other than the foregoing did not
-exceed 20 percent of the total weekly hours worked.
-
-Thus, if more than twenty percent (20\%) of the worker's time in a week
-is spent on non-caretaking duties such as general housecleaning, making
-beds, cooking, laundry or other duties related to the maintenance of a
-private household or the premises, the worker is NOT a Personal
-Attendant. See,
-\href{http://www.dir.ca.gov/dlse/DomesticWorkerBillOfRights-FAQ.html}{\emph{http://www.dir.ca.gov/dlse/DomesticWorkerBillOfRights-FAQ.html}}{]}
 
 \emph{Payroll Log}:
 
@@ -333,12 +317,6 @@ Employer will report employee's earnings to the Social Security
 Administration so that employee receives appropriate retirement
 benefits.
 
-\textbf{Tax Withholding/Reporting Notes: Need to check against 2015
-Household Employer's Guide.}
-\href{http://www.edd.ca.gov/pdf_pub_ctr/de8829.pdf}{\textbf{\emph{http://www.edd.ca.gov/pdf\_pub\_ctr/de8829.pdf}}}
-\textbf{I will also Call HomePay to double-check this section. For help
-with the tax process, call HomePay (888-273-3356). }
-
 \textbf{CONFIDENTIALITY}
 
 Employee understands that any and all private information obtained about
@@ -453,5 +431,57 @@ Employee Telephone Number:
 
 Employee Email:
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+	\label{LastPage}
+
+	\pagestyle{empty}
+
+\section*{} %rules
+\newpage
+\begin{attachment}{\rules{}} \label{rules}
+	something
+\end{attachment}
+
+\section*{} %basic
+\newpage
+\begin{attachment}{\basic{}} \label{basic}
+	something
+\end{attachment}
+
+\section*{} %bathroom
+\newpage
+\begin{attachment}{\bathroom{}} \label{bathroom}
+	something
+\end{attachment}
+
+\section*{} %shopping
+\newpage
+\begin{attachment}{\shopping{}} \label{shopping}
+	something
+\end{attachment}
+
+\section*{} %bigchores
+\newpage
+\begin{attachment}{\bigchores{}} \label{bigchores}
+	something
+\end{attachment}
+
+\section*{} %shower
+\newpage
+\begin{attachment}{\shower{}} \label{shower}
+	something
+\end{attachment}
+
+\section*{} %health
+\newpage
+\begin{attachment}{\health{}} \label{health}
+	something
+\end{attachment}
+
+\section*{} %notyourjob
+\newpage
+\begin{attachment}{\notyourjob{}} \label{notyourjob}
+	something
+\end{attachment}
 
 \end{document}
