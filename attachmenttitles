@@ -1,0 +1,8 @@
+\newcommand{\rules}{Senior Care Guidelines}
+\newcommand{\basic}{Basic Daily Chores}
+\newcommand{\bathroom}{Bathroom Checklist}
+\newcommand{\shopping}{Items To Put On Shopping List When Getting Low}
+\newcommand{\bigchores}{Big Chores, Only One To Be Done Each Week}
+\newcommand{\shower}{Showers}
+\newcommand{\health}{Health Records}
+\newcommand{\notyourjob}{Not Your Responsibility}

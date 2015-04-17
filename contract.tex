@@ -11,14 +11,7 @@
 \newcommand{\caregiver}{Caregiver's Name}
 \newcommand{\mom}{Joan B. Harrison}
 
-\newcommand{\rules}{Senior Care Guidelines}
-\newcommand{\basic}{Basic Daily Chores}
-\newcommand{\bathroom}{Bathroom Checklist}
-\newcommand{\shopping}{Items To Put On Shopping List When Getting Low}
-\newcommand{\bigchores}{Big Chores, Only One To Be Done Each Week}
-\newcommand{\shower}{Showers}
-\newcommand{\health}{Health Records}
-\newcommand{\notyourjob}{Not Your Responsibility}
+\input{attachmenttitles}
 
 \newcounter{attachmentcounter}
 \renewcommand{\theattachmentcounter}{\Alph{attachmentcounter}}
@@ -256,31 +249,31 @@ Employee Email:
 \section*{} %basic
 \newpage
 \begin{attachment}{\basic{}} \label{basic}
-	something
+	\input{basic}
 \end{attachment}
 
 \section*{} %bathroom
 \newpage
 \begin{attachment}{\bathroom{}} \label{bathroom}
-	something
+	\input{bathroom}
 \end{attachment}
 
 \section*{} %shopping
 \newpage
 \begin{attachment}{\shopping{}} \label{shopping}
-	something
+	\input{shopping}
 \end{attachment}
 
 \section*{} %bigchores
 \newpage
 \begin{attachment}{\bigchores{}} \label{bigchores}
-	something
+	\input{monthly}
 \end{attachment}
 
 \section*{} %shower
 \newpage
 \begin{attachment}{\shower{}} \label{shower}
-	something
+	\input{shower}
 \end{attachment}
 
 \section*{} %health

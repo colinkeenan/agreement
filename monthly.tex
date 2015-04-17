@@ -1,5 +1,5 @@
 \documentclass[12pt,letterpaper]{article}
-\newcommand{\mytitle}{Big Chores - One Per Week}
+\input{attachmenttitles}
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \overfullrule=2cm
 \let\oldenumerate\enumerate
@@ -12,33 +12,11 @@
 }
 \pagenumbering{gobble}
 \begin{document}
-\title{\mytitle{}}
+\title{bigchores{}}
 \author{Colin N Keenan colinnkeenan@gmail.com}
 \date{March 2015}
-\section*{\mytitle{}}
-\begin{enumerate}
-	\item refrigerator
-	\item dish racks, toaster oven, burners, microwave, and mop the floor
-	\item thoroughly clean the stove and oven
-	\item thoroughly vacuum and wipe-down, moving lounge chair and changing lounge chair bedding
-	\item thoroughly clean downstairs bathroom
-	\item thoroughly clean carpet stains throughout lower area and living room, including cleaning shop vacuum and towels used
-\end{enumerate}
-\section*{Showers}
-The Employer is reluctant to take showers. Please handle this as follows:
-\begin{enumerate}
-	\item On each shift where you potentially have time to assist with the shower, please suggest that she take one, but don't spend time trying to convince her.
-	\item After a week, be more insistent, for about fifteen minutes.
-	\item After two weeks, put her commode in the upstairs bathroom and follow her upstairs when she goes to the bathroom. She should take a shower after that. Assist as you have been trained and as required. Put the commode back into the downstairs bathroom after she takes her shower.
-\end{enumerate}
-When checking in or out of each shift, please tell Colin whenever she takes her shower.
-\section{Blood Sugar Targets}
-\begin{enumerate}
-	\item \textbf{Always above 70}. If at 70 or less, immediately provide plenty of carbs (coffee with milk \& 8 lumps of real sugar and bread, milk and bread, banana, real sugar sweets like candy, cookies, ice cream\ldots) and check again in 15 minutes. This would normally happen a few hours after the last shot, so not during your shift. Colin will be calling and prompting Joan to check her blood sugar and eat as needed in between your shifts.
-	\item \textbf{Before Breakfast: 80 - 120}
-	\item \textbf{Before Lunch \& Dinner: 71 - 130}
-	\item \textbf{Two hours after Dinner: 120 - 160}
-	\item \textbf{Four hours after Dinner: 110 - 140}
-\end{enumerate}
+\input{monthly}
+\input{shower}
+\input{insulin}
 \end{document}
 

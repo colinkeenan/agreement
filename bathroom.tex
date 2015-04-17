@@ -1,7 +1,6 @@
 \documentclass[12pt,letterpaper]{article}
-\newcommand{\mytitle}{Bathroom Checklist}
+\input{attachmenttitles}
 \usepackage[margin=1in,headheight=28pt]{geometry}
-\usepackage{multicol}
 \overfullrule=2cm
 \let\oldenumerate\enumerate
 \renewcommand{\enumerate}{
@@ -13,22 +12,9 @@
 }
 \pagenumbering{gobble}
 \begin{document}
-\title{\mytitle{}}
+\title{\bathroom{}}
 \author{Colin N Keenan colinnkeenan@gmail.com}
 \date{March 2015}
-\section*{\mytitle{}}
-\begin{enumerate}
-	\item put toilet paper on toilet roll holder
-	\item clean soap and soap holder
-	\item cleanup and wipe down sink and counter
-	\item replace hand towel as needed
-	\item clean commode once a week \textbf{and} when needed
-	\item put trash with kitchen trash
-	\item including stairs and landing:
-		\begin{enumerate}
-			\item check for soiled clothing and put clothes in washing machine
-			\item dry and clean spots on carpet to reduce odor
-		\end{enumerate}
-\end{enumerate}
+\input{bathroom}
 \end{document}
 
