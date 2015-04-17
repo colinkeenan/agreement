@@ -6,8 +6,13 @@
 \usepackage[table]{xcolor}
 
 \newcommand{\startdate}{the/start/date}
-\newcommand{\datefillin}{\hspace{0.2cm}\makebox[3cm]{\hrulefill}}
-\newcommand{\initialfillin}{\hspace{0.2cm}\makebox[1.5cm]{\hrulefill}}
+\newcommand{\datefillin}{\hspace{0.2cm}\rule{3cm}{.1pt}}
+\newcommand{\initialfillin}{\hspace{0.2cm}\rule{1.5cm}{.1pt}}
+\newcommand{\tabtiny}[1]{\makebox[1.8em][l]{#1}\ignorespaces}
+\newcommand{\tabsmall}[1]{\makebox[.14\linewidth][l]{#1}\ignorespaces}
+\newcommand{\tabmed}[1]{\makebox[.22\linewidth][l]{#1}\ignorespaces}
+\newcommand{\tablmed}[1]{\makebox[.33\linewidth][l]{#1}\ignorespaces}
+\newcommand{\tablarge}[1]{\makebox[.55\linewidth][l]{#1}\ignorespaces}
 \newcommand{\caregiver}{Caregiver's Name}
 \newcommand{\mom}{Joan B. Harrison}
 
@@ -69,8 +74,6 @@ She is able to ascend and descend stairs, use the bathroom alone and is able to 
 
 The person you will care for can be left alone.
 
-Caregiver's initials \initialfillin{}
-
 \section{Work Schedule And Responsibilities}
 
 If the Employee is not in the Room Rental (a ``non-LIVE-IN Employee''), the work schedule consists of sixteen hours a week done in two shifts seven days a week, along with weekday medical and dental appointments scheduled by the Employee. If the Employee is in the Room Rental (a ``LIVE-IN Employee''), the work schedule consists of fourteen hours done in two shifts Monday through Friday, along with weekday medical and dental appointments scheduled by the Employee. 
@@ -90,7 +93,7 @@ You will \textbf{not} be responsible for doing anything listed in ``\notyourjob{
 
 \section{Compensation}
 
-The following is the compensation you will be paid for your services, depending on whether or not you are a non-LIVE-IN (Employee working 7 days a week), LIVE-IN (Employee 1), or a non-LIVE-IN (Employee 2). If a LIVE-IN (Employee 1), you would only work on the 6th or 7th day in an emergency (an unpredictable or unavoidable occurrence at unscheduled intervals requiring immediate action).
+The following is the compensation you will be paid for your services, depending on whether or not you are a ALL-WEEK non-LIVE-IN Employee, a WORK-WEEK LIVE-IN Employee, or a WEEKEND non-LIVE-IN Employee 2. If a WORK-WEEK LIVE-IN Employee, you would only work on the 6th or 7th day (weekend) in an emergency (an unpredictable or unavoidable occurrence at unscheduled intervals requiring immediate action).
 \rowcolors{1}{white}{pink}
 \begin{table}
 \caption{non-LIVE-IN (Employee working 7 days a week)}
@@ -128,7 +131,7 @@ Weekly Totals: & &  2 hours & \$26.50\\
 
 \section{Payment of Wages}
 
-Weekly (Every Friday). Wages will be paid directly into the Employee's Venmo account by no later than 11:59 p.m. each Friday at the end of the work week. The work week will begin on Saturday and will end on Friday. Wages may not be paid in cash.
+Weekly (Every Monday). Wages will be paid directly into the Employee's Venmo account by no later than Noon each Monday for the work week that ended the day before. The work week will begin on Monday and will end on Sunday. Wages shall not be paid in cash.
 
 \section{Payroll Log}
 
@@ -203,41 +206,38 @@ This agreement contains the entire agreement between the parties, superseding in
 
 \section{Severability}
 
-The parties hereto agree that in the event any article or part thereof of this agreement is held to be unenforceable or invalid then said article or part shall be struck and all remaining provisions shall remain in full force and effect.
+The parties hereto agree that in the event any article or part thereof of this agreement is held to be unenforceable or invalid then said article or part shall be struck and all remaining provisions shall remain in full force and effect. 
 
+\vspace{1cm}
 Employer hereby agrees to be fully bound by the terms of this contract.
 
-Employer Signature
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_dated
-\_\_\_\_\_\_\_\_\_\_\_
-
-\mom{}
+\vspace{.5cm}
+\noindent\tabmed{Employer Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
+\tabmed{} \tablarge{\textsuperscript{\mom{}}} 
 
 Employer's Address and Telephone Number:
 
-104 N. Wilson, Apt. \#13
+104 N. Wilson, Apt. \#13\\
+Pasadena, CA 91106\\
+(626) 396-7081\\* \\
 
-Pasadena, CA 91106
-
-(626) 396-7081
-
+\vspace{1cm}
 Employee hereby agrees to be fully bound by the terms of this contract.
 
-Employee Signature:
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_dated
-\_\_\_\_\_\_\_\_\_\_
-
-{[}Employee's Name{]}
+\vspace{.5cm}
+\noindent\tabmed{Employee Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
+\tabmed{} \tablarge{\textsuperscript{\caregiver{}}}
 
 Employee Address:
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\hrulefill
 
 Employee Telephone Number:
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\hrulefill
 
 Employee Email:
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\hrulefill
 
+\input{notoarycontent}
 	\label{LastPage}
 
 \section*{} %rules
