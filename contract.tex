@@ -4,6 +4,7 @@
 \overfullrule=2cm
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
 \newcommand{\checkbox}{\raisebox{2pt}{\framebox[12pt][c]{\rule[7pt]{0pt}{-.3\baselineskip}}}}
 
 \newcommand{\startdate}{the/start/date}
@@ -80,32 +81,32 @@ The person you will care for can be left alone.
 
 \subsection*{Work Schedule, Responsibilities, and Compensation}
 The work schedule, responsibilities, and compensation depend on whether or not the Employee is renting a room in the Employer's Home, and how many days a week the Employee is allowed to work.
-
-\rowcolors{1}{white}{pink}
+\rowcolors{1}{white}{lightgray}
 \subsubsection*{Three Categories of Employee}
 
-\noindent Employee is\\
+\noindent Employee is a category\\
 \noindent(check one)
 \begin{itemize}
-	\item[\checkbox] an \allweek{}
-	\item[\checkbox] a \weekend{}
-	\item[\checkbox] a \weekday{}
+	\item[\checkbox] \ref{allweek}. \allweek{}
+	\item[\checkbox] \ref{weekend}. \weekend{}
+	\item[\checkbox] \ref{weekday}. \weekday{}
 \end{itemize}
 
 Regardless of what category of employee your are, you will need to check in by phone at the start of each shift and check out by phone or internet at the end of each shift as set forth in the \rules{}. Your daily morning and evening chores are set forth in \basic{}, \bathroom{}, and \shopping{}. 
 
 You will \textbf{not} be responsible for doing anything listed in ``\notyourjob{}'' (Attachment \ref{notyourjob}). 
 
-Further responsibilities, your work schedule, and compensation are listed under your type of employee below.
+Further responsibilities, your work schedule, and compensation are listed under your category of employee below.
 \begin{enumerate}
-	\item \textbf{\allweek{}}. Is not renting a room in the Employer's Home. Is required to work everyday, seven (7) days a week. In addition to the responsibilities already listed, once a week, you will do a bigger chore from the \bigchores{} list. You will also assist with showers a few times a month as set forth in \shower{}. 
+	\item \textbf{\allweek{}}. \label{allweek}
+		Is not renting a room in the Employer's Home. Is required to work everyday, seven (7) days a week. In addition to the responsibilities already listed, once a week, you will do a bigger chore from the \bigchores{} list. You will also assist with showers a few times a month as set forth in \shower{}. 
 		\begin{enumerate}
 			\item \textbf{Morning Shift}. 8am until chores are completed or Employee is out of time (typically finished at about 9am, but may finish anytime between 8:30am and 10am)
 			\item \textbf{Evening Shift}. 7pm until chores are completed or Employee is out of time (typically finished at about 8pm, but may finish anytime between 7:30pm and 9pm)
 			\item \textbf{16 Weekly Hours Plus Medical Appointments}. The total number of hours, not counting medical and dental appointments, should be within half an hour of sixteen (16) hours each week. 
 				\begin{enumerate}
-					\item The Employee must be able to make any two weekdays free of other obligations each week in order to be able to accompany Employer to medical and dental appointments scheduled by Employee.
-					\item The Employee should attempt to schedule no more than two medical appointments in the same work week.
+					\item The Employee must be able to make two weekdays available each week for accompanying Employer to medical and dental appointments as scheduled by Employee.
+					\item The Employee shall attempt to schedule no more than two medical appointments in the same work-week.
 					\item The Employee may leave certain chores to be completed on the following shift, or do some chores in advance that would normally be done on the following shift. As long as medicine, insulin, and food is served on time, all other chores can be done on the previous or following shift.
 				\end{enumerate}
 		\end{enumerate}
@@ -118,7 +119,8 @@ Further responsibilities, your work schedule, and compensation are listed under 
 			Weekly Totals: & &  22 hours & \$291.72\\
 			\hline
 		\end{tabular}
-	\item \textbf{\weekend{}}. Is not renting a room in the Employer's Home. Is required to work on Saturday and Sunday, but not on weekdays.
+	\item \textbf{\weekend{}}. \label{weekend}
+		Is not renting a room in the Employer's Home. Is required to work on Saturday and Sunday, but not on weekdays.
 		\begin{enumerate}
 			\item \textbf{Morning Shift}. 8am - 9am
 			\item \textbf{Evening Shift}. 7pm - 8pm 
@@ -131,14 +133,15 @@ Further responsibilities, your work schedule, and compensation are listed under 
 			Weekly Totals: & &  4 hours & \$53.04\\
 			\hline
 		\end{tabular}
-	\item \textbf{\weekday{}}. Is renting a room in the Employer's Home. Is required to work five (5) days a week, but not on weekends. Would only work on the 6th or 7th day (weekend) in an emergency (which is an unpredictable or unavoidable occurrence at unscheduled intervals requiring immediate action). In addition to the responsibilities already listed, once a week, you will do a bigger chore from the \bigchores{} list. You will also assist with showers a few times a month as set forth in \shower{}. 
+	\item \textbf{\weekday{}}. \label{weekday}
+		Is renting a room in the Employer's Home. Is required to work five (5) days a week, but not on weekends. Would only work on the 6th or 7th day (weekend) in an emergency (which is an unpredictable or unavoidable occurrence at unscheduled intervals requiring immediate action). In addition to the responsibilities already listed, once a week, you will do a bigger chore from the \bigchores{} list. You will also assist with showers a few times a month as set forth in \shower{}. 
 		\begin{enumerate}
 			\item \textbf{Morning Shift}. 8am until chores are completed or Employee is out of time (typically finished at about 9am, but may finish anytime between 8:30am and 10am)
 			\item \textbf{Evening Shift}. 7pm until chores are completed or Employee is out of time (typically finished at about 8pm, but may finish anytime between 7:30pm and 9pm)
 			\item \textbf{12 - 14 Weekly Hours Plus Medical Appointments}. The total number of hours, not counting medical and dental appointments, should be within an hour of thirteen (13) hours each week. 
 				\begin{enumerate}
-					\item The Employee must be able to make any two weekdays free of other obligations each week in order to be able to accompany Employer to medical and dental appointments scheduled by Employee.
-					\item The Employee should attempt to schedule no more than two appointments in the same work week.
+					\item The Employee must be able to make two weekdays available each week for accompanying Employer to medical and dental appointments as scheduled by Employee.
+					\item The Employee shall attempt to schedule no more than two appointments in the same work week.
 					\item The Employee may leave certain chores to be completed on the following shift, or do some chores in advance that would normally be done on the following shift. As long as medicine, insulin, and food is served on time, all other chores can be done on the previous or following shift.
 				\end{enumerate}
 		\end{enumerate}
@@ -154,7 +157,7 @@ Further responsibilities, your work schedule, and compensation are listed under 
 		\end{tabular}
 \end{enumerate}
 
-\subsection*{Pay}
+\subsection*{Paychecks}
 \begin{enumerate}
 	\item{\textbf{Payment of Wages}}. Weekly (Every Monday). Wages will be paid directly into the Employee's Venmo account by no later than Noon each Monday for the work week that ended the day before. The work week will begin on Monday and will end on Sunday. Wages shall not be paid in cash.
 	\item{\textbf{Payroll Log}}. 
@@ -172,58 +175,41 @@ Further responsibilities, your work schedule, and compensation are listed under 
 		\end{itemize}
 		The Employee will qualify for paid sick leave by working for the Employer for at least 30 days within a year in California and by satisfying a 90 day employment period. The Employee will begin to accrue Family Sick Leave upon the first day of her employment at the rate of one hour paid leave for every 30 hours worked. However, the Employee may only take 24 hours of sick leave per year. Accrued paid sick leave may be carried over to the next year, but accrued sick leave may not exceed 48 hours.\\
 	An employee can take paid leave for employee's own or a family member for the diagnosis, care or treatment of an existing health condition or preventive care or for specified purposes for an employee who is a victim of domestic violence, sexual assault or stalking or as otherwise permitted under California law. (``Family Sick Leave'').
-	\item{\textbf{Tax Withholding/Reporting}}. Employee will complete Form I-9 (available at www.uscis.gov/forms) and provide the required documentation verifying employment eligibility within three days of hiring.\\
-	Employer will withhold the required Social Security and Medicare taxes from the employee's pay, along with income taxes per the Employee's instructions on Form W-4 and all other applicable state taxes.\\
-	All tax withholdings will be remitted to the state and federal tax agencies on or before the household employment tax deadlines. In addition, Employer will match the employee's Social Security and Medicare contributions and make contributions to the state and federal unemployment insurance funds on behalf of the employee.\\
-	Employer will provide employee with Form W-2 at the end of the year (by January 31).\\
-	Employer will report employee's earnings to the Social Security Administration so that employee receives appropriate retirement benefits.
+	\item{\textbf{Tax Withholding/Reporting}}. Employee will complete Form I-9 (available at www.uscis.gov/forms) and provide the required documentation verifying employment eligibility within three days of hiring. Employer will withhold the required Social Security and Medicare taxes from the employee's pay, along with income taxes per the Employee's instructions on Form W-4 and all other applicable state taxes. All tax withholdings will be remitted to the state and federal tax agencies on or before the household employment tax deadlines. In addition, Employer will match the employee's Social Security and Medicare contributions and make contributions to the state and federal unemployment insurance funds on behalf of the employee. Employer will provide employee with Form W-2 at the end of the year (by January 31). Employer will report employee's earnings to the Social Security Administration so that employee receives appropriate retirement benefits.
 	\item{\textbf{Raises}}. Cost Of Living Adjustment (``COLA''). After 5 years of employment, the Employee will be eligible for a percent raise equal to the cumulative United States Social Security COLA for those five years. This raise will be automatic.
 \end{enumerate}
 
-\subsection*{Confidentiality}
+\subsection*{Confidentiality, At Will, and Social Media}
+\begin{enumerate}
+	\item{\textbf{Confidentiality}}. Employee understands that any and all private information obtained about the Employer during the course of employment, including but not limited to medical, financial, legal and career information, is strictly confidential and may not be disclosed to any third party for any reason.  
+	\item{\textbf{At Will Employment}}. It is understood and agreed that:
+		\begin{enumerate}
+			\item The Employee may at any time terminate this agreement and her employment by giving not less than two weeks written notice to the Employer.
+			\item The Employer may, in its absolute discretion, terminate this agreement and the Employee's employment at any time, for any reason with or without cause or notice.
+		\end{enumerate}
+	\item{\textbf{Social Media Policy}}. Employee understands that no information about his/her location, plans for the day or pictures of family members should be shared on any social media network. Employee will also not tell strangers to the family (i.e.  Employee's friends) where she is spending the day, unless authorized by one or more members of the Employer's family.  
+\end{enumerate}
 
-Employee understands that any and all private information obtained about the Employer during the course of employment, including but not limited to medical, financial, legal and career information, is strictly confidential and may not be disclosed to any third party for any reason.  
+\subsection*{About This Agreement}
+\begin{enumerate}
+	\item{\textbf{Laws}}. This agreement shall be governed by the laws of the State of California.
+	\item{\textbf{Entire Agreement}}. This agreement contains the entire agreement between the parties, superseding in all respects any and all prior oral or written agreements or understandings pertaining to the employment of the Employee by the Employer and shall be amended or modified only by written instrument signed by both of the parties hereto.  
+	\item{\textbf{Severability}}. The parties hereto agree that in the event any article or part thereof of this agreement is held to be unenforceable or invalid then said article or part shall be struck and all remaining provisions shall remain in full force and effect. 
+\end{enumerate}
 
-\subsection*{At Will Employment}
-
-It is understood and agreed that:
-
-The Employee may at any time terminate this agreement and her employment by giving not less than two weeks written notice to the Employer.
-
-The Employer may, in its absolute discretion, terminate this agreement and the Employee's employment at any time, for any reason with or without cause or notice.
-
-\subsection*{Social Media Policy}
-
-Employee understands that no information about his/her location, plans for the day or pictures of family members should be shared on any social media network. Employee will also not tell strangers to the family (i.e.  Employee's friends) where she is spending the day, unless authorized by one or more members of the Employer's family.  
-
-\subsection*{Laws}
-
-This agreement shall be governed by the laws of the State of California.
-
-\subsection*{Entire Agreement}
-
-This agreement contains the entire agreement between the parties, superseding in all respects any and all prior oral or written agreements or understandings pertaining to the employment of the Employee by the Employer and shall be amended or modified only by written instrument signed by both of the parties hereto.  
-
-\subsection*{Severability}
-
-The parties hereto agree that in the event any article or part thereof of this agreement is held to be unenforceable or invalid then said article or part shall be struck and all remaining provisions shall remain in full force and effect. 
-
-\vspace{1cm}
+\newpage
 \noindent\textbf{Employer hereby agrees to be fully bound by the terms of this contract.}
 
-\vspace{1cm}
+\vspace{.8cm}
 \noindent\tabmed{Employer Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
-\tabmed{} \tablarge{\textsuperscript{\mom{}}}\\ 
-
-\noindent Employer's Address and Telephone Number:
-
-\noindent 104 N. Wilson, Apt. \#13\\
-\noindent Pasadena, CA 91106\\
-\noindent (626) 396-7081\\* \\
+\tabmed{} \tablarge{\textsuperscript{\mom{}}}\\* 
+\noindent \tablarge{\hspace{2cm} Employer's Address and Telephone Number:} 104 N. Wilson, Apt. \#13\\
+\noindent \tablarge{} Pasadena, CA 91106\\
+\noindent \tablarge{} (626) 396-7081\\* \\
 
 \noindent\textbf{Employee hereby agrees to be fully bound by the terms of this contract.}
 
-\vspace{1cm}
+\vspace{.8cm}
 \noindent\tabmed{Employee Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
 \tabmed{} \tablarge{\textsuperscript{\lname{}}}
 
@@ -235,12 +221,10 @@ The parties hereto agree that in the event any article or part thereof of this a
 
 \vspace{.5cm}
 \noindent Employee Email: \hrulefill
-
 \input{notarycontent}
 	\label{LastPage}
 
 \section*{} %rules
-\newpage
 	\pagestyle{empty}
 \begin{attachment}{\rules{}} \label{rules}
 	something
