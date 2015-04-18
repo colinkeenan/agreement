@@ -4,6 +4,7 @@
 \overfullrule=2cm
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage[table]{xcolor}
+\newcommand{\checkbox}{\raisebox{2pt}{\framebox[12pt][c]{\rule[7pt]{0pt}{-.3\baselineskip}}}}
 
 \newcommand{\startdate}{the/start/date}
 \newcommand{\datefillin}{\hspace{0.2cm}\rule{3cm}{.1pt}}
@@ -15,6 +16,9 @@
 \newcommand{\tablarge}[1]{\makebox[.55\linewidth][l]{#1}\ignorespaces}
 \newcommand{\lname}{Caregiver's Name}
 \newcommand{\mom}{Joan B. Harrison}
+\newcommand{\allweek}{ALL-WEEK non-LIVE-IN Employee}
+\newcommand{\weekend}{WEEKEND non-LIVE-IN Employee}
+\newcommand{\weekday}{WEEKDAY LIVE-IN Employee}
 
 \input{attachmenttitles}
 
@@ -47,24 +51,24 @@
 \thispagestyle{fancy}
 
 \noindent \hrulefill
-
-Dear \lname{},
+\section*{Terms of Employment}
+Dear \lname{},\\
 
 Thank you for providing this much-needed care! The following contract is to make sure we are all on the same page about responsibilities, vacation days, taxes, payments and schedules. The attached ``\rules{}'' (Attachment \ref{rules}), ``\basic{}'' (Attachment \ref{basic}), ``\bathroom{}'' (Attachment \ref{bathroom}), ``\shopping{}'' (Attachment \ref{shopping}), ``\bigchores{}'' (Attachment \ref{bigchores}), and ``\health{}'' (Attachment \ref{health}) offer a little more information about how our family works and how we are hoping you can assist our loved one, written down so it can be clear. While the below contract is very black and white, the attachments will be agile documents as we know things might change.
 
 This contract, executed on \datefillin{}, between \mom{} (``Employer'') and \lname{} (``Employee'') has the following terms of employment:
 
-\section{Start Date}
+\subsection*{Start Date}
 
 Employee will start employment on \textbf{\startdate{}} and continue until either party elects to terminate the relationship.
 
-\section{Worksite Address}
+\subsection*{Worksite Address}
 
 Work will be performed at 104 North Wilson Ave, Apt. 13, Pasadena, CA 91106 (``Employer's Home'').
 
-The Employee may choose to rent a room in the Employer's Home upon the terms set forth in the \agreementtitle{} (``Room Rental'').
+The Employee may choose to rent a room in the Employer's Home upon the terms set forth in the \agreementtitle{}.
 
-\section{Notes About The Person Requiring Care}
+\subsection*{Notes About The Person Requiring Care}
 
 The person you will care for, \mom{}, born February 7,1943 has been diagnosed with diabetes, scoliosis and severe arthritis, has difficulty swallowing, has had surgery for thryroid, kidney and, most recently, breast cancer, has high cholesterol and has floaters in her eyes. Though undiagnosed, she also suffers from extreme anxieties, may have auditory or visual hallucinations, and minor memory loss.
 
@@ -74,74 +78,95 @@ She is able to ascend and descend stairs, use the bathroom alone and is able to 
 
 The person you will care for can be left alone.
 
-\section{Work Schedule And Responsibilities}
+\subsection*{Work Schedule, Responsibilities, and Compensation}
+The work schedule, responibilities, and compensation depend on whether or not the Employee is renting a room in the Employer's Home, and how many days a week the Employee is allowed to work.
 
-If the Employee is not in the Room Rental (a ``non-LIVE-IN Employee''), the work schedule consists of sixteen hours a week done in two shifts seven days a week, along with weekday medical and dental appointments scheduled by the Employee. If the Employee is in the Room Rental (a ``LIVE-IN Employee''), the work schedule consists of fourteen hours done in two shifts Monday through Friday, along with weekday medical and dental appointments scheduled by the Employee. 
+\rowcolors{1}{white}{pink}
+\subsubsection*{Three Types of Employee}
 \begin{enumerate}
-	\item \textbf{Morning Shift}. 8am until chores are completed or Employee is out of time (typically finished at about 9am, but may finish anytime between 8:30am and 10am)
-	\item \textbf{Evening Shift}. 7pm until chores are completed or Employee is out of time (typically finished at about 8pm, but may finish anytime between 7:30pm and 9pm)
-	\item \textbf{16 Weekly Hours Plus Medical Appointments}. The total number of hours, not counting medical and dental appointments, should be within half an hour of sixteen hours each week. 
+	\item \textbf{\allweek{}}. Is not renting a room in the Employer's Home. Is required to work everyday, seven (7) days a week.
 		\begin{enumerate}
-			\item The Employee should attempt to schedule no more than two medical appointments in the same work week.
-			\item The Employee may leave certain chores to be completed on the following shift, or do some chores in advance that would normally be done on the following shift. As long as medicine, insulin, and food is served on time, all other chores can be done on the previous or following shift.
+			\item \textbf{Morning Shift}. 8am until chores are completed or Employee is out of time (typically finished at about 9am, but may finish anytime between 8:30am and 10am)
+			\item \textbf{Evening Shift}. 7pm until chores are completed or Employee is out of time (typically finished at about 8pm, but may finish anytime between 7:30pm and 9pm)
+			\item \textbf{16 Weekly Hours Plus Medical Appointments}. The total number of hours, not counting medical and dental appointments, should be within half an hour of sixteen (16) hours each week. 
+				\begin{enumerate}
+					\item The Employee must be able to make any two weekdays free of other obligations each week in order to be able to accompany Employer to medical and dental appointments scheduled by Employee.
+					\item The Employee should attempt to schedule no more than two medical appointments in the same work week.
+					\item The Employee may leave certain chores to be completed on the following shift, or do some chores in advance that would normally be done on the following shift. As long as medicine, insulin, and food is served on time, all other chores can be done on the previous or following shift.
+				\end{enumerate}
 		\end{enumerate}
+		\begin{tabular}{|p{.3\textwidth}|l|l|p{.11\textwidth}|}
+			\hline
+			Pay Rates & Amounts & x Estimated Hours per week & Estimated Weekly Totals\\ \hline
+			Regular rate of pay & \$13.26 per hour & 16 hours & \$212.16\\ \hline
+			Medical or Dental Appointments (varies weekly, but no more than 2 appointments per week) & \$13.26 per hour & 6 hours & \$79.56\\ \hline
+			Overtime rate of pay (1.5 x the regular rate of pay) for any hours worked over thirty (30) in a week or over six (6) in a day & \$19.89 per hour & 0 hours & \$0.00\\ \hline
+			Weekly Totals: & &  22 hours & \$291.72\\
+			\hline
+		\end{tabular}
+	\item \textbf{\weekend{}}. Is not renting a room in the Employer's Home. Is required to work on Saturday and Sunday, but not on weekdays.
+		\begin{enumerate}
+			\item \textbf{Morning Shift}. 8am - 9am
+			\item \textbf{Evening Shift}. 7pm - 8pm 
+			\item \textbf{4 Weekly Hours}. The total number of hours will be no more than four (4) each week. There will not be any medical or dental appointments. 
+		\end{enumerate}
+		\begin{tabular}{|p{.3\textwidth}|l|l|p{.11\textwidth}|}
+			\hline
+			Pay Rates & Amounts & x Estimated Hours per week & Estimated Weekly Totals\\ \hline
+			Regular rate of pay & \$13.26 per hour & 4 hours & \$53.04\\ \hline
+			Weekly Totals: & &  4 hours & \$53.04\\
+			\hline
+		\end{tabular}
+	\item \textbf{\weekday{}}. Is renting a room in the Employer's Home. Is required to work five (5) days a week, but not on weekends. Would only work on the 6th or 7th day (weekend) in an emergency (which is an unpredictable or unavoidable occurrence at unscheduled intervals requiring immediate action).
+		\begin{enumerate}
+			\item \textbf{Morning Shift}. 8am until chores are completed or Employee is out of time (typically finished at about 9am, but may finish anytime between 8:30am and 10am)
+			\item \textbf{Evening Shift}. 7pm until chores are completed or Employee is out of time (typically finished at about 8pm, but may finish anytime between 7:30pm and 9pm)
+			\item \textbf{12 - 14 Weekly Hours Plus Medical Appointments}. The total number of hours, not counting medical and dental appointments, should be within an hour of thirteen (13) hours each week. 
+				\begin{enumerate}
+					\item The Employee must be able to make any two weekdays free of other obligations each week in order to be able to accompany Employer to medical and dental appointments scheduled by Employee.
+					\item The Employee should attempt to schedule no more than two appointments in the same work week.
+					\item The Employee may leave certain chores to be completed on the following shift, or do some chores in advance that would normally be done on the following shift. As long as medicine, insulin, and food is served on time, all other chores can be done on the previous or following shift.
+				\end{enumerate}
+		\end{enumerate}
+		\begin{tabular}{|p{.3\textwidth}|l|l|p{.11\textwidth}|}
+			\hline
+			Pay Rates & Amounts & x Estimated Hours per week & Estimated Weekly Totals\\ \hline
+			Regular rate of pay & \$13.26 per hour & 14 hours & \$185.64\\ \hline
+			Medical or Dental Appointments (varies weekly, but no more than 2 appointments per week) & \$13.26 per hour & approx. 6 hours & \$79.56\\ \hline
+			Time and a half (1.5 x the regular rate of pay) for any hours up to and including nine hours on the sixth (6th) and seventh (7th) workdays; for any hours worked over nine (9) in a day & \$19.89 per hour & 0 hours & \$0.00\\ \hline
+			Double time (2 x the regular rate of pay) for hours worked over nine (9) hours on the sixth and seventh consecutive day of workweek. & \$26.52 per hour & 0 hours & \$0.00\\ \hline
+			Weekly Totals: & & 20 hours & \$265\\
+			\hline
+		\end{tabular}
 \end{enumerate}
+
+\noindent Employee is\\
+\noindent(check one)
+\begin{itemize}
+	\item[\checkbox] \allweek{}
+	\item[\checkbox] \weekend{}
+	\item[\checkbox] \weekday{}
+\end{itemize}
+
 
 You will need to check in by phone at the start of each shift and check out by phone or internet at the end of each shift as set forth in the \rules{}. Your daily morning and evening chores are set forth in \basic{}, \bathroom{}, and \shopping{}. Once a week, you will do a bigger chore from the \bigchores{} list. You will also assist with showers a few times a month as set forth in \shower{}. You are to spend about sixteen hours each week on the chores referenced in this paragraph.
 
 You will \textbf{not} be responsible for doing anything listed in ``\notyourjob{}'' (Attachment \ref{notyourjob}). 
 
-\section{Compensation}
 
-The following is the compensation you will be paid for your services, depending on whether or not you are a ALL-WEEK non-LIVE-IN Employee, a WORK-WEEK LIVE-IN Employee, or a WEEKEND non-LIVE-IN Employee 2. If a WORK-WEEK LIVE-IN Employee, you would only work on the 6th or 7th day (weekend) in an emergency (an unpredictable or unavoidable occurrence at unscheduled intervals requiring immediate action).
-\rowcolors{1}{white}{pink}
-\begin{table}
-\caption{non-LIVE-IN (Employee working 7 days a week)}
-\begin{tabular}{|p{.3\textwidth}|l|l|p{.11\textwidth}|}
-\hline
-Pay Rates & Amounts & x Estimated Hours per week & Estimated Weekly Totals\\ \hline
-Regular rate of pay & \$13.26 per hour & 16 hours & \$212.16\\ \hline
-Medical or Dental Appointments (varies weekly, but no more than 2 appointments per week) & \$13.26 per hour & 6 hours & \$79.56\\ \hline
-Overtime rate of pay (1.5 x the regular rate of pay) for any hours worked over thirty (30) in a week or over six (6) in a day & \$19.89 per hour & 0 hours & \$0.00\\ \hline
-Weekly Totals: & &  22 hours & \$291.72\\
-\hline
-\end{tabular}
-
-\caption{LIVE-IN Employee (Employee 1)}
-\begin{tabular}{|p{.3\textwidth}|l|l|p{.11\textwidth}|}
-\hline
-Pay Rates & Amounts & x Estimated Hours per week & Estimated Weekly Totals\\ \hline
-Regular rate of pay & \$13.26 per hour & 14 hours & \$185.64\\ \hline
-Medical or Dental Appointments (varies weekly, but no more than 2 appointments per week) & \$13.26 per hour & approx. 6 hours & \$79.56\\ \hline
-Time and a half (1.5 x the regular rate of pay) for any hours up to and including nine hours on the sixth (6th) and seventh (7th) workdays; for any hours worked over nine (9) in a day & \$19.89 per hour & 0 hours & \$0.00\\ \hline
-Double time (2 x the regular rate of pay) for hours worked over nine (9) hours on the sixth and seventh consecutive day of workweek. & \$26.52 per hour & 0 hours & \$0.00\\ \hline
-Weekly Totals: & & 20 hours & \$265\\
-\hline
-\end{tabular}
-
-\caption{non-LIVE-IN (Employee 2)}
-\begin{tabular}{|p{.3\textwidth}|l|l|p{.11\textwidth}|}
-\hline
-Pay Rates & Amounts & x Estimated Hours per week & Estimated Weekly Totals\\ \hline
-Regular rate of pay & \$13.25 per hour & 2 hours & \$26.50\\ \hline
-Weekly Totals: & &  2 hours & \$26.50\\
-\hline
-\end{tabular}
-\end{table}
-
-\section{Payment of Wages}
+\subsection*{Payment of Wages}
 
 Weekly (Every Monday). Wages will be paid directly into the Employee's Venmo account by no later than Noon each Monday for the work week that ended the day before. The work week will begin on Monday and will end on Sunday. Wages shall not be paid in cash.
 
-\section{Payroll Log}
+\subsection*{Payroll Log}
 
 The Employee will be required to check in and out of each shift by phone or internet as described in \rules{}.
 
-\section{Mileage And General Expenses}
+\subsection*{Mileage And General Expenses}
 
 Any miles driven while on the job using the employee's car will be reimbursed at the IRS Mileage Reimbursement Rate, which covers the cost of gasoline as well as general wear and tear on the car. Employee will maintain a mileage log and submit to Employer for reimbursement at the end of the pay period. The 2015 IRS mileage reimbursement rate is 57.5 cents per mile.  All other pre-approved, work-related expenses will be reimbursed at cost. Employee will keep all receipts and submit to employer for reimbursement at the end of each pay period.
 
-\section{Paid Time Off}
+\subsection*{Paid Time Off}
 
 Employee will receive the following paid time off:
 
@@ -160,7 +185,7 @@ accrual requirements do not change even if you have a part time
 employee. We will also have to provide sick leave rights notice. see,
 http://www.dir.ca.gov/dlse/Publications/LC\_2810.5\_Notice\_(Revised-11\_2014).pdf{]}}
 
-\section{Tax Withholding/Reporting}
+\subsection*{Tax Withholding/Reporting}
 
 Employee will complete Form I-9 (available at www.uscis.gov/forms) and provide the required documentation verifying employment eligibility within three days of hiring.
 
@@ -173,11 +198,11 @@ Employer will provide employee with Form W-2 (available at www.irs.gov/Forms-\&-
 Employer will report employee's earnings to the Social Security Administration so that employee receives appropriate retirement
 benefits.
 
-\section{Confidentiality}
+\subsection*{Confidentiality}
 
 Employee understands that any and all private information obtained about the Employer during the course of employment, including but not limited to medical, financial, legal and career information, is strictly confidential and may not be disclosed to any third party for any reason.  
 
-\section{At Will Employment}
+\subsection*{At Will Employment}
 
 It is understood and agreed that:
 
@@ -185,26 +210,26 @@ The Employee may at any time terminate this agreement and her employment by givi
 
 The Employer may, in its absolute discretion, terminate this agreement and the Employee's employment at any time, for any reason with or without cause or notice.
 
-\section{Social Media Policy}
+\subsection*{Social Media Policy}
 
 Employee understands that no information about his/her location, plans for the day or pictures of family members should be shared on any social media network. Employee will also not tell strangers to the family (i.e.  caregiver's friends) where she is spending the day, unless authorized by one or more members of the Employer's family.  
 
-\section{Raises And Reviews}
+\subsection*{Raises And Reviews}
 
 After 5 years of employment, the Employee will be eligible for a raise
 of \$\_\_\_or \_\_\_\%. This will be based on:
 
 \textbf{{[}Insert what they need to do to receive a raise.{]}}
 
-\section{Laws}
+\subsection*{Laws}
 
 This agreement shall be governed by the laws of the State of California.
 
-\section{Entire Agreement}
+\subsection*{Entire Agreement}
 
 This agreement contains the entire agreement between the parties, superseding in all respects any and all prior oral or written agreements or understandings pertaining to the employment of the Employee by the Employer and shall be amended or modified only by written instrument signed by both of the parties hereto.  
 
-\section{Severability}
+\subsection*{Severability}
 
 The parties hereto agree that in the event any article or part thereof of this agreement is held to be unenforceable or invalid then said article or part shall be struck and all remaining provisions shall remain in full force and effect. 
 
