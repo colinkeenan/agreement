@@ -12,7 +12,7 @@
 \tabtiny{} \tablmed{\textsuperscript{Date}}~\textsuperscript{Here Insert Name and Title of the Officer}\\*
 personally appeared \mom{} and \lname{} who proved to me on the basis of satisfactory evidence to be the persons whose names are subscribed to the within instrument and acknowledged to me that they executed the same in their authorized capacities, and that by their signatures on the instrument the persons, or the entity upon behalf of which the persons acted, executed the instrument.\\
 
-\rowcolors{1}{white}
+\rowcolors{1}{white}{white}
 \hfill\begin{tabular}{@{}p{.5\linewidth}@{}}
 I certify under PENALTY OF PERJURY under the
 laws of the State of California that the
