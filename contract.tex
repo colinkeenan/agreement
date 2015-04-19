@@ -1,10 +1,12 @@
 \documentclass[]{article}
 \newcommand{\mytitle}{SENIOR CARE CONTRACT}
 \newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
+\newcommand{\rulestitle}{SENIOR CARE GUIDELINES}
 \overfullrule=2cm
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage[table]{xcolor}
 \definecolor{lightgray}{gray}{0.9}
+\definecolor{medgray}{gray}{0.7}
 \newcommand{\checkbox}{\raisebox{2pt}{\framebox[12pt][c]{\rule[7pt]{0pt}{-.3\baselineskip}}}}
 
 \newcommand{\startdate}{the/start/date}
@@ -34,6 +36,10 @@
 	\noindent \textbf{\Large Attachment\theattachmentcounter:~{#1}}
 	\noindent
 }{}
+
+\newcommand{\makecell}[2][c]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
 \usepackage{multicol}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
