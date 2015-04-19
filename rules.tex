@@ -1,148 +1,68 @@
 \documentclass[]{article}
+\newcommand{\rulestitle}{Senior Care Guidelines}
+\newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
 \overfullrule=2cm
 \usepackage[margin=1in,headheight=28pt]{geometry}
-\usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-    \usepackage{xltxtra,xunicode}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-  \newcommand{\euro}{€}
-\fi
-% use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
+\newcommand{\checkbox}{\raisebox{2pt}{\framebox[12pt][c]{\rule[7pt]{0pt}{-.3\baselineskip}}}}
+
+\newcommand{\startdate}{the/start/date}
+\newcommand{\datefillin}{\hspace{0.2cm}\rule{3cm}{.1pt}}
+\newcommand{\initialfillin}{\hspace{0.2cm}\rule{1.5cm}{.1pt}}
+\newcommand{\sw}{.15\textwidth}
+\newcommand{\bw}{.39\textwidth}
+\newcommand{\tabtiny}[1]{\makebox[1.8em][l]{#1}\ignorespaces}
+\newcommand{\tabsmall}[1]{\makebox[.14\linewidth][l]{#1}\ignorespaces}
+\newcommand{\tabmed}[1]{\makebox[.22\linewidth][l]{#1}\ignorespaces}
+\newcommand{\tablmed}[1]{\makebox[.33\linewidth][l]{#1}\ignorespaces}
+\newcommand{\tablarge}[1]{\makebox[.55\linewidth][l]{#1}\ignorespaces}
+\newcommand{\lname}{Caregiver's Name}
+\newcommand{\mom}{Joan B. Harrison}
+\newcommand{\allweek}{ALL-WEEK non-LIVE-IN Employee}
+\newcommand{\weekend}{WEEKEND non-LIVE-IN Employee}
+\newcommand{\weekday}{WEEKDAY LIVE-IN Employee}
+
+\input{attachmenttitles}
+
+\newcounter{attachmentcounter}
+\renewcommand{\theattachmentcounter}{\Alph{attachmentcounter}}
+\newenvironment{attachment}[1] {%
+	\refstepcounter{attachmentcounter}%
+	\noindent \textbf{\Large Attachment\theattachmentcounter:~{#1}}
+	\noindent
 }{}
-\usepackage{longtable,booktabs}
-\ifxetex
-  \usepackage[setpagesize=false, % page size defined by xetex
-              unicode=false, % unicode breaks when used with xetex
-              xetex]{hyperref}
-\else
-  \usepackage[unicode=true]{hyperref}
-\fi
-\hypersetup{breaklinks=true,
-            bookmarks=true,
-            pdfauthor={},
-            pdftitle={},
-            colorlinks=true,
-            citecolor=blue,
-            urlcolor=blue,
-            linkcolor=magenta,
-            pdfborder={0 0 0}}
-\urlstyle{same}  % don't use monospace font for urls
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\setcounter{secnumdepth}{0}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancypagestyle{withfooter}{
+	\fancyhf{}
+	\lhead{\centering \rulestitle{}}
+	\rfoot{Page \thepage~of~\pageref{LastPage}}
+}
+\fancypagestyle{empty}{
+	\fancyhf{}
+}
 
-\date{}
-
+\pagestyle{withfooter}
 \begin{document}
 
-\textbf{{[}I've kept the drafting notes in this set of guidelines for
-guidance. I will delete all of those drafting notes once we have settled
-on our rules. I still also need to make sure that we have not made any
-promises in these guidelines.{]}}
-
-\textbf{{[}We need to decide how we would like to divide up particular
-tasks among the family. Once we've made those decisions, I will add
-those family members to the document{]}}
-
-\textbf{Senior Care Guidelines Disclaimer: The Senior Care Documents (as
-defined herein) have been provided for informational and guidance
-purposes only. The Senior Care Documents do not contain any promises and
-do not constitute a contract. As an ``at will'' employee as set forth in
-the Senior Care Contract I may quit upon two weeks notice or be
-terminated by the Employer at any time for any reason with or without
-cause or notice. The Employer may revise the Senior Care Documents in
-its discretion and at any time without a written revision. However, the
-``At Will Employment'' provision contained in the Senior Care Contract
-may not be so modified.}
-
-Note: This is a document that the family and adult or senior caregiver
-will work with and develop together. The goal is for family members to
-take time to fill out this document at the start of the relationship,
-but update it as the loved one's needs develop and change -\/- and the
-trust grows deeper between family members and the caregiver.
+\textbf{Senior Care Guidelines Disclaimer: The Senior Care Documents (as defined herein) have been provided for informational and guidance purposes only. The Senior Care Documents do not contain any promises and do not constitute a contract. As an ``at will'' employee as set forth in the Senior Care Contract I may quit upon two weeks notice or be terminated by the Employer at any time for any reason with or without cause or notice. The Employer may revise the Senior Care Documents in its discretion and at any time without a written revision. However, the ``At Will Employment'' provision contained in the Senior Care Contract may not be so modified.} 
 
 \textbf{Date:}
 
-\textbf{Family Philosophy:}
+\section*{Family Philosophy}
+We are hoping to respect Joan's wishes to remain at home where she is most comfortable so that she may continue to enjoy her retirement on her own terms. Though our mother may not have the same cognitive ability that she once had, she is not a child and should not be treated as such.  Please treat her the same way as you would like to be treated---with kindness, compassion, understanding and respect. By relying on these principles to guide your care, you will garner her trust, making your job easier and our mother happier. A request from a trusted friend is much easier to follow than a command from someone you do not like or respect. Without this trust, she may become anxious and just shut down and refuse to follow any requests. Of course, you must never use physical force or threats. Nor should you use humiliating or cruel comments as a tool for getting her to follow your instructions. These types of comments are not effective and just make her more emotionally upset.
 
-Describe yourselves and how you want your parent or loved one to be
-cared for. Explain what is important to you (for instance, caring and
-compassionate treatment, retaining mom or dad's dignity, monitoring
-medications carefully, etc.). How independent is your mom? Will she have
-a large say in day-to-day needs or does she have dementia and need
-direction? Describe how much involvement you will have and how much
-managing you will want to do of your loved one's daily schedule.
+Your responsibilities are outlined below and in the Senior Care Contract. Joan's family will continue to take care of everything else.  For example, we will continue to help Joan with any financial or legal matters, repair and maintenance of her home, health matters, as well as other day to day needs. For your convenience, we have included a list of family members and their contact information.
 
-We are hoping to respect Joan's wishes to remain at home where she is
-most comfortable so that she may continue to enjoy her retirement on her
-own terms. Though our mother may not have the same cognitive ability
-that she once had, she is not a child and should not be treated as such.
-Please treat her the same way as you would like to be treated---with
-kindness, compassion, understanding and respect. By relying on these
-principles to guide your care, you will garner her trust, making your
-job easier and our mother happier. A request from a trusted friend is
-much easier to follow than a command from someone you do not like or
-respect. Without this trust, she may become anxious and just shut down
-and refuse to follow any requests. Of course, you must never use
-physical force or threats. Nor should you use humiliating or cruel
-comments as a tool for getting her to follow your instructions. These
-types of comments are not effective and just make her more emotionally
-upset
+\section*{Family History}
 
-Your responsibilities are outlined below and in the Senior Care
-Contract. Joan's family will continue to take care of everything else.
-For example, we will continue to help Joan with any financial or legal
-matters, repair and maintenance of her home, health matters, as well as
-other day to day needs. For your convenience, we have included a list of
-family members and their contact information.
+Our mother is a fiercely independent person who has lived on her own for most of her life. She has been married and divorced two times. She has two children, Colin and Charlene, from the first marriage and two children, Renee and Allegra, from the second. She now has seven grandchildren and two great grandchildren. Two of her grandchildren, Rachel Ogletree and Jessica Gould, live in town, as does her older daughter, Charlene. She has developed a very close relationship with Rachel and her husband Roy as they have checked in on her and visited her often throughout these past few years. Her only brother, Bob, lives in England.
 
-\textbf{{[}add telephone and contact list{]}}
+She has had many jobs throughout her life and sometimes more than one job at a time to make ends meet. She has worked as an editor at an engineering firm and a bank, a secretary and copy editor for a number of companies, as well as a stenographer. She has always been keenly interested in literature and poetry and has written scores of poems herself. She chose to retire as soon as she could to reap the benefits of all that hard work.
 
-\textbf{{[}We may want to include a very general clause of who to
-contact for what issue{]}}
-
-\textbf{Family History:}
-
-Share a little bit about your family and the history of your loved one
-so the caregiver gets to know them.
-
-Our mother is a fiercely independent person who has lived on her own for
-most of her life. She has been married and divorced two times. She has
-two children, Colin and Charlene, from the first marriage and two
-children, Renee and Allegra, from the second. She now has seven
-grandchildren and two great grandchildren. Two of her grandchildren,
-Rachel Ogletree and Jessica Gould, live in town, as does her older
-daughter, Charlene. She has developed a very close relationship with
-Rachel and her husband Roy as they have checked in on her and visited
-her often throughout these past few years. Her only brother, Bob, lives
-in England.
-
-She has had many jobs throughout her life and sometimes more than one
-job at a time to make ends meet. She has worked as an editor at an
-engineering firm and a bank, a secretary and copy editor for a number of
-companies, as well as a stenographer. She has always been keenly
-interested in literature and poetry and has written scores of poems
-herself. She chose to retire as soon as she could to reap the benefits
-of all that hard work.
-
-\textbf{Specific Diagnoses:}
+\{Specific Diagnoses:}
 
 Does your parent have a medical diagnosis like diabetes, congestive
 heart failure or dementia? Let your caregiver know the specifics and
