@@ -11,6 +11,8 @@
 \newcommand{\datefillin}{\hspace{0.2cm}\rule{3cm}{.1pt}}
 \newcommand{\initialfillin}{\hspace{0.2cm}\rule{1.5cm}{.1pt}}
 \newcommand{\sw}{.15\textwidth}
+\newcommand{\nw}{.2\textwidth}
+\newcommand{\mw}{.29\textwidth}
 \newcommand{\bw}{.39\textwidth}
 \newcommand{\tabtiny}[1]{\makebox[1.8em][l]{#1}\ignorespaces}
 \newcommand{\tabsmall}[1]{\makebox[.14\linewidth][l]{#1}\ignorespaces}
@@ -39,6 +41,11 @@
 	\fancyhf{}
 	\lhead{\centering \mytitle{}}
 	\rfoot{Page \thepage~of~\pageref{LastPage}}
+}
+\fancypagestyle{rules}{
+	\fancyhf{}
+	\lhead{\centering \rulestitle{}}
+	\rfoot{Page \thepage~of~\pageref{LastRulesPage}}
 }
 \fancypagestyle{empty}{
 	\fancyhf{}
@@ -230,7 +237,7 @@ Further responsibilities, your work schedule, and compensation are listed under 
 \section*{} %rules
 	\pagestyle{empty}
 \begin{attachment}{\rules{}} \label{rules}
-	something
+	\input{rulescontent}
 \end{attachment}
 
 \section*{} %basic
