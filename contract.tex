@@ -7,7 +7,6 @@
 \usepackage[table]{xcolor}
 \definecolor{lightgray}{gray}{0.9}
 \definecolor{medgray}{gray}{0.8}
-\rowcolors{1}{lightgray}{white}
 \newcommand{\checkbox}{\raisebox{2pt}{\framebox[12pt][c]{\rule[7pt]{0pt}{-.3\baselineskip}}}}
 
 \newcommand{\startdate}{the/start/date}
@@ -125,6 +124,7 @@ Further responsibilities, your work schedule, and compensation are listed under 
 					\item The Employee may leave certain chores to be completed on the following shift, or do some chores in advance that would normally be done on the following shift. As long as medicine, insulin, and food is served on time, all other chores can be done on the previous or following shift.
 				\end{enumerate}
 		\end{enumerate}
+		\rowcolors{1}{lightgray}{white}
 		\begin{tabular}{|p{\bw}|p{\sw}|p{\sw}|p{\sw}|}
 			\hline
 			\rowcolor{medgray}
@@ -244,19 +244,18 @@ Further responsibilities, your work schedule, and compensation are listed under 
 	\newpage
 
 \section*{} %rules
-	\pagestyle{empty}
 \begin{attachment}{\rules{}} \label{rules}
+	\rowcolors{1}{lightgray}{white}
 	\input{rulescontent}
 \end{attachment}
 
 \section*{} %basic
-\newpage
+\pagestyle{empty}
 \begin{attachment}{\basic{}} \label{basic}
 	\input{basicdaycontent}
 \end{attachment}
 
 \section*{} %bathroom
-\newpage
 \begin{attachment}{\bathroom{}} \label{bathroom}
 	\input{bathroomcontent}
 \end{attachment}
