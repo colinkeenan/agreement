@@ -2,6 +2,7 @@
 \newcommand{\mytitle}{SENIOR CARE CONTRACT}
 \newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
 \newcommand{\rulestitle}{SENIOR CARE GUIDELINES}
+\newcommand{\healthtitle}{HEALTH RECORDS}
 \overfullrule=2cm
 \usepackage[margin=1in,headheight=28pt]{geometry}
 \usepackage[table]{xcolor}
@@ -52,6 +53,11 @@
 	\fancyhf{}
 	\lhead{\centering \rulestitle{}}
 	\rfoot{Page \thepage~of~\pageref{LastRulesPage}}
+}
+\fancypagestyle{health}{
+	\fancyhf{}
+	\lhead{\centering \healthtitle{}}
+	\rfoot{Page \thepage~of~\pageref{LastHealthPage}}
 }
 \fancypagestyle{empty}{
 	\fancyhf{}
@@ -291,8 +297,9 @@ Further responsibilities, your work schedule, and compensation are listed under 
 
 \section*{} %health
 \newpage
-\begin{attachment}{\health{}} \label{health}
-	something
+\begin{attachment}{\health{}} \\ \label{health}
+
+	\input{healthcontent}
 \end{attachment}
 
 \section*{} %notyourjob

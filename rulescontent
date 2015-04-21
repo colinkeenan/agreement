@@ -1,7 +1,7 @@
 \setcounter{page}{1}
 \pagestyle{rules}
 
-\noindent\textbf{Senior Care Guidelines Disclaimer: The Senior Care Documents (as defined herein) have been provided for informational and guidance purposes only. The Senior Care Documents do not contain any promises and do not constitute a contract. As an ``at will'' employee as set forth in the Senior Care Contract, you may quit upon two weeks notice or be terminated by the Employer at any time for any reason with or without cause or notice. The Employer may revise the Senior Care Documents in its discretion and at any time without a written revision. However, the ``At Will Employment'' provision contained in the Senior Care Contract may not be so modified.}\\
+\noindent\textbf{Senior Care Guidelines Disclaimer: The Senior Care Documents (as defined herein on page \pageref{LastRulesPage}) have been provided for informational and guidance purposes only. The Senior Care Documents do not contain any promises and do not constitute a contract. As an ``at will'' employee as set forth in the Senior Care Contract, you may quit upon two weeks notice or be terminated by the Employer at any time for any reason with or without cause or notice. The Employer may revise the Senior Care Documents in its discretion and at any time without a written revision. However, the ``At Will Employment'' provision contained in the Senior Care Contract may not be so modified.}\\
 
 \noindent\textbf{Date:} \today
 
@@ -18,35 +18,7 @@ She has had many jobs throughout her life and sometimes more than one job at a t
 
 \subsection*{Ongoing Diagnosed Health Conditions}
 
-\begin{tabular}{|p{\bw}|p{\bw}|}
-	\hline
-	\rowcolor{medgray}
-	Health condition & Date noted by Kaiser Permanente under current plan (was previously on her 2nd husband's plan)\\ \hline
-	History of thyroid cancer and removal of the thyroid & around 1980 (not done by Kaiser Permanente and not noted)\\ \hline
-	History of Diabetes Type 2 treated with pills & late 1990's? (not noted in current Kaiser Permanente plan)\\ \hline
-	History of cancer of the kidney & 1/3/2006\\ \hline
-	Hypothyroidism (Low Thyroid) (as a result of removal of thyroid and not taking thyroid medication as prescribed) & 3/23/2006\\ \hline
-	Essential Hypertension & 3/23/2006\\ \hline
-	Scoliosis since childhood & 6/24/2006\\ \hline
-	Osteoporosis (Significant Thinning Of Bone) & 1/18/2006\\ \hline
-	Diabetes Type 2 With Moderate Kidney Disease (treated with insulin injections) & 08/10/2006\\ \hline
-	White Coat Syndrome & 07/16/2009\\ \hline
-	History Of Partial Nephrectomy (Kidney Removal) & 04/29/2010\\ \hline
-	Bilateral Cataract & 05/01/2013\\ \hline
-	Diabetes Type 2, Without Retinopathy & 05/01/2013\\ \hline
-	Vitamin D Deficiency & 05/14/2013\\ \hline
-	Abnormal Mammography & 07/15/2013\\ \hline
-	Onychomycosis (Nail Fungal Infection) & 10/31/2014\\ \hline
-	Onychogryphosis & 10/31/2014\\ \hline
-	Dry Skin & 10/31/2014\\ \hline
-	Atherosclerosis Of Aorta & 11/24/2014\\ \hline
-	Diabetes Type 2 With Hyperlipidemia & 11/30/2014\\ \hline
-	History Of Fall & 12/16/2014\\ \hline
-	Cancer Female Breast, Right Breast & 01/21/2015\\ \hline
-	Acquired Schatzkis Ring & 01/21/2015\\
-	\hline
-\end{tabular}
-
+\input{healthtable}
 \subsection*{Attention}
 
 Joan may be left at home safely. She is capable of transferring from her chair to her walker, going up and down the stairs independently and is able to transfer from her walker to the toilet. 
@@ -91,7 +63,7 @@ List of current doctors and recurring appointments
 
 	She has difficulty swallowing, please try to stick to softer, easier to chew foods and cut up any meats into very small pieces.
 
-	As outlined in the Daily Schedule, you will need to measure her blood sugar levels after breakfast and dinner. She will measure these blood levels herself after lunch and at midnight before she goes to bed.
+	As outlined in the \basic{}, you will need to measure her blood sugar levels before breakfast and dinner. She will measure these blood levels herself before lunch and every couple of hours after dinner before going to bed.
 
 	Breakfast Examples:
 
@@ -128,8 +100,8 @@ Roy Ogletree & Grandson-in-law & & \emph{rogletree@gmail.com}\\ \hline
 Jessica Gould & Granddaughter & cell: 818-383-3931 & \emph{zoobze11@hotmail.com}\\ \hline
 Christine Bryan & Family Friend & cell: 310-956-2715 &\\ \hline
 Cathy \& Buddy Szymoniak & Family Friends & cell: 626-7543 &\\ \hline
-\rowcolor{white}
 \multicolumn{4}{l}{ } \\
+\rowcolor{white}
 \multicolumn{4}{l}{\textbf{\emph{Out-of-Town Family}}} \\ \hline
 Bob Giffords & Brother & (the U.K.) &\\ \hline
 Colin Keenan & Son & \makecell{cell: 816-200-2658\\(Kansas City, MO)} & \emph{colinnkeenan@gmail.com}\\ \hline
@@ -199,7 +171,7 @@ For any other emergencies, please call {[}either Colin Keenan or Rachel Ogletree
 
 \subsection*{Employee Acknowledgment}
 
-I, \lname{} acknowledge receipt of the Senior Care Guidelines, Daily Schedule, Health Care Record and other materials reasonably related to my employment (``Senior Care Documents''). I further acknowledge and understand that I have been provided with the Senior Care Documents for informational and guidance purposes only, and that the Senior Care Documents contain no promises and do not constitute a contract. I further acknowledge and understand that I am an ``at will'' employee as set forth in the Senior Care Contract and that I may quit upon two weeks notice or be terminated by the Employer at any time for any reason with or without cause or notice.  The Employer may revise the Senior Care Documents in its discretion and at any time without a written revision. However, the ``At Will Employment'' provision contained in the Senior Care Contract may not be so modified.
+I, \lname{} acknowledge receipt of the \rules{}, \basic{}, \bathroom{}, \shopping{}, \bigchores{}, \shower{}, \health{}, \notyourjob{}, and other materials reasonably related to my employment (``Senior Care Documents''). I further acknowledge and understand that I have been provided with the Senior Care Documents for informational and guidance purposes only, and that the Senior Care Documents contain no promises and do not constitute a contract. I further acknowledge and understand that I am an ``at will'' employee as set forth in the Senior Care Contract and that I may quit upon two weeks notice or be terminated by the Employer at any time for any reason with or without cause or notice.  The Employer may revise the Senior Care Documents in its discretion and at any time without a written revision. However, the ``At Will Employment'' provision contained in the Senior Care Contract may not be so modified.
 
 \vspace{.8cm}
 \noindent\tabmed{Employee Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*

@@ -1,0 +1,37 @@
+\documentclass[]{article}
+\newcommand{\healthtitle}{HEALTH RECORDS}
+\overfullrule=2cm
+\usepackage[margin=1in,headheight=28pt]{geometry}
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{medgray}{gray}{0.8}
+\rowcolors{1}{lightgray}{white}
+\newcommand{\checkbox}{\raisebox{2pt}{\framebox[12pt][c]{\rule[7pt]{0pt}{-.3\baselineskip}}}}
+
+\newcommand{\sw}{.15\textwidth}
+\newcommand{\nw}{.2\textwidth}
+\newcommand{\mw}{.29\textwidth}
+\newcommand{\bw}{.39\textwidth}
+
+\newcommand{\makecell}[2][c]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancypagestyle{empty}{
+	\fancyhf{}
+}
+\fancypagestyle{withfooter}{
+	\fancyhf{}
+	\lhead{\centering \healthtitle{}}
+	\rfoot{Page \thepage~of~\pageref{LastPage}}
+}
+\fancypagestyle{health}{
+	\fancyhf{}
+	\lhead{\centering \healthtitle{}}
+	\rfoot{Page \thepage~of~\pageref{LastHealthPage}}
+}
+
+\begin{document}
+	\input{healthcontent}
+\end{document}
