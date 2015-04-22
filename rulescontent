@@ -128,7 +128,7 @@ Ella Lukasiewicz & Great Granddaughter & (near San Francisco) &\\
 \hline
 \end{tabular}
 
-\subsubsection*{Apartment Manager} The house apartment owned by Joan is located in Wilson Manor, a condominium building, that is managed by Beven & Brock Property Management, 99 S Lake Ave \#100, Pasadena, CA 91101, (626) 795-3282. However, there's no reason for you to contact them. Joan, being the owner of her apartment, is responsible for the maintenance of it. Contact Colin with any concerns that you might want to bring to an apartment manager.
+\subsubsection*{Apartment Manager} The house apartment owned by Joan is located in Wilson Manor, a condominium building, that is managed by Beven \& Brock Property Management, 99 S Lake Ave \#100, Pasadena, CA 91101, (626) 795-3282. However, there's no reason for you to contact them. Joan, being the owner of her apartment, is responsible for the maintenance of it. Contact Colin with any concerns that you might want to bring to an apartment manager.
 
 \subsubsection*{Contractors such as plumbers, heating/ac, handyman and etc.}
 
@@ -165,32 +165,39 @@ Because you have been employed on an ``at-will'' basis, you may terminate your e
 \end{enumerate}
 
 \subsection*{In an Emergency}
+\textbf{\emph{Call 911}} \\
 
-For any life-threatening emergencies, please call 911 first. Then call the following people:
-
-Colin Keenan (816) 200-2658
-
-Rachel Ogletree (626) 241-2951
-
-Charlene Gould (213) 948-6157\\
-
-Colin can provide you with more detailed information about Joan Harrison's health that could be needed by the EMT team. Rachel and Charlene are locally available to help out. You should also plan on attending Joan at the hospital or other medical unit until a family member is able to join you.
-
-For any other emergencies, please call {[}either Colin Keenan or Rachel Ogletree (or other local family member, e.g., Charlene or Chris{]} for further direction. If you are not able to reach Colin, please contact Kaiser Permanente using the table below for further guidance. Be sure to have Joan's membership card and Health Record readily available at all times. Once you have either reached Colin, Rachel or Kaiser and you have been given further directions, please contact Charlene as well.
-
-
-\noindent \begin{tabular}{|p{\nw}|p{\nw}|} 
+\noindent \begin{tabular}{|l|l|} 
 \rowcolor{medgray}
-\multicolumn{4}{c}{\textbf{Kaiser Permanente Phone Numbers}} \\ 
+\multicolumn{2}{l}{\textbf{Emergency Contacts}} \\ 
+\rowcolor{medgray}
+\textbf{Name} & \textbf{Phone\#} \\ \hline
+\textbf{Emergency} & \textbf{911} \\ \hline
+Colin Keenan & (816) 200-2658 \\ \hline
+Rachel Ogletree & (626) 241-2951 \\ \hline
+Charlene Gould & (213) 948-6157\\
+\hline 
+\end{tabular} \\
+
+
+	Colin can provide you with more detailed information about Joan Harrison's health that could be needed by the EMT team. Rachel and Charlene are locally available to help out. You should also plan on attending Joan at the hospital or other medical unit until a family member is able to join you.
+
+	For any other emergencies, please call Colin or Rachel for directions. If you are not able to reach Colin, please contact Kaiser Permanente using the table below for further guidance. Be sure to have Joan's membership card and Health Record readily available at all times. Once you have reached Colin, Rachel or Kaiser and you have been given further directions, please contact Charlene as well.
+
+
+\noindent \begin{tabular}{|l|l|} 
+\rowcolor{medgray}
+\multicolumn{2}{l}{\textbf{Kaiser Permanente Phone Numbers}} \\ 
 \rowcolor{medgray}
 \textbf{Reason} & \textbf{Phone\#} \\ \hline
-Advice on weekdays 9-5 & 1-800-954-8000 \\ \hline
-Advice after hours & 1-888-576-6225 \\ \hline
+Advice on weekdays 9-5 & 800-954-8000 \\ \hline
+Advice after hours & 888-576-6225 \\ \hline
 Appointments & 323-783-2972 \\ \hline
 Care Management of insulin & 323-783-7887 \\ \hline
 Opthomology & 323-783-2565 \\ 
 \hline
 \end{tabular}
+
 
 \subsection*{Employee Acknowledgment}
 
