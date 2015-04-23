@@ -57,13 +57,19 @@ She will require help with the following tasks:
 
 \subsection*{Additional Care}
 
-\noindent \begin{tabular}{|p{\nw}|p{\nw}|p{\nw}|p{\mw}|} 
+\noindent \begin{tabular}{|p{\mw}|p{\nw}|p{\nw}|} 
 \rowcolor{medgray}
 \multicolumn{4}{c}{\textbf{Doctors and Dentist}} \\ 
 \rowcolor{medgray}
-\textbf{Name} & \textbf{Treatment} & \textbf{Location} & \textbf{Telephone \#}\\ \hline
+\textbf{Name} & \textbf{Treatment} & \textbf{Location}}\\ \hline
 \rowcolor{white}
-dr & treat & loc & 222\\
+Garris, Richard Franklin (M.D.) (man) & Primary Care & 3280 E Foothill Blvd, Pasadena\\ \hline
+Abdalla, Iman Ahmad (M.D.) (woman) & Breast Cancer & 1515 N Vermont Ave, LA\\ \hline
+Le, Tuan Anh (Dpm) (man) & Podiatry & 501 N Orange St, Glendale\\ \hline
+Okahira, Deana H (Pharm.D.) (woman) & Blood Sugar/Insulin & Pasadena\\ \hline
+Than, Michael Steven (M.D.) (man) & backup Primary Care & Pasadena\\ \hline
+Winarko, Jonathan (M.D.) (man) & Opthomologist (cataract) & 1515 N Vermont Ave, LA\\ \hline
+Robin Stephen L DDS (man) & Dentist & 1245 W Huntington Dr \# 103, Arcadia (626) 795-4412\\
 \hline
 \end{tabular}
 
