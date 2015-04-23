@@ -1,6 +1,6 @@
 \setcounter{page}{1}
 \pagestyle{health}
 
-input{healthtable}
+\input{healthtable}
 \label{LastHealthPage}
 %/* vim: set filetype=tex : */ 
