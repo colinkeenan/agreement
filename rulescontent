@@ -25,6 +25,8 @@ Joan may be left at home safely. She is capable of transferring from her chair t
 
 \subsection*{Medication Monitoring}
 
+After checking her blood sugar, you will be serving pills, an inhaler, and an insulin filled syringe with breakfast and dinner. The specific medications and dosages may change over time, and you should keep a current list for showing to the nurse on medical appointments. You will be trained on how to prepare the pills and syringe when trained for the job. Joan will take the medicine, use the inhaler, and inject the insulin herself, but make sure she is aware of the medicine and insulin before she starts eating. Although served with every breakfast and dinner, she still forgets and doesn't notice if it's not right in the way of her food.
+
 \subsection*{Physical or Cognitive Impairments}
 
 \input{impairmentcontent}
@@ -55,13 +57,21 @@ She will require help with the following tasks:
 
 \subsection*{Additional Care}
 
-List of current doctors and recurring appointments
+\noindent \begin{tabular}{|p{\nw}|p{\nw}|p{\nw}|p{\mw}|} 
+\rowcolor{medgray}
+\multicolumn{4}{c}{\textbf{Doctors and Dentist}} \\ 
+\rowcolor{medgray}
+\textbf{Name} & \textbf{Treatment} & \textbf{Location} & \textbf{Telephone \#}\\ \hline
+\rowcolor{white}
+dr & treat & loc & 222\\
+\hline
+\end{tabular}
 
 \subsection*{Eating/Food Preferences or Restrictions and Instructions}
 \begin{enumerate}
 	\item\textbf{General Instructions}. You will be preparing three healthy, nutritious and well balanced (but small) meals for Joan. Eating or keeping Joan company are not part of your duties so you will be checking out with Colin almost immediately after serving a meal, and you may leave after that. You will personally serve Breakfast and Dinner at the end of your shifts. Lunch and snacks should be prepared and placed in or beside the refrigerator during your shift. Try to avoid simply leaving all the snacks out for her to eat as she pleases. Measure out an appropriate amount of snack food and put beside or in the refrigerator as required. She should be encouraged to stand up and get her own lunch and snacks that you have prepared, rather than leaving everything next to her. Excess snack food should be placed in a high cupboard that she would have great difficulty reaching for herself.
 
-	She has difficulty swallowing, please try to stick to softer, easier to chew foods. Fresh meat should either be well marbled with fat or be prepared with a sweet sauce to make it easier to swallow. Lunch meats like ham, salami, and bologna are fine for lunch. We are not overly concerned about the amount of fat that she eats.
+	She has difficulty swallowing; so, please try to stick to softer, easier to chew foods. Fresh meat should either be well marbled with fat or be prepared with a sweet sauce to make it easier to swallow. Lunch meats like ham, salami, and bologna are fine for lunch. We are not overly concerned about the amount of fat that she eats.
 
 	Although eating too many carbs at once will raise her blood sugar to levels that may damage internal organs, her insulin injections have been prescribed to balance out a steady supply of carbs throughout the day. Eating fewer carbs than usual can lead to Joan experiencing dangerously low blood sugar between your work shifts which, if repeated often, may eventually lead Joan to suffer minor brain damage. So, a sweet sauce with meat is fine, and she will need a carb (bread, noodles, rice, chips, fruit, milk, plain yogurt \ldots) with every meal and as snacks between meals as well. A desert made with real sugar served with dinner or left within reach in the freezer/refrigerator is fine too, but do not give her desert after every meal even if she asks for that.
 
