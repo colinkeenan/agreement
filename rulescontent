@@ -59,9 +59,9 @@ She will require help with the following tasks:
 
 \noindent \begin{tabular}{|p{\mw}|p{\nw}|p{\nw}|} 
 \rowcolor{medgray}
-\multicolumn{4}{c}{\textbf{Doctors and Dentist}} \\ 
+\multicolumn{3}{c}{\textbf{Doctors and Dentist}} \\ 
 \rowcolor{medgray}
-\textbf{Name} & \textbf{Treatment} & \textbf{Location}}\\ \hline
+\textbf{Name} & \textbf{Treatment} & \textbf{Location}\\ \hline
 \rowcolor{white}
 Garris, Richard Franklin (M.D.) (man) & Primary Care & 3280 E Foothill Blvd, Pasadena\\ \hline
 Abdalla, Iman Ahmad (M.D.) (woman) & Breast Cancer & 1515 N Vermont Ave, LA\\ \hline
