@@ -114,9 +114,8 @@ We have no specific restrictions on who is allowed to visit Joan and the length 
 \multicolumn{4}{c}{\textbf{Contact Information Of Family And Friends}} \\ 
 \rowcolor{medgray}
 \textbf{Name(s)} & \textbf{Relationship} & \textbf{Telephone \#} & \textbf{Email Address}\\ \hline
-\rowcolor{white}
-\multicolumn{4}{l}{ } \\
-\multicolumn{4}{l}{\textbf{\emph{In-Town Family and Friends}}} \\ \hline
+\rowcolor{white} \multicolumn{4}{l}{ } \\
+\rowcolor{white} \multicolumn{4}{l}{\textbf{\emph{In-Town Family and Friends}}} \\ \hline
 Charlene Nichols & Daughter & \makecell{home: 323-685-2055\\cell: 213-948-6157} & \emph{sciencecharlene@gmail.com}\\ \hline
 Chris Nichols & Son-in-law & & \\ \hline
 Rachel Ogletree & Granddaughter & cell: 626-241-2951 & \emph{bashakat@hotmail.com}\\ \hline
@@ -124,9 +123,8 @@ Roy Ogletree & Grandson-in-law & & \emph{rogletree@gmail.com}\\ \hline
 Jessica Gould & Granddaughter & cell: 818-383-3931 & \emph{zoobze11@hotmail.com}\\ \hline
 Christine Bryan & Family Friend & cell: 310-956-2715 &\\ \hline
 Cathy \& Buddy Szymoniak & Family Friends & cell: 626-7543 &\\ \hline
-\multicolumn{4}{l}{ } \\
-\rowcolor{white}
-\multicolumn{4}{l}{\textbf{\emph{Out-of-Town Family}}} \\ \hline
+\rowcolor{white} \multicolumn{4}{l}{ } \\
+\rowcolor{white} \multicolumn{4}{l}{\textbf{\emph{Out-of-Town Family}}} \\ \hline
 Bob Giffords & Brother & (the U.K.) &\\ \hline
 Colin Keenan & Son & \makecell{cell: 816-200-2658\\(Kansas City, MO)} & \emph{colinnkeenan@gmail.com}\\ \hline
 Renee Fried & Daughter & \makecell{cell: 240-401-3932\\home: 301-983-9580\\(near Wash. D.C.)} & \emph{reneefriedzone@gmail.com}\\ \hline
