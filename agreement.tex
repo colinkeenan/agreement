@@ -1,5 +1,19 @@
 \documentclass[12pt,letterpaper]{article}
 \newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
+\newcommand{\agreementdef}{agreement, titled \agreementtitle{}, including sections \ref{specifics} and \ref{definitions} on pages 1 through \pageref{acceptance} as well as Schedules \ref{therental} through \ref{disclosures} on pages \pageref{therental} through \pageref{LastPage}}
+
+\renewcommand{\theenumi}{\textit{\arabic{enumi}}} %these 12 lines make item references have the same punctuation as the item being referenced
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumii}{\textit{(\alph{enumii})}}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\textit{\roman{enumiii}}}
+\renewcommand{\labelenumiii}{\theenumiii}
+\renewcommand{\theenumiv}{\textit{(\Alph{enumiv})}}
+\renewcommand{\labelenumiv}{\theenumiv}
+\makeatletter
+\renewcommand\p@enumii{\theenumi}
+\renewcommand\p@enumiii{\theenumi\theenumii}
+\makeatother
 
 \newcommand{\tabtiny}[1]{\makebox[1.8em][l]{#1}\ignorespaces}
 \newcommand{\tabsmall}[1]{\makebox[.14\linewidth][l]{#1}\ignorespaces}
@@ -43,6 +57,7 @@
 \newcommand{\lname}{Lodger's Name}
 \newcommand{\ownermail}{Owner Email}
 \newcommand{\management}{Management}
+\newcommand{\myaddress}{Management Address and Phone}
 \newcommand{\myemail}{Management Email}
 \newcommand{\condo}{Wilson Manor}
 \newcommand{\apt}{Apartment}
@@ -53,6 +68,7 @@
 \newcommand{\appliances}{Shared Appliances}
 \newcommand{\utilities}{Shared Utilities}
 \newcommand{\firstday}{Occupancy Commencement Date}
+\newcommand{\occdate}{the/occ/date}
 \newcommand{\rentweek}{Rental Term}
 \newcommand{\rent}{\$175}
 \newcommand{\lemail}{Lodger Email}
@@ -67,7 +83,7 @@
 
 \noindent \hrulefill
 \section{\specifics{}} \label{specifics}
-This agreement, titled \agreementtitle{} (the ``Agreement'') is entered into by and between \mom{} (``Owner''), and the individual identified as Lodger (``Lodger'') for the week-to-week rental of that certain furnished lodging (``\room{}'') within that certain apartment house (``\apt{}'') occupied and owned by Owner, where the Lodger, \room{}, and \apt{} are identified in items \ref{lodger}, \ref{room}, and \ref{apt} of section \ref{definitions} of this Agreement. Further details of the \room{} are set forth in Schedule \ref{therental}. Even though personally occupying \apt{}, Owner together with her family members who have been authorized to act as the Owner's managers of the \apt{} and are identified in item \ref{management} of section \ref{definitions} of this Agreement, will hereinafter be referred to as management (``\management{}''). Only Owner and Lodger shall reside in \apt{}. All references to other residents are references to the residents of the condominium building with address listed in item \ref{condo} in section \ref{specifics} of this Agreement (``\condo{}''), in which \apt{} is located.
+This \agreementdef{} (the ``Agreement'') is entered into by and between \mom{} (``Owner''), and the individual identified as Lodger (``Lodger'') for the week-to-week rental of that certain furnished lodging (``\room{}'') within that certain apartment house (``\apt{}'') occupied and owned by Owner, where the Lodger, \room{}, and \apt{} are identified in items \ref{lodger}, \ref{room}, and \ref{apt} of section \ref{definitions} of this Agreement. Further details of the \room{} are set forth in Schedule \ref{therental}. Even though personally occupying \apt{}, Owner together with her family members who have been authorized to act as the Owner's managers of the \apt{} and are identified in item \ref{management} of section \ref{definitions} of this Agreement, will hereinafter be referred to as management (``\management{}''). Only Owner and Lodger shall reside in \apt{}. All references to other residents are references to the residents of the condominium building with address listed in item \ref{condo} in section \ref{specifics} of this Agreement (``\condo{}''), in which \apt{} is located.
 
 	\begin{enumerate}
 		\item \textbf{Applicability of Section 1946.5 of California Civil Code}\\*
@@ -112,7 +128,7 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 \begin{multicols}{2}
 	\begin{enumerate} 
 		\item \textbf{Agreement}\\* \label{agreement}
-			This agreement, titled \agreementtitle{}
+			This \agreementdef{}
 		\item \textbf{\management{}}\\* \label{management}
 			\noindent \mom{}\\*
 			and the authorized family members listed below:\\*
@@ -122,7 +138,13 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 			Renee Fried,
 			Allegra Harrison,
 			Rachel Ogletree
-				
+
+		\item \textbf{\myaddress{}}\\* \label{myaddress}
+			Colin Keenan
+			3835 Park Ave
+			Kansas City, MO 64109
+			816-200-2658
+			
 		\item \textbf{\myemail{}}\\* \label{myemail}
 			colinnkeenan@gmail.com
 
@@ -270,8 +292,9 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 
 \tabmed{Schedule \ref{disclosures}} \tablarge{\textbf{\disclosures{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
 
-\newpage
-Signing below signifies acceptance of this Agreement, titled \agreementtitle{} (having previously received and read it), including sections \ref{specifics} and \ref{definitions} on pages 1 through \thepage{} as well as Schedules \ref{therental} through \ref{disclosures} on pages \pageref{therental} through \pageref{LastPage}.
+\newpage \label{acceptance}
+{\small\noindent\textbf{CAUTION: THIS IS A LEGALLY BINDING AGREEMENT; MAKE SURE YOU UNDERSTAND ALL OF ITS PROVISIONS BEFORE SIGNING} \\*
+By signing below, I acknowledge having received a copy of, and having read and understood, this \agreementdef{}. This agreement is entered into on \today{} and will be effective on \occdate{}.
 
 \vspace{1cm}
 \noindent\tabmed{Lodger Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
@@ -281,7 +304,7 @@ Signing below signifies acceptance of this Agreement, titled \agreementtitle{} (
 \noindent\tabmed{Owner Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
 \tabmed{} \tablarge{\textsuperscript{\mom{}}} 
 
-\input{notarycontent}
+\input{notarycontent}}
 \section*{} %therental
 \vspace{-1cm}
 \begin{schedule}{\therental{}} \label{therental}
@@ -289,11 +312,11 @@ Signing below signifies acceptance of this Agreement, titled \agreementtitle{} (
 	\item \textbf{Rental And Occupancy Of Lodging}. 
 		\begin{enumerate}
 			\item \textbf{Room}.
-				\management{} agrees to rent to the Lodger, on a week-to-week basis, and for residential purposes only, the \room{} that is located within the \apt{}, and, the Lodger agrees to rent from the Owner the \room{} that is located in the \apt{} and to use the \room{} as a bedroom.  Other than as provided in item \ref{livingroom} of section \ref{definitions} of this Agreement, (the ``\livingroom{}''), rental of the \room{} includes shared use of all rooms in the house, including the top-floor bedroom with a view of Union Street, all entrances, all hallways and stairs, all hallway closets, the kitchen, the top-floor bathroom, and a carport area providing parking space for one vehicle in the gated parking area of \condo{} (the ``\shared{}'').
+				As consideration for this Agreement, \management{} agrees to rent to the Lodger, on a week-to-week basis, and for residential purposes only, the \room{} that is located within the \apt{}, and, the Lodger agrees to rent from the Owner the \room{} that is located in the \apt{} and to use the \room{} as a bedroom.  Other than as provided in item \ref{livingroom} of section \ref{definitions} of this Agreement, (the ``\livingroom{}''), rental of the \room{} includes shared use of all rooms in the house, including the top-floor bedroom with a view of Union Street, all entrances, all hallways and stairs, all hallway closets, the kitchen, the top-floor bathroom, and a carport area providing parking space for one vehicle in the gated parking area of \condo{} (the ``\shared{}'').
 			\item \textbf{Authorized Occupants}. No one other than the Lodger shall reside in the \room{}. 
 			\item \textbf{Use Of Lodging}. The \room{} shall be used only for residential purposes. The Lodger shall not, in whole or in part, assign this Agreement, or sublet or transfer possession of any part or all of the \room{}. The Lodger shall not give accommodations to paid boarders or residents. Occupancy by guests is prohibited without the Owner's prior written consent and will be considered a breach of this agreement. If employed by \management{}, Lodger may not have guests while on duty under that employment. No guest may visit for more than six (6) hours in a day without the written permission of a member of \management{}. The Lodger shall give prompt prior written notice to \management{} in the event the Lodger will be absent from \apt{} for more than 7 calendar days. Such notice shall include information regarding the expected duration of the absence and where the Lodger may be contacted in the event of an emergency. 
 			\item \textbf{No Smoking}. \label{smoking}
-				As posted in many places on the \condo{} property, smoking is prohibited on \condo{} property, and is enforceable under city laws where \condo{} is located. \management{} will terminate this Agreement as provided in item \ref{terminate} of this section if \management{} suspects Lodger, guests, or others under lodger's control, have smoked in \room{}, \apt{}, or on \condo{} property.
+				As posted in many places on the \condo{} property, smoking is prohibited on \condo{} property, and is enforceable under city laws where \condo{} is located. \management{} will terminate this Agreement as provided in item \ref{terminate} of this section if \management{} has reason to believe that Lodger, guests, or others under lodger's control, have smoked in \room{}, \apt{}, or on \condo{} property.
 			\item \textbf{Appliances}. \management{} shall provide and maintain those appliances listed in item \ref{appliances} of section \ref{definitions} of this Agreement{}, (the ``\appliances{}''), in good working order during the time the \room{} is rented to Lodger.
 			\item \textbf{\furniture{}}. \management{} shall provide the \furniture{} listed in item \ref{furniture} of section \ref{definitions} of this Agreement{} (``\furniture{}'') in usable condition and maintain same in usable condition during the time \room{} is rented to Lodger.
 		\end{enumerate}
@@ -306,14 +329,18 @@ Signing below signifies acceptance of this Agreement, titled \agreementtitle{} (
 \begin{schedule}{\payments{}} \label{payments}
 \begin{enumerate}
 	\item \textbf{Method Of Payment Of Monetary Obligations}. \label{paymethod}
+		All payments of Rent and any other monetary sums due under the terms of this Agreement shall be made either via Venmo or via Wells Fargo Bank. 
 		\begin{enumerate} 
-			\item \textbf{Venmo}. All payments of Rent and any other monetary sums due under the terms of this Agreement shall be made via Venmo subject to its terms of service, https://venmo.com/w/legal/us-user-agreement/. 
+			\item \textbf{Venmo}. Payments made via Venmo shall be made to the Venmo account associated with the Owner's email address (the ``\ownermail{}'') that is set forth in item \ref{ownermail} of section \ref{definitions} of this Agreement{}. Venmo's website is https://venmo.com/; Venmo also has apps for Android and iOS. 
+			\item \textbf{Wells Fargo Bank, 82 S Lake Ave, Pasadena, CA 91101}. Payments made via Wells Fargo Bank shall be deposited at Wells Fargo Bank at 82 S Lake Ave, Pasadena, CA 91101 into the checking account for THE JOAN B. HARRISON FAMILY TRUST with account number 8139769759. Payments may be made in any form accepted by that Wells Fargo Bank branch.
+			\item \textbf{Rejected Payment Fee}. If any form of payment offered by Lodger in payment of Rent or any other amount due under this Agreement is returned for lack of sufficient funds, a ``stop payment,'' or any other reason, Lodger will pay the Owner a returned payment fee of \$25 for the first payment made by Lodger and rejected by the bank, and \$35 for every subsequent rejected payment.
+			\item \textbf{\paymenttime{}}. \label{defpaytime} 
 				\begin{enumerate}
-					\item Venmo payments shall be made to the Venmo account associated with the Owner's email address (the ``\ownermail{}'') that is set forth in item \ref{ownermail} of section \ref{definitions} of this Agreement{}. 
-					\item \label{defpaytime} 
-						Venmo will notify \management{} of the payment via the \ownermail{}, and \management{} will consider the payment as having been received at the time and date stamped on the Venmo notification (``\paymenttime{}''). 
-					\item For reasons of security and convenience, \management{} shall not accept cash payments. Unless otherwise directed in writing by \management{}, all payments shall be made through Venmo's website https://venmo.com/, one of Venmo's apps for Android/iOS, or by any other method Venmo provides. 
+					\item Venmo will notify \management{} of the payment via the \ownermail{}. 
+					\item Lodger should notify \management{} of Wells Fargo Bank deposits via the \ownermail{} and \management{} shall log onto https://online.wellsfargo.com to confirm the deposit shows as pending or posted. If the deposit does not show up at https://online.wellsfargo.com, \management{} shall notify the Lodger of this situation via reply to the Lodger's emailed notification of payment, and contact the bank to find out if systems are up and if there is any way to confirm the deposit. \management{} shall check with the Bank again at close of business day and every business day following until the actual payment date has been determined.
+					\item \management{} will consider the payment as having been received at the time and date stamped on either the Venmo notification, or the Lodger notification if https://online.wellsfargo.com also shows the deposit on the same business day, (``\paymenttime{}''). If payment is made via Wells Fargo Bank, but https://online.wellsfargo.com does not show the deposit on the same business day, the \paymenttime{} will match the date as reported by Wells Fargo Bank.
 				\end{enumerate}
+			\item \textbf{No Other Payment Method or Location}. Lodger shall not make any payment in person or through the mail to Owner or any other member of \management{}. Although Lodger may feel it would be more convenient to pay the Owner in person, the Lodger shall not do so. Payments are not useful unless in the Owner's checking account, and due to medical conditions, Owner will not make deposits into her checking account.
 			\item \textbf{Receipt}. \management{} will provide receipt of payment via one of the \lemail{} that is set forth in item \ref{lemail} of section \ref{definitions} of this Agreement{} (``\lemail{}''), and record payment was received at the \paymenttime{}. 
 		\end{enumerate}
 	\item \textbf{Security Deposit And Payments Of Rent Due Under This Agreement}. 
@@ -362,7 +389,7 @@ Signing below signifies acceptance of this Agreement, titled \agreementtitle{} (
 					\item 30 days in any other case during the first year of this Agreement or otherwise allowed by law, or 
 					\item 60 days in any other case.
 				\end{enumerate} 
-				The Notice of Termination shall state that Lodger is not welcome in \apt{} anymore, provide a reminder that only Owner and Lodger reside in this \apt{}, and contain a statement about reclaiming personal property persuant to California Civil Code 1946.1(h). If the notice period is less than 30 days, the Notice of Termination shall also provide the justifying reason for shorter notice. 
+				The Notice of Termination shall state that Lodger is not welcome in \apt{} anymore, provide a reminder that only Owner and Lodger reside in this \apt{}, and contain a statement about reclaiming personal property pursuant to California Civil Code 1946.1(h). If the notice period is less than 30 days, the Notice of Termination shall also provide the justifying reason for shorter notice. 
 			\item \textbf{Service Of Termination Notice}. \label{service}
 				When a notice of termination requires service pursuant to California Code of Civil Procedure 1162, such service may be made by either: 
 				\begin{enumerate}
@@ -386,7 +413,7 @@ Signing below signifies acceptance of this Agreement, titled \agreementtitle{} (
 \begin{schedule}{\behavior{}} \label{behavior}
 \begin{enumerate}
 	\item \textbf{Criminal And Drug Related Activities}. 
-		In an effort to keep \mom{} safe in her own home, \management{} is taking a ``zero tolerance' position towards any of the Criminal or Drug-Related Criminal activities described on this page. 
+		In an effort to keep \mom{} safe in her own home, \management{} is taking a ``zero tolerance'' position towards any of the Criminal or Drug-Related Criminal activities described on this page. 
 		\begin{enumerate} 
 			\item \textbf{Criminal Activity}. \label{criminal}
 				\begin{enumerate}
@@ -399,7 +426,7 @@ Signing below signifies acceptance of this Agreement, titled \agreementtitle{} (
 						\end{enumerate} 
 					\item The Lodger specifically understands and acknowledges that: 
 						\begin{enumerate} 
-							\item	The Lodger has an affirmative obligation to ensure that the Lodger, guest, or other person under his or her control commits no such criminal or illegal activity; 
+							\item	The Lodger has an obligation to ensure that the Lodger, guest, or other person under his or her control commits no such criminal or illegal activity; 
 							\item The Lodger shall be held strictly and vicariously liable for such criminal or illegal acts of a guest, or other person under his or her control; and 
 							\item \management{} will terminate this Agreement for any such criminal or illegal act, regardless of whether there is an arrest or a conviction. 
 						\end{enumerate}
@@ -409,7 +436,7 @@ Signing below signifies acceptance of this Agreement, titled \agreementtitle{} (
 			\item \textbf{Criminal Drug Related Activity}. \label{drug}
 				Lodger, guest, or other person under his or her control shall not engage in the illegal manufacture, sale, distribution, use or possession with the intent to manufacture, sell, distribute or use a controlled substance as defined in section 102 of the Controlled Substances Act (21 U.S.C. 802) (``Drug-Related Criminal Activity'') on or off the property of \condo{}. The Lodger specifically understands and acknowledges that: 
 				\begin{enumerate}
-					\item The Lodger has an affirmative obligation to ensure that the Lodger, or guest, or other person under his or her control do not commit any Drug-Related Criminal Activity; 
+					\item The Lodger has an obligation to ensure that the Lodger, or guest, or other person under his or her control do not commit any Drug-Related Criminal Activity; 
 					\item The Lodger shall be held strictly and vicariously liable for any such Drug-Related Criminal Activity which is committed by a guest, or other person under his or her control; and 
 					\item \management{} will terminate this Agreement for any such criminal or illegal act, regardless of whether there is an arrest or a conviction.
 				\end{enumerate}
