@@ -1,6 +1,6 @@
-\documentclass[12pt,letterpaper]{article}
+\documentclass[]{article}
 \newcommand{\agreementtitle}{WILSON MANOR, BEDROOM IN CONDOMINIUM APARTMENT 13, WEEK-TO-WEEK LODGING RENTAL AGREEMENT}
-\newcommand{\agreementdef}{agreement, titled \agreementtitle{}, including sections \ref{specifics} and \ref{definitions} on pages 1 through \pageref{acceptance} as well as Schedules \ref{therental} through \ref{disclosures} on pages \pageref{therental} through \pageref{LastPage}}
+\newcommand{\agreementdef}{agreement, titled \agreementtitle{}, including sections \ref{specifics} and \ref{definitions} on pages 1 through \pageref{acceptance} as well as Schedules \ref{therental} through \ref{meta} on pages \pageref{therental} through \pageref{LastPage}}
 
 \renewcommand{\theenumi}{\textit{\arabic{enumi}}} %these 12 lines make item references have the same punctuation as the item being referenced
 \renewcommand{\labelenumi}{\theenumi}
@@ -51,13 +51,14 @@
 \newcommand{\rules}{Residential Rules}
 \newcommand{\standards}{Residential Housekeeping Standards}
 \newcommand{\meta}{About This Agreement}
-\newcommand{\disclosures}{Disclosures}
 
 \newcommand{\mom}{Joan B Harrison}
 \newcommand{\lname}{Lodger's Name}
+\newcommand{\lbirth}{lod/dat/bir}
+\newcommand{\lss}{lod-ss-numb}
+\newcommand{\lodgeremail}{lodger@email.com}
 \newcommand{\ownermail}{Owner Email}
 \newcommand{\management}{Management}
-\newcommand{\myaddress}{Management Address and Phone}
 \newcommand{\myemail}{Management Email}
 \newcommand{\condo}{Wilson Manor}
 \newcommand{\apt}{Apartment}
@@ -68,7 +69,6 @@
 \newcommand{\appliances}{Shared Appliances}
 \newcommand{\utilities}{Shared Utilities}
 \newcommand{\firstday}{Occupancy Commencement Date}
-\newcommand{\occdate}{the/occ/date}
 \newcommand{\rentweek}{Rental Term}
 \newcommand{\rent}{\$175}
 \newcommand{\lemail}{Lodger Email}
@@ -77,7 +77,7 @@
 \begin{document}
 \title{\agreementtitle{}}
 \author{Drafted by Colin N Keenan colinnkeenan@gmail.com}
-\date{April 2015}
+\date{May 2015}
 \maketitle
 \thispagestyle{fancy}
 
@@ -109,17 +109,24 @@ This \agreementdef{} (the ``Agreement'') is entered into by and between \mom{} (
 			Lodger further understands and agrees with the following: 
 			\begin{enumerate}
 				\item This Agreement is temporary and although automatically renewing weekly, this Agreement will eventually be terminated by \management{} when \management{} will no longer rent \room{} to anyone, even if Lodger has always been in good standing under this Agreement. 
-				\item \management{} desires that Lodger clearly understands how to avoid premature termination of this Agreement, and so has provided rules as listed in Schedule \ref{rules} of this Agreement (``\rules{}''), and housekeeping standards as listed in Schedule \ref{standards} of this Agreement (``\standards{}''). 
+				\item \management{} desires that Lodger clearly understands how to keep renting \room{} week-to-week until it will no longer be available, and so has provided rules as listed in Schedule \ref{rules} of this Agreement (``\rules{}''), and housekeeping standards as listed in Schedule \ref{standards} of this Agreement (``\standards{}''). 
 				\item \management{} may change or add to \rules{} and \standards{} with 30 day written notice, providing those subsequent drafts to Lodger.
-				\item Lodger shall obey the \rules{} and \standards{} as currently and subsequently drafted and delivered to Lodger in order to avoid premature termination of this Agreement.
+				\item Lodger shall obey the \rules{} and \standards{} as currently and subsequently drafted and delivered to Lodger in order to avoid termination of this Agreement.
 			\end{enumerate}
 
 		\item \textbf{\meta{}}.
 			Further terms relating to this Agreement itself are set forth in Schedule \ref{meta} of this Agreement.
 
-		\item \textbf{\disclosures{}}. See Schedule \ref{disclosures}: \disclosures{}.
+		\item \textbf{Disclosures}. 
+			\begin{enumerate}
+				\item \textbf{Megan's Law Disclosure}.
+					``Notice: Pursuant to Section 290.46 of the Penal Code, information about specified registered sex offenders is made available to the public via an Internet Web site maintained by the Department of Justice at www.meganslaw.ca.gov. Depending on an offender's criminal history, this information will include either the address at which the offender resides or the community of residence and ZIP Code in which he or she resides.''
+				\item \textbf{Confidentiality Of Record}. 
+					Confidential records and information obtained by \management{} shall not be disclosed to third parties except in accordance with law. 
+			\end{enumerate}
+
 		\item \textbf{Honesty}.
-			The Lodger understands and agrees that \management{} is entering into this Agreement in reliance upon the truth, completeness and accuracy of information provided in the Lodger's initial application for a lodging rental. Furthermore, the Lodger understands and agrees that \management{} is relying on the truth, completeness and accuracy of all future information to be provided by the Lodger. Should it be discovered that any such information is false, misleading, or incomplete, \management{} may terminate this Agreement which may result in additional rent being owed by the Lodger and/or lead to other legal action and remedies which may be appropriate under the law. 
+			The Lodger understands and agrees that \management{} is entering into this Agreement in reliance upon the truth, completeness and accuracy of information provided in the Lodger's initial application for a lodging rental. Furthermore, the Lodger understands and agrees that \management{} is relying on the truth, completeness and accuracy of all future information to be provided by the Lodger. Should it be discovered that any such information is false, misleading, or incomplete, \management{} may terminate this Agreement which may lead to other legal action and remedies which may be appropriate under the law. 
 
 	\end{enumerate}
 
@@ -129,9 +136,13 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 	\begin{enumerate} 
 		\item \textbf{Agreement}\\* \label{agreement}
 			This \agreementdef{}
+
+			\vfill
+			\columnbreak
+
 		\item \textbf{\management{}}\\* \label{management}
-			\noindent \mom{}\\*
-			and the authorized family members listed below:\\*
+			\noindent \mom{}
+			and the authorized family members:\\*
 			Colin N Keenan,
 			Charlene Nichols,
 			Chris Nichols,
@@ -139,12 +150,6 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 			Allegra Harrison,
 			Rachel Ogletree
 
-		\item \textbf{\myaddress{}}\\* \label{myaddress}
-			Colin Keenan
-			3835 Park Ave
-			Kansas City, MO 64109
-			816-200-2658
-			
 		\item \textbf{\myemail{}}\\* \label{myemail}
 			colinnkeenan@gmail.com
 
@@ -152,57 +157,55 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 			The real property condominium building on the south-east corner of Wilson Ave and Union St in the United States Postal Service zip code 91106
 
 		\item \textbf{\apt{}}\\* \label{apt}
-			The apartment house in \condo{} owned by \mom{} with the following address:\\*
-			104 N Wilson, \apt{} 13,\\* 
+			The apartment house in \condo{} owned by \mom{} with the following address:
+			104 N Wilson, \apt{} 13,
 			Pasadena, CA  91106
 
-
-\vfill
-\columnbreak
 		\item \textbf{\room{}}\\* \label{room}
-			\textit{In \apt{}}\\*
+			\textit{In \apt{}}
 			the top-floor bedroom with a view of the gated parking area
 
 		\item \textbf{\furniture{}}\\* \label{furniture}
-			\textit{In \room{}}\\*
+			\textit{In \room{}}
 			queen-size bed on frame, large dresser, shelves, bookcase, floor lamp\\*
-			\textit{In Kitchen}\\*
-			fully stocked with plates, bowls, cups, silverware, cutting boards, cooking utensils, pizza pan, broiler pan, drip pan, dish clothes, hand towels, etc.
-			\textit{In Linen Closet}\\*
+			\textit{In Kitchen}
+			fully stocked with plates, bowls, cups, silverware, cutting boards, cooking utensils, dish clothes, hand towels, etc.\\*
+			\textit{In Linen Closet}
 			bath towels, hand towels, wash cloths, fitted and flat sheets, blankets, etc.
 
 		\item \textbf{\shared{}}\\* \label{shared}
-			\textit{In \apt{}}\\*
-			the top-floor room with a view of Union~St\\*
-			all entrances\\*
-			all hallways and stairs\\*
-			all hallway closets\\*
-			the kitchen\\*
-			top-floor bathroom\\*
-			\textit{In gated parking area of \condo{}}\\*
+			\textit{In \apt{}}
+			the top-floor room with a view of Union~St,
+			all entrances,
+			all hallways and stairs,
+			all hallway closets,
+			the kitchen,
+			top-floor bathroom,
+			\textit{In gated parking area of \condo{}}
 			carport area providing parking space for one vehicle
 			
 		\item \textbf{\livingroom{}}\\* \label{livingroom}
-			\textit{In \apt{}}\\*
-			living room\\*
+			\textit{In \apt{}}
+			living room,
 			bottom-floor bathroom
 			
 		\item \textbf{\appliances}\\* \label{appliances}
-			gas furnace with central air conditioner
-			\textit{In Kitchen}  
+			gas furnace with central air conditioner\\*
+			\textit{In Kitchen} 
 			gas stove with 4 burners and oven, 
-			1800W double burner,
 			900W microwave,
 			1500W toaster oven\\*
-			\textit{In Hallway Next To \room{}} washer and dryer
-			\textit{In \room{}} electric heater,
+			\textit{In Hallway Next To \room{}}
+			washer and dryer\\*
+			\textit{In \room{}} 
+			electric heater,
 			portable air conditioner
 			
 		\item \textbf{\utilities{}}\\* \label{utilities}
 			water,
-			rubbish removal,\\*
+			rubbish removal,
 			electricity,
-			natural gas,\\*
+			natural gas,
 			broadband internet
 
 		\item \textbf{Rent}\\* \label{rent}
@@ -233,68 +236,49 @@ In this section of the Agreement, the meaning of the capitalized words referred 
 		\item \textbf{\standards{}}\\*
 			Housekeeping standards as listed in Schedule \ref{standards} of this Agreement
 
-		\item \textbf{Owner}\\* \label{owner}
-			\begin{minipage}[t]{2in}
-
-				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Name}
-				
-				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Date Of Birth}
-			\end{minipage}%
+		\item \textbf{Owner}: \label{owner}
+				\mom{}\\*
+				Date Of Birth: 2/7/1943
 
 		\item \textbf{\ownermail{}}\\* \label{ownermail}
 			joanharrisonzone@gmail.com
 
-		\item \textbf{Lodger}\\* \label{lodger}
-			\begin{minipage}[t]{2in}
+		\item \textbf{Lodger}: \label{lodger}
+			\lname{}\\*
+			Date Of Birth: \lbirth{}\\*
+			Social Security Number: \lss{}
 
-				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Name}
-				
-				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Date Of Birth}
-				
-				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Social Security Number}
-				
-				\vspace{0.5cm}\makebox[2in]{\hrulefill} \\*
-				\textsuperscript{Signature (\lname{})}
-			\end{minipage}%
+		\item \textbf{\lemail{}}\\* \label{lemail}
+			\lodgeremail{}
 
-		\item \textbf{\lemail{}} \label{lemail}
-
-			\vspace{0.5cm}\makebox[2in]{\hrulefill}
-
-			\vspace{0.5cm}\makebox[2in]{\hrulefill}
 	\end{enumerate}
 \end{multicols}
 
-\vspace{.3cm}\noindent \textbf{I have read and been given copies of all sections and schedules of this Agreement:} \vspace{.1cm}
+\newpage 
+~\vspace{-1cm}
 
-\tabmed{Section \ref{specifics}} \tablarge{\textbf{\specifics{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\textbf{I have read and been given copies of all sections and schedules of this Agreement:} \vspace{.1cm}
 
-\tabmed{Section \ref{definitions}} \tablarge{\textbf{\definitions{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\tabmed{Section \ref{specifics}} \tablarge{\textbf{\specifics{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\tabmed{Schedule \ref{therental}} \tablarge{\textbf{\therental{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\tabmed{Section \ref{definitions}} \tablarge{\textbf{\definitions{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\tabmed{Schedule \ref{payments}} \tablarge{\textbf{\payments{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\tabmed{Schedule \ref{therental}} \tablarge{\textbf{\therental{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\tabmed{Schedule \ref{terminating}} \tablarge{\textbf{\terminating{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\tabmed{Schedule \ref{payments}} \tablarge{\textbf{\payments{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\tabmed{Schedule \ref{behavior}} \tablarge{\textbf{\behavior{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\tabmed{Schedule \ref{terminating}} \tablarge{\textbf{\terminating{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\tabmed{Schedule \ref{rules}} \tablarge{\textbf{\rules{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\tabmed{Schedule \ref{behavior}} \tablarge{\textbf{\behavior{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\tabmed{Schedule \ref{standards}} \tablarge{\textbf{\standards{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}\vspace{.3cm} 
+\tabmed{Schedule \ref{rules}} \tablarge{\textbf{\rules{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\tabmed{Schedule \ref{meta}} \tablarge{\textbf{\meta{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\tabmed{Schedule \ref{standards}} \tablarge{\textbf{\standards{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\tabmed{Schedule \ref{disclosures}} \tablarge{\textbf{\disclosures{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin} \vspace{.3cm}
+\tabmed{Schedule \ref{meta}} \tablarge{\textbf{\meta{}}} \tabsmall{Initial:\hspace{0.2cm}\initialfillin}
 
-\newpage \label{acceptance}
-{\small\noindent\textbf{CAUTION: THIS IS A LEGALLY BINDING AGREEMENT; MAKE SURE YOU UNDERSTAND ALL OF ITS PROVISIONS BEFORE SIGNING} \\*
-By signing below, I acknowledge having received a copy of, and having read and understood, this \agreementdef{}. This agreement is entered into on \today{} and will be effective on \occdate{}.
+\label{acceptance}
+By signing below, I acknowledge having received a copy of, and having read and understood, this \agreementdef{}. This agreement is entered into on \today{} and will be effective on the \firstday{}. 
 
 \vspace{1cm}
 \noindent\tabmed{Lodger Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
@@ -304,9 +288,10 @@ By signing below, I acknowledge having received a copy of, and having read and u
 \noindent\tabmed{Owner Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
 \tabmed{} \tablarge{\textsuperscript{\mom{}}} 
 
-\input{notarycontent}}
+~\vspace{-1.5cm}
+\input{notarycontent}
+
 \section*{} %therental
-\vspace{-1cm}
 \begin{schedule}{\therental{}} \label{therental}
 \begin{enumerate}
 	\item \textbf{Rental And Occupancy Of Lodging}. 
@@ -333,7 +318,7 @@ By signing below, I acknowledge having received a copy of, and having read and u
 		\begin{enumerate} 
 			\item \textbf{Venmo}. Payments made via Venmo shall be made to the Venmo account associated with the Owner's email address (the ``\ownermail{}'') that is set forth in item \ref{ownermail} of section \ref{definitions} of this Agreement{}. Venmo's website is https://venmo.com/; Venmo also has apps for Android and iOS. 
 			\item \textbf{Wells Fargo Bank, 82 S Lake Ave, Pasadena, CA 91101}. Payments made via Wells Fargo Bank shall be deposited at Wells Fargo Bank at 82 S Lake Ave, Pasadena, CA 91101 into the checking account for THE JOAN B. HARRISON FAMILY TRUST with account number 8139769759. Payments may be made in any form accepted by that Wells Fargo Bank branch.
-			\item \textbf{Rejected Payment Fee}. If any form of payment offered by Lodger in payment of Rent or any other amount due under this Agreement is returned for lack of sufficient funds, a ``stop payment,'' or any other reason, Lodger will pay the Owner a returned payment fee of \$25 for the first payment made by Lodger and rejected by the bank, and \$35 for every subsequent rejected payment.
+			\item \textbf{Rejected Payment Fees}. If any form of payment offered by Lodger in payment of Rent or any other amount due under this Agreement is returned for lack of sufficient funds, a ``stop payment,'' or any other reason, Lodger will pay the Owner the returned payment fees, if any, charged by Wells Fargo Bank upon rejecting the payment.
 			\item \textbf{\paymenttime{}}. \label{defpaytime} 
 				\begin{enumerate}
 					\item Venmo will notify \management{} of the payment via the \ownermail{}. 
@@ -350,11 +335,10 @@ By signing below, I acknowledge having received a copy of, and having read and u
 				The first \rentweek{} shall begin on the \firstday{} and shall end on \\* \\
 				Monday, \datefillin, 2015. Every seven days is another \rentweek{}. Every Tuesday will be the start of another \rentweek{} and every Monday will be the end of the \rentweek{}. (``\rentweek'')
 	\item \textbf{Automatic Renewal}. Unless terminated, this Agreement shall be automatically renewed weekly on the same terms and conditions. 
-			\item \textbf{Rent And Rent Due Date}. The Lodger shall pay the Owner a weekly rent of \rent{}. Rent shall be paid on or before each Monday, which is the last (that is, the 7th) day of each \rentweek{}.
+			\item \textbf{Rent And Rent Due Date}. The Lodger shall pay the Owner a weekly rent of \rent{}. Rent shall be paid on or before each Monday, which is the last day of each \rentweek{}.
 			\item \textbf{Delinquent Rent}. \label{due}
-					Rent is delinquent if the \paymenttime{} is later than 11:59pm Pacific Standard Time on the seventh (7th) day of the week when due. 
-			\item \textbf{Pay Or Quit}. Should Lodger allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, a notice to pay the Rent or quit will be served. 
-			\item \textbf{Late Charge}. Because Owner and Lodger agree that actual damages for late rent payments are very difficult or impossible to determine, Owner and Lodger agree to the following stated late charge as liquidated damages. Should Lodger allow the Rent to become delinquent in accordance with item \ref{due} of this section of Agreement, Lodger shall be charged a \$5 late fee, plus \$1 for each additional day that the rent continues to be unpaid.  The total late charge for any one week will not exceed \$10. Any notice to the Lodger that a late charge has been assessed shall not waive, or otherwise affect, any rental agreement termination notice or lawsuit. Tender of late fees after the expiration of a rental agreement termination notice shall not waive said notice or the right to effect the removal of Lodger from \apt{} based on the notice. 
+				Rent is delinquent if the \paymenttime{} is later than 11:59pm Pacific Standard Time on Monday, the last day of the \rentweek{} when due. 
+			\item \textbf{Pay Or Quit}. Should Lodger allow the Rent to become delinquent in accordance with item \ref{due} of this section of the Agreement, a notice to pay the Rent or quit will be served. 
 		\end{enumerate} 
 	\item \textbf{Utility Services}. 
 		\begin{enumerate} 
@@ -408,11 +392,11 @@ By signing below, I acknowledge having received a copy of, and having read and u
 \end{schedule}
 
 \section*{} %behavior
-\vspace{-1cm}
+\newpage
 \begin{schedule}{\behavior{}} \label{behavior}
 \begin{enumerate}
 	\item \textbf{Criminal And Drug Related Activities}. 
-		In an effort to keep \mom{} safe in her own home, \management{} is taking a ``zero tolerance'' position towards any of the Criminal or Drug-Related Criminal activities described on this page. 
+		In an effort to keep Owner safe in her own home, \management{} is taking a ``zero tolerance'' position towards any of the Criminal or Drug-Related Criminal activities described on this page. 
 		\begin{enumerate} 
 			\item \textbf{Criminal Activity}. \label{criminal}
 				\begin{enumerate}
@@ -476,19 +460,17 @@ By signing below, I acknowledge having received a copy of, and having read and u
 	\item No vehicle repairs or maintenance may be done within the parking area. 
 	\item The drive-way speed limit is 5 mph. Please be careful of pedestrians.
 	\item Do not blow horns or race engines within the parking area. 
-	\item Without prior written approval of \management{}, nothing with any dimension greater than two (2) feet may be brought into the \room{}, \apt{}, or \condo{}.
 	\item Bicycle riding, skateboarding, rollerskating and game playing is permitted in the parking area or on sidewalks in the common areas if there is parental supervision.
 	\item Items shall not be stored in the carport area.
+	\item Without prior written approval of \management{}, nothing with any dimension greater than two (2) feet may be brought into the \room{}, \apt{}, or \condo{}.
 	\item Nothing shall be thrown out windows or doors. All trash and garbage shall be deposited in outside trash bins or trash cans provided by \management{}. 
 	\item Please place trash in the dumpster, not alongside it. Please do not place loose trash into dumpster. Please reclose the lid to keep odors to a minimum. Large boxes should be torn-up before placing in dumpster. 
 	\item Nothing large (furniture, mattresses, TV's, etc.) shall be put in or near the dumpsters. Residents are responsible for making arrangements for disposing of large items or hazardous waste. 
 	\item The walk-through security gate must be kept locked at all times for security reasons. Please do not disable this lock or prop the door open. 
 	\item Please use your automatic gate openers each time you drive through the gate. Please be sure the gate closes behind you.
-	\item Without prior written approval of \management{}, nothing provided in the \room{} may be moved or removed from the \room{}.
-	\item Without prior written approval of \management{}, personal property shall not be stored outside the \room{} at any time. 
-	\item Without prior written approval of \management{}, nothing provided in \shared{} may be removed from the area it is in other than items in closets or cupboards. Items in cupboards must be cleaned and returned to the cupboard daily.
-	\item Without prior written approval of \management{}, nothing provided in the \apt{} may be removed from the \apt{}.
-	\item All common areas including, but not limited to, sidewalks, courts, entry passages, halls and stairways shall remain free from obstruction at all times. 
+	\item Without prior written approval of \management{}, nothing provided in the \room{} may be moved or removed from the \room{}, and personal property shall not be stored outside the \room{} at any time.
+	\item Without prior written approval of \management{}, nothing provided in \shared{} may be removed from the area it is in other than items in closets or cupboards, and nothing provided in the \apt{} may be removed from the \apt{}. 
+	\item All \shared{} shall remain free from obstruction at all times. 
 	\item Musical instruments; radios; television sets; CD, record and tape players; and other musical devices shall not be played at a volume audible outside the \room{} at anytime. 
 	\item At no time shall the Lodger, guest or other individual under the control of the Lodger, create noise which is objectionable to other residents of \condo{} or Owner.
 	\item Trash cans, bottles, brooms, mops, etc., should be kept out of sight.
@@ -497,15 +479,13 @@ By signing below, I acknowledge having received a copy of, and having read and u
 	\item No signs are to be displayed to public view.
 	\item Outside antennas are prohibited, including satellite dishes.
 	\item Flammable materials including, but not limited to, lighter fluid, gasoline, solvents and motor oil shall not be kept in or about the \room{}. 
-	\item Lodger is required to maintain the grounds immediately surrounding the \room{} in good condition. 
 	\item Do not move or put plants in the common areas of \condo{}.
 	\item Lodger may not borrow or remove equipment or property from the common areas of \condo{}. 
 	\item Only one pet may be kept in \apt, but no pet or animal may be kept without obtaining the written consent from a member of Management first; if a member of Management grants consent to have a pet, then the Lodger must keep it wearing a current license tag issued by The Pasadena Humane Society, keep track of the current rabies certificate for it, and thoroughly clean up after it, using appropriate measures to reduce pet odors and stains. Lodger shall walk his or her dog frequently enough to reduce indoor issues. However, Owner is against corporal punishment or overly harsh words towards pets, and Lodger shall refrain from correcting the pet in those ways. Such consent if granted, shall be revocable at the Owner's option upon giving a 7 day written notice.
-	\item The Lodger shall not create a mess in the laundry areas. 
 	\item	Lodger, guest, or other person under his or her control shall not be permitted on the roof. 
 	\item No writing or painting on any surface of \apt{} or \condo{} property.
 	\item Lodger shall not damage, remove or otherwise render inoperable any smoke detector or other safety devices or equipment within the \room{}, apt{}, or condo{}. 
-	\item Alcoholic beverages shall not be consumed in the \shared{} or the public areas of \condo{}. 
+	\item Alcoholic beverages shall not be consumed in the public areas of \condo{}. 
 	\item No explosives or firecrackers shall be kept or exploded on or about the \room{}, \apt{}, or \condo{}. 
 	\item Abuse of alcohol which causes behavior that interferes with the health, safety, or the right to the peaceful enjoyment of \condo{} property by Owner, \condo{} residents or personnel will not be tolerated. 
 	\item Other than as requested by Owner, Lodger shall not adjust the thermostat which controls the \apt{}'s central heating and air conditioning.
@@ -514,7 +494,6 @@ By signing below, I acknowledge having received a copy of, and having read and u
 \end{schedule}
 
 \section*{} % standards
-\newpage
 \begin{schedule}{\standards{}} \label{standards}\vspace{.25cm}\\*
 	The Lodger shall
 \begin{enumerate}
@@ -532,10 +511,11 @@ By signing below, I acknowledge having received a copy of, and having read and u
 	\item keep all kitchen cabinets and countertops of the \apt{} clean and neat;
 	\item keep all dishes clean and safely stored when not in use; 
 	\item daily clean the dishes, pots, or pans and all other cooking utensils used by Lodger that are owned by Owner;
-	\item not store dishes, pots, pans, or other cooking utensils in the sink by putting them in the container provided by \management{} for that purpose until actually washing them;
+	\item not store dishes, pots, pans, or other cooking utensils in the sink (instead, they may be put in the container provided by \management{} for that purpose until actually washing them and the container as well);
 	\item keep all closets and other storage areas neat and clean; 
+	\item keep the laundry area neat;
 	\item keep all trash in an appropriately covered container and remove all trash from the \room{} and the \apt{} on at least a weekly basis;
-	\item keep the bathroom exhaust fan, if any, free of dust; 
+	\item keep the bathroom exhaust fan free of dust; 
 	\item keep the toilet and tank clean and free of odors; 
 	\item keep the tub/shower and curtains clean and free of mildew and mold. Shower curtains provided by \management{} shall not be replaced except by \management{}.
 \end{enumerate}
@@ -549,7 +529,7 @@ By signing below, I acknowledge having received a copy of, and having read and u
 		This Agreement may only be modified or amended 
 		\begin{enumerate}
 			\item by the written consent of both \management{} and the Lodger, or 
-			\item \management{} (without the written consent of the Lodger) at any time during the term of the Agreement upon 7 day written notice. 
+			\item \management{} (without the written consent of the Lodger) at any time during the term of the Agreement upon 30 or 60 day written notice as required by law. 
 		\end{enumerate}
 				
 		This item \ref{modifications} of this Schedule of the Agreement, shall not apply to changes authorized by this Agreement or law.
@@ -561,19 +541,6 @@ By signing below, I acknowledge having received a copy of, and having read and u
 		All rights and remedies that \management{} may have under this Agreement or at law are cumulative and nonexclusive. 
 	\item \textbf{Severability}. 
 		If any provision of this Agreement is found by a court of competent jurisdiction to be illegal, invalid, or unenforceable, the remainder of this Agreement will not be affected. In lieu of any provision which a court of competent jurisdiction finds to be illegal, invalid, or unenforceable, there will be added as a part of this Agreement a provision as similar to such provision as may be possible, yet be legal, valid and enforceable. 
-	\item \textbf{The Effect Of Prior Rental Agreements}. 
-		Providing the Lodger is not in default of any term, condition or covenant under any other rental agreement that is in force between the Lodger and \management{} at the time this Agreement becomes effective, all prior rental agreements will terminate. In all cases where the Lodger is in default under a rental agreement with \management{} at the time this Agreement becomes effective, any default under that agreement shall be deemed a default of this Agreement. 
-\end{enumerate}
-\end{schedule}
-
-\section*{} %disclosures
-\newpage
-\begin{schedule}{\disclosures{}} \label{disclosures}
-\begin{enumerate}
-	\item \textbf{Megan's Law Disclosure}.
-		``Notice: Pursuant to Section 290.46 of the Penal Code, information about specified registered sex offenders is made available to the public via an Internet Web site maintained by the Department of Justice at www.meganslaw.ca.gov. Depending on an offender's criminal history, this information will include either the address at which the offender resides or the community of residence and ZIP Code in which he or she resides.''
-	\item \textbf{Confidentiality Of Record}. 
-		Confidential records and information obtained by \management{} shall not be disclosed to third parties except in accordance with law. 
 \end{enumerate}
 \end{schedule}
 
