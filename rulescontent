@@ -34,11 +34,11 @@ After checking her blood sugar, you will be serving pills, an inhaler, and an in
 			\item The blood sugar readings that you report daily will help Joan's doctor (through Colin) know if the insulin is balancing her carb intake each day.
 			\item Colin will be communicating blood sugar readings to Joan's doctor frequently, and occasionally you will give the glucose monitoring device directly to Joan's doctor during an appointment.
 			\item You will be informed by Colin or Joan's doctor whenever insulin or any medication needs to be adjusted. You may ask for a printout after a doctor's appointment, and Colin will both tell you over the phone and confirm with an email. 
-			\item You shall not take it upon yourself to provide any other dose of insulin than as prescribed, but you will withhold insulin when her blood sugar reading is below 70.
+			\item You shall not take it upon yourself to provide any other dose of insulin than as prescribed, but you will ask Joan not to take the insulin when her blood sugar reading is below 70, and call Colin.
 			\item You will not likely get a low reading (below 70) during your shift, but if you do, 
 				\begin{enumerate}
 					\item provide a serving of carbs and check every fifteen minutes (details: \insulin{}),
-					\item do not giver her insulin, and
+					\item leave insulin with her but ask her not to take it until she talks to Colin, and
 					\item call Colin.
 				\end{enumerate}
 			\item When her readings are higher than the targets outlined in \insulin{},
