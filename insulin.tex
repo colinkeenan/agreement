@@ -1,0 +1,20 @@
+\documentclass[12pt,letterpaper]{article}
+\input{attachmenttitles}
+\usepackage[margin=1in,headheight=28pt]{geometry}
+\overfullrule=2cm
+\let\oldenumerate\enumerate
+\renewcommand{\enumerate}{
+  \oldenumerate
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+	\large
+}
+\pagenumbering{gobble}
+\begin{document}
+\title{bigchores{}}
+\author{Colin N Keenan colinnkeenan@gmail.com}
+\date{June 2015}
+\section*{\insulin}
+\input{insulincontent}
+\end{document}

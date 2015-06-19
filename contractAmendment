@@ -1,0 +1,26 @@
+\newpage
+\section*{Amendment to Senior Care Contract}
+
+This is an Amendment to the Senior Care Contract dated \startdate{} (the ``Contract'') between \mom{} (``Employer'') and \lname{} (``Employee'').
+
+Employer and Employee agree to the following changes and/or additions to the Contract: 
+\noindent Employee is a category\\
+\noindent(check one)
+\begin{itemize}
+	\item[\checkbox] \ref{allweek}. \allweek{}
+	\item[\checkbox] \ref{weekend}. \weekend{}
+	\item[\checkbox] \ref{weekday}. \weekday{}
+\end{itemize}
+The Employer shall lend the Employee keys to the Employer's residence located at 104 North Wilson Ave Apt 13, Pasadena, California (the ``Keys'').  The Employee shall only use the Keys as needed to perform the duties and responsibilities set forth under the Contract.  The Employee shall not copy the Keys or distribute the Keys to another person other than the Employer unless granted permission in writing by Colin Keenan. Should the Employee lose any of the Keys, the Employee shall promptly contact the Employer and Colin Keenan to permit replacement of the Keys and, if necessary, to change the locks.  Once employment has been terminated either by the Employee or the Employer, the Employee shall return the Keys to the Employer upon the last day of employment.
+
+In all other respects, the terms of the Contract shall remain in effect.
+
+\vspace{1.5cm}
+\noindent\tabmed{Employer Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
+\tabmed{} \tablarge{\textsuperscript{\mom{}}}\\* 
+
+\vspace{.8cm}
+\noindent\tabmed{Employee Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
+\tabmed{} \tablarge{\textsuperscript{\lname{}}}
+
+%/* vim: set filetype=tex : */ 

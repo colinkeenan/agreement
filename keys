@@ -1,0 +1,28 @@
+\newpage
+\fancypagestyle{empty}{
+	\fancyhf{}
+}
+\thispagestyle{empty}
+\section*{Keys}
+\subsection*{The ``Keys''}
+\mom{} has lent \lname{} the following 3 keys to \mom's residence located at 104 North Wilson Ave Apt 13, Pasadena, CA:
+\begin{itemize}
+	\item a key to the outside doors
+	\item a key to the bedroom
+	\item a key to the mailbox
+\end{itemize}
+\subsection*{The ``Keys' Rules''}
+\lname{} shall:
+\begin{itemize}
+	\item not copy the Keys or distribute the Keys to another person other than to \mom{} unless granted permission in writing by Colin Keenan
+	\item promptly contact \mom{} and Colin Keenan to permit replacement of the Keys and, if necessary, to change the locks, if \lname{} loses any of the Keys
+	\item return the Keys to \mom{} upon vacating the premises
+\end{itemize}
+
+\subsubsection*{I, \lname{}, have received the Keys, and agree to obey the Keys' Rules.}
+
+\vspace{1.5cm}
+\noindent\tabmed{Lodger Signature} \tablarge{\makebox[.5\linewidth]{\hrulefill}} \tabmed{Date\datefillin} \\*
+\tabmed{} \tablarge{\textsuperscript{\lname{}}}
+
+%/* vim: set filetype=tex : */ 
